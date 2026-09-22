@@ -1,0 +1,38 @@
+# Raw Photoshoot Dumps & Unprocessed Media
+BTS Videos/
+Events/
+Studio Portrait/
+raw_assets/
+
+# Internal QA Audits, Crops & Test Scratch Scripts
+scratch/
+scripts/
+ui_audit_report/
+verified_crops/
+screenshots/
+screen new/
+final_qa_screenshots/
+audit_*/
+temp_*/
+image_audit_crops/
+slideshow_test_crops/
+thumbnails_manifest/
+audit_report_data.json
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

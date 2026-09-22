@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="140" height="140">
+  <defs>
+    <path id="textCircle" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+  </defs>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#a27e54" stroke-width="1" stroke-opacity="0.4"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#a27e54" stroke-width="1" stroke-opacity="0.3"/>
+  <text font-family="'Cinzel', 'Cormorant Garamond', 'Playfair Display', serif" font-size="9" fill="#a27e54" letter-spacing="3.2">
+    <textPath href="#textCircle" startOffset="0%">
+      • ZYAGO STUDIO • BESPOKE COMMISSION • LONDON •
+    </textPath>
+  </text>
+  <text x="100" y="107" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="24" fill="#a27e54" text-anchor="middle" font-style="italic" font-weight="600" letter-spacing="1">ZS</text>
+</svg>

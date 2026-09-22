@@ -1,0 +1,702 @@
+[
+  {
+    "index": 1,
+    "name": "img1.webp",
+    "category": "Events",
+    "original": "ASM02772.jpg",
+    "src_path": "Events\\Weddings\\ASM02772.jpg",
+    "orig_size_mb": 1.56,
+    "new_size_kb": 142.6,
+    "dimensions": "1638x2048"
+  },
+  {
+    "index": 2,
+    "name": "img2.webp",
+    "category": "Events",
+    "original": "ASM02797.jpg",
+    "src_path": "Events\\Weddings\\ASM02797.jpg",
+    "orig_size_mb": 1.38,
+    "new_size_kb": 110.3,
+    "dimensions": "1638x2048"
+  },
+  {
+    "index": 3,
+    "name": "img3.webp",
+    "category": "Events",
+    "original": "IMG_2086.jpg",
+    "src_path": "Events\\Weddings\\IMG_2086.jpg",
+    "orig_size_mb": 18.59,
+    "new_size_kb": 517.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 4,
+    "name": "img4.webp",
+    "category": "Events",
+    "original": "IMG_2220.jpg",
+    "src_path": "Events\\Weddings\\IMG_2220.jpg",
+    "orig_size_mb": 25.56,
+    "new_size_kb": 491.0,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 5,
+    "name": "img5.webp",
+    "category": "Events",
+    "original": "IMG_3245.jpg",
+    "src_path": "Events\\Weddings\\IMG_3245.jpg",
+    "orig_size_mb": 9.27,
+    "new_size_kb": 100.1,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 6,
+    "name": "img6.webp",
+    "category": "Events",
+    "original": "IMG_3280.jpg",
+    "src_path": "Events\\Weddings\\IMG_3280.jpg",
+    "orig_size_mb": 14.63,
+    "new_size_kb": 289.0,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 7,
+    "name": "img7.webp",
+    "category": "Events",
+    "original": "IMG_5240.jpg",
+    "src_path": "Events\\Weddings\\IMG_5240.jpg",
+    "orig_size_mb": 15.34,
+    "new_size_kb": 400.3,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 8,
+    "name": "img8.webp",
+    "category": "Events",
+    "original": "MUT_0862.jpg",
+    "src_path": "Events\\Weddings\\MUT_0862.jpg",
+    "orig_size_mb": 11.96,
+    "new_size_kb": 440.6,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 9,
+    "name": "img9.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_1239.jpg",
+    "src_path": "Studio Portrait\\IMG_1239.jpg",
+    "orig_size_mb": 10.16,
+    "new_size_kb": 206.1,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 10,
+    "name": "img10.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_1694.jpg",
+    "src_path": "Studio Portrait\\IMG_1694.jpg",
+    "orig_size_mb": 14.88,
+    "new_size_kb": 210.1,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 11,
+    "name": "img11.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_1910.jpg",
+    "src_path": "Studio Portrait\\IMG_1910.jpg",
+    "orig_size_mb": 16.51,
+    "new_size_kb": 276.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 12,
+    "name": "img12.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_1926.jpg",
+    "src_path": "Studio Portrait\\IMG_1926.jpg",
+    "orig_size_mb": 17.13,
+    "new_size_kb": 243.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 13,
+    "name": "img13.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_2018.jpg",
+    "src_path": "Studio Portrait\\IMG_2018.jpg",
+    "orig_size_mb": 8.62,
+    "new_size_kb": 270.5,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 14,
+    "name": "img14.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_2978.jpg",
+    "src_path": "Studio Portrait\\IMG_2978.jpg",
+    "orig_size_mb": 7.71,
+    "new_size_kb": 186.0,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 15,
+    "name": "img15.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_3890.jpg",
+    "src_path": "Studio Portrait\\IMG_3890.jpg",
+    "orig_size_mb": 5.22,
+    "new_size_kb": 351.0,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 16,
+    "name": "img16.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_5731.jpg",
+    "src_path": "Studio Portrait\\IMG_5731.jpg",
+    "orig_size_mb": 4.95,
+    "new_size_kb": 222.7,
+    "dimensions": "2560x2048"
+  },
+  {
+    "index": 17,
+    "name": "img17.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_5879.jpg",
+    "src_path": "Studio Portrait\\IMG_5879.jpg",
+    "orig_size_mb": 10.12,
+    "new_size_kb": 232.7,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 18,
+    "name": "img18.webp",
+    "category": "Studio Portrait",
+    "original": "IMG_9720.jpg",
+    "src_path": "Studio Portrait\\IMG_9720.jpg",
+    "orig_size_mb": 12.43,
+    "new_size_kb": 87.2,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 19,
+    "name": "img19.webp",
+    "category": "Studio Portrait",
+    "original": "SFP_7675.jpg",
+    "src_path": "Studio Portrait\\SFP_7675.jpg",
+    "orig_size_mb": 12.57,
+    "new_size_kb": 366.0,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 20,
+    "name": "img20.webp",
+    "category": "Studio Portrait",
+    "original": "SFP_8501.jpg",
+    "src_path": "Studio Portrait\\SFP_8501.jpg",
+    "orig_size_mb": 19.35,
+    "new_size_kb": 282.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 21,
+    "name": "img21.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0008.jpg",
+    "src_path": "Studio Portrait\\ZSR_0008.jpg",
+    "orig_size_mb": 9.87,
+    "new_size_kb": 225.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 22,
+    "name": "img22.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0026.jpg",
+    "src_path": "Studio Portrait\\ZSR_0026.jpg",
+    "orig_size_mb": 7.42,
+    "new_size_kb": 194.9,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 23,
+    "name": "img23.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0034.jpg",
+    "src_path": "Studio Portrait\\ZSR_0034.jpg",
+    "orig_size_mb": 5.7,
+    "new_size_kb": 140.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 24,
+    "name": "img24.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0042.jpg",
+    "src_path": "Studio Portrait\\ZSR_0042.jpg",
+    "orig_size_mb": 4.28,
+    "new_size_kb": 96.2,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 25,
+    "name": "img25.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0045.jpg",
+    "src_path": "Studio Portrait\\ZSR_0045.jpg",
+    "orig_size_mb": 11.61,
+    "new_size_kb": 245.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 26,
+    "name": "img26.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0069.jpg",
+    "src_path": "Studio Portrait\\ZSR_0069.jpg",
+    "orig_size_mb": 5.03,
+    "new_size_kb": 94.7,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 27,
+    "name": "img27.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0072.jpg",
+    "src_path": "Studio Portrait\\ZSR_0072.jpg",
+    "orig_size_mb": 10.91,
+    "new_size_kb": 476.0,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 28,
+    "name": "img28.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0075.jpg",
+    "src_path": "Studio Portrait\\ZSR_0075.jpg",
+    "orig_size_mb": 8.16,
+    "new_size_kb": 190.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 29,
+    "name": "img29.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0232 (2).jpg",
+    "src_path": "Studio Portrait\\ZSR_0232 (2).jpg",
+    "orig_size_mb": 11.34,
+    "new_size_kb": 218.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 30,
+    "name": "img30.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0232.jpg",
+    "src_path": "Studio Portrait\\ZSR_0232.jpg",
+    "orig_size_mb": 9.66,
+    "new_size_kb": 181.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 31,
+    "name": "img31.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0282.jpg",
+    "src_path": "Studio Portrait\\ZSR_0282.jpg",
+    "orig_size_mb": 8.58,
+    "new_size_kb": 169.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 32,
+    "name": "img32.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0305.jpg",
+    "src_path": "Studio Portrait\\ZSR_0305.jpg",
+    "orig_size_mb": 6.85,
+    "new_size_kb": 95.6,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 33,
+    "name": "img33.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0359.jpg",
+    "src_path": "Studio Portrait\\ZSR_0359.jpg",
+    "orig_size_mb": 8.03,
+    "new_size_kb": 234.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 34,
+    "name": "img34.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0432.jpg",
+    "src_path": "Studio Portrait\\ZSR_0432.jpg",
+    "orig_size_mb": 15.06,
+    "new_size_kb": 223.9,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 35,
+    "name": "img35.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0450.jpg",
+    "src_path": "Studio Portrait\\ZSR_0450.jpg",
+    "orig_size_mb": 15.79,
+    "new_size_kb": 111.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 36,
+    "name": "img36.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0493.jpg",
+    "src_path": "Studio Portrait\\ZSR_0493.jpg",
+    "orig_size_mb": 14.2,
+    "new_size_kb": 387.3,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 37,
+    "name": "img37.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0549.jpg",
+    "src_path": "Studio Portrait\\ZSR_0549.jpg",
+    "orig_size_mb": 5.23,
+    "new_size_kb": 124.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 38,
+    "name": "img38.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0610.jpg",
+    "src_path": "Studio Portrait\\ZSR_0610.jpg",
+    "orig_size_mb": 7.45,
+    "new_size_kb": 174.3,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 39,
+    "name": "img39.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0642.jpg",
+    "src_path": "Studio Portrait\\ZSR_0642.jpg",
+    "orig_size_mb": 7.51,
+    "new_size_kb": 138.7,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 40,
+    "name": "img40.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0752.jpg",
+    "src_path": "Studio Portrait\\ZSR_0752.jpg",
+    "orig_size_mb": 9.92,
+    "new_size_kb": 96.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 41,
+    "name": "img41.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0798.jpg",
+    "src_path": "Studio Portrait\\ZSR_0798.jpg",
+    "orig_size_mb": 25.56,
+    "new_size_kb": 424.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 42,
+    "name": "img42.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0803.jpg",
+    "src_path": "Studio Portrait\\ZSR_0803.jpg",
+    "orig_size_mb": 14.81,
+    "new_size_kb": 208.3,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 43,
+    "name": "img43.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0808_V2.jpg",
+    "src_path": "Studio Portrait\\ZSR_0808_V2.jpg",
+    "orig_size_mb": 14.84,
+    "new_size_kb": 365.2,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 44,
+    "name": "img44.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0845.jpg",
+    "src_path": "Studio Portrait\\ZSR_0845.jpg",
+    "orig_size_mb": 8.18,
+    "new_size_kb": 66.3,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 45,
+    "name": "img45.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_0874.jpg",
+    "src_path": "Studio Portrait\\ZSR_0874.jpg",
+    "orig_size_mb": 8.19,
+    "new_size_kb": 101.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 46,
+    "name": "img46.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1029.jpg",
+    "src_path": "Studio Portrait\\ZSR_1029.jpg",
+    "orig_size_mb": 9.73,
+    "new_size_kb": 250.1,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 47,
+    "name": "img47.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1030.jpg",
+    "src_path": "Studio Portrait\\ZSR_1030.jpg",
+    "orig_size_mb": 12.08,
+    "new_size_kb": 214.1,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 48,
+    "name": "img48.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1092.jpg",
+    "src_path": "Studio Portrait\\ZSR_1092.jpg",
+    "orig_size_mb": 7.43,
+    "new_size_kb": 136.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 49,
+    "name": "img49.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1113.jpg",
+    "src_path": "Studio Portrait\\ZSR_1113.jpg",
+    "orig_size_mb": 11.35,
+    "new_size_kb": 306.7,
+    "dimensions": "2560x1945"
+  },
+  {
+    "index": 50,
+    "name": "img50.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1202.jpg",
+    "src_path": "Studio Portrait\\ZSR_1202.jpg",
+    "orig_size_mb": 11.05,
+    "new_size_kb": 283.9,
+    "dimensions": "2080x2560"
+  },
+  {
+    "index": 51,
+    "name": "img51.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1315.jpg",
+    "src_path": "Studio Portrait\\ZSR_1315.jpg",
+    "orig_size_mb": 10.71,
+    "new_size_kb": 382.9,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 52,
+    "name": "img52.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1534.jpg",
+    "src_path": "Studio Portrait\\ZSR_1534.jpg",
+    "orig_size_mb": 15.05,
+    "new_size_kb": 340.6,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 53,
+    "name": "img53.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1536.jpg",
+    "src_path": "Studio Portrait\\ZSR_1536.jpg",
+    "orig_size_mb": 8.08,
+    "new_size_kb": 181.8,
+    "dimensions": "2560x1808"
+  },
+  {
+    "index": 54,
+    "name": "img54.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1574.jpg",
+    "src_path": "Studio Portrait\\ZSR_1574.jpg",
+    "orig_size_mb": 6.04,
+    "new_size_kb": 129.9,
+    "dimensions": "1701x2560"
+  },
+  {
+    "index": 55,
+    "name": "img55.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1577.jpg",
+    "src_path": "Studio Portrait\\ZSR_1577.jpg",
+    "orig_size_mb": 10.17,
+    "new_size_kb": 170.0,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 56,
+    "name": "img56.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1689.jpg",
+    "src_path": "Studio Portrait\\ZSR_1689.jpg",
+    "orig_size_mb": 7.51,
+    "new_size_kb": 179.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 57,
+    "name": "img57.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1858.jpg",
+    "src_path": "Studio Portrait\\ZSR_1858.jpg",
+    "orig_size_mb": 17.76,
+    "new_size_kb": 649.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 58,
+    "name": "img58.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_1888.jpg",
+    "src_path": "Studio Portrait\\ZSR_1888.jpg",
+    "orig_size_mb": 13.77,
+    "new_size_kb": 356.8,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 59,
+    "name": "img59.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2357.jpg",
+    "src_path": "Studio Portrait\\ZSR_2357.jpg",
+    "orig_size_mb": 8.62,
+    "new_size_kb": 369.6,
+    "dimensions": "1707x2560"
+  },
+  {
+    "index": 60,
+    "name": "img60.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2362.jpg",
+    "src_path": "Studio Portrait\\ZSR_2362.jpg",
+    "orig_size_mb": 14.73,
+    "new_size_kb": 464.2,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 61,
+    "name": "img61.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2420.jpg",
+    "src_path": "Studio Portrait\\ZSR_2420.jpg",
+    "orig_size_mb": 11.64,
+    "new_size_kb": 357.5,
+    "dimensions": "2560x1706"
+  },
+  {
+    "index": 62,
+    "name": "img62.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2524.jpg",
+    "src_path": "Studio Portrait\\ZSR_2524.jpg",
+    "orig_size_mb": 10.59,
+    "new_size_kb": 236.1,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 63,
+    "name": "img63.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2623.jpg",
+    "src_path": "Studio Portrait\\ZSR_2623.jpg",
+    "orig_size_mb": 16.04,
+    "new_size_kb": 345.6,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 64,
+    "name": "img64.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2657.jpg",
+    "src_path": "Studio Portrait\\ZSR_2657.jpg",
+    "orig_size_mb": 15.87,
+    "new_size_kb": 577.5,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 65,
+    "name": "img65.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2705.jpg",
+    "src_path": "Studio Portrait\\ZSR_2705.jpg",
+    "orig_size_mb": 14.4,
+    "new_size_kb": 132.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 66,
+    "name": "img66.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2831.jpg",
+    "src_path": "Studio Portrait\\ZSR_2831.jpg",
+    "orig_size_mb": 14.29,
+    "new_size_kb": 287.9,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 67,
+    "name": "img67.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2925.jpg",
+    "src_path": "Studio Portrait\\ZSR_2925.jpg",
+    "orig_size_mb": 7.87,
+    "new_size_kb": 214.7,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 68,
+    "name": "img68.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_2941.jpg",
+    "src_path": "Studio Portrait\\ZSR_2941.jpg",
+    "orig_size_mb": 5.63,
+    "new_size_kb": 147.2,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 69,
+    "name": "img69.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_3116.jpg",
+    "src_path": "Studio Portrait\\ZSR_3116.jpg",
+    "orig_size_mb": 10.87,
+    "new_size_kb": 251.4,
+    "dimensions": "1706x2560"
+  },
+  {
+    "index": 70,
+    "name": "img70.webp",
+    "category": "Studio Portrait",
+    "original": "ZSR_3793.jpg",
+    "src_path": "Studio Portrait\\ZSR_3793.jpg",
+    "orig_size_mb": 8.86,
+    "new_size_kb": 332.6,
+    "dimensions": "1706x2560"
+  }
+]
