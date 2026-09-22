@@ -2392,7 +2392,8 @@ img, video {
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: var(--radius-sm);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+  border: none;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14), 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .about-floating-photo {
@@ -2403,8 +2404,8 @@ img, video {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: var(--radius-sm);
-  border: 6px solid var(--bg-ivory);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  border: none;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22), 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 860px) {
