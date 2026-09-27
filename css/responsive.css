@@ -335,7 +335,7 @@
   }
 
   .gallery-item {
-    border-radius: 8px;
+    border-radius: 0 !important;
     -webkit-tap-highlight-color: transparent;
     transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
@@ -530,4 +530,17 @@
   .gallery-item.item-offset-top {
     margin-top: 14px;
   }
+
+  .sophie-cards-grid {
+    max-width: 300px;
+  }
+
+  .sophie-profile-card {
+    max-width: 300px;
+  }
+
+  .sophie-card-media {
+    height: 220px;
+  }
 }
+

@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initGalleryLightbox();
   initWhatsAppEnquiryForm();
   initMagneticButtons();
+  initConnectWidget();
+  initCardEnquiry();
 });
 
 /* --------------------------------------------------------------------------
@@ -840,3 +842,85 @@ function initHeroSlideshow() {
   showSlide(0);
   startAutoPlay();
 }
+
+/* --------------------------------------------------------------------------
+   13. FLOATING LUXURY CONNECT WIDGET (CALL & WHATSAPP)
+   -------------------------------------------------------------------------- */
+function initConnectWidget() {
+  const widget = document.getElementById('luxuryConnectWidget');
+  const triggerBtn = document.getElementById('luxuryConnectBtn');
+  const popover = document.getElementById('connectPopover');
+  const cardCloseBtn = document.getElementById('connectCardCloseBtn');
+
+  if (!widget || !triggerBtn || !popover) return;
+
+  const toggleWidget = (e) => {
+    e.stopPropagation();
+    const isOpen = widget.classList.toggle('is-open');
+    triggerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    popover.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+  };
+
+  const closeWidget = () => {
+    if (widget.classList.contains('is-open')) {
+      widget.classList.remove('is-open');
+      triggerBtn.setAttribute('aria-expanded', 'false');
+      popover.setAttribute('aria-hidden', 'true');
+    }
+  };
+
+  triggerBtn.addEventListener('click', toggleWidget);
+
+  if (cardCloseBtn) {
+    cardCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeWidget();
+    });
+  }
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!widget.contains(e.target)) {
+      closeWidget();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeWidget();
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   LUXURY ENQUIRY PROFILE CARD INTERACTION
+   -------------------------------------------------------------------------- */
+function initCardEnquiry() {
+  const touchBtn = document.getElementById('enquiryGetInTouchBtn');
+  const bookmarkBtn = document.getElementById('enquiryBookmarkBtn');
+  const drawer = document.getElementById('enquiryModalDrawer');
+  if (!drawer) return;
+
+  const toggleDrawer = (e) => {
+    if (e) e.preventDefault();
+    drawer.classList.toggle('active');
+    if (drawer.classList.contains('active')) {
+      drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  };
+
+  if (touchBtn) touchBtn.addEventListener('click', toggleDrawer);
+  if (bookmarkBtn) bookmarkBtn.addEventListener('click', toggleDrawer);
+}
+
+function submitCardInquiry() {
+  const form = document.getElementById('cardInquiryForm');
+  const msg = document.getElementById('enquirySuccessMsg');
+  if (form && msg) {
+    form.style.display = 'none';
+    msg.style.display = 'block';
+  }
+}
+
+
