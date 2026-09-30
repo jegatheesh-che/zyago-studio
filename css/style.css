@@ -2749,6 +2749,111 @@ img, video, iframe, picture,
 }
 
 /* --------------------------------------------------------------------------
+   FOUNDER CURTAIN REVEAL ANIMATION (LUXURY EDITORIAL)
+   -------------------------------------------------------------------------- */
+.founder-curtain-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.founder-curtain-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: var(--bg-charcoal);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.16), 0 8px 24px rgba(0, 0, 0, 0.08);
+  aspect-ratio: 2 / 3;
+}
+
+.founder-curtain-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transform: scale(1.12);
+  transition: transform 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.15s, filter 1.4s ease;
+  filter: contrast(104%) brightness(98%);
+}
+
+.founder-curtain-wipe {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #17140F 0%, #2A241B 50%, #17140F 100%);
+  z-index: 3;
+  transform-origin: top center;
+  transform: scaleY(1);
+  transition: transform 1.3s cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+  pointer-events: none;
+}
+
+.founder-curtain-wipe::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+/* Revealed State */
+.founder-curtain-container.is-revealed .founder-curtain-wipe,
+.founder-curtain-container:hover .founder-curtain-wipe {
+  transform: scaleY(0);
+}
+
+.founder-curtain-container.is-revealed .founder-curtain-img {
+  transform: scale(1);
+}
+
+.founder-curtain-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  right: 20px;
+  background: rgba(23, 20, 15, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(176, 141, 87, 0.35);
+  border-radius: 2px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 4;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s, opacity 0.8s ease 0.8s;
+}
+
+.founder-curtain-container.is-revealed .founder-curtain-badge {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.founder-badge-title {
+  font-family: var(--font-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.founder-badge-role {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
    EDITORIAL ARCHED CONTACT DESIGN (INSPIRED BY ARCHED MINIMALIST LUXURY)
    -------------------------------------------------------------------------- */
 .contact-editorial-section {

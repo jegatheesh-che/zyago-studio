@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initConnectWidget();
   initCardEnquiry();
   initAwwwardsWorkflowGsap();
+  initFounderCurtainReveal();
 });
 
 /* --------------------------------------------------------------------------
@@ -1059,6 +1060,29 @@ function initAwwwardsWorkflowGsap() {
     }, { threshold: 0.3 });
 
     stepItems.forEach(step => observer.observe(step));
+  }
+}
+
+/* --------------------------------------------------------------------------
+   16. SMOOTH FOUNDER CURTAIN REVEAL CONTROLLER
+   -------------------------------------------------------------------------- */
+function initFounderCurtainReveal() {
+  const curtainCards = document.querySelectorAll('.founder-curtain-container');
+  if (!curtainCards.length) return;
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -40px 0px' });
+
+    curtainCards.forEach(card => observer.observe(card));
+  } else {
+    curtainCards.forEach(card => card.classList.add('is-revealed'));
   }
 }
 
