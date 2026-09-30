@@ -1,0 +1,1032 @@
+[
+  {
+    "index": 1,
+    "original": "01.jpg",
+    "file": "portrait-001.webp",
+    "dimensions": {
+      "width": 1080,
+      "height": 1350
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 2,
+    "original": "IMG_0758.jpg",
+    "file": "portrait-002.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 3,
+    "original": "IMG_0765.jpg",
+    "file": "portrait-003.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 4,
+    "original": "IMG_0788.jpg",
+    "file": "portrait-004.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 5,
+    "original": "IMG_1239.jpg",
+    "file": "portrait-005.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 6,
+    "original": "IMG_1442.jpg",
+    "file": "portrait-006.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 7,
+    "original": "IMG_1449.jpg",
+    "file": "portrait-007.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 8,
+    "original": "IMG_1459.jpg",
+    "file": "portrait-008.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 9,
+    "original": "IMG_1549.jpg",
+    "file": "portrait-009.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 10,
+    "original": "IMG_1553.jpg",
+    "file": "portrait-010.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 11,
+    "original": "IMG_1694.jpg",
+    "file": "portrait-011.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 12,
+    "original": "IMG_1910.jpg",
+    "file": "portrait-012.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 13,
+    "original": "IMG_1926.jpg",
+    "file": "portrait-013.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 14,
+    "original": "IMG_1989.jpg",
+    "file": "portrait-014.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 15,
+    "original": "IMG_1993.jpg",
+    "file": "portrait-015.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 16,
+    "original": "IMG_2018.jpg",
+    "file": "portrait-016.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 17,
+    "original": "IMG_2096.jpg",
+    "file": "portrait-017.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 18,
+    "original": "IMG_2457.jpg",
+    "file": "portrait-018.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 19,
+    "original": "IMG_2474.jpg",
+    "file": "portrait-019.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 20,
+    "original": "IMG_2928.jpg",
+    "file": "portrait-020.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 21,
+    "original": "IMG_2978.jpg",
+    "file": "portrait-021.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 22,
+    "original": "IMG_3890.jpg",
+    "file": "portrait-022.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 23,
+    "original": "IMG_5731.jpg",
+    "file": "portrait-023.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 24,
+    "original": "IMG_5814 (Collage).jpg",
+    "file": "portrait-024.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 25,
+    "original": "IMG_5879.jpg",
+    "file": "portrait-025.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 26,
+    "original": "IMG_8907.jpg",
+    "file": "portrait-026.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 27,
+    "original": "IMG_8935.jpg",
+    "file": "portrait-027.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 28,
+    "original": "IMG_9005.jpg",
+    "file": "portrait-028.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 29,
+    "original": "IMG_9024.jpg",
+    "file": "portrait-029.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 30,
+    "original": "IMG_9102.jpg",
+    "file": "portrait-030.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 31,
+    "original": "IMG_9720.jpg",
+    "file": "portrait-031.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 32,
+    "original": "SFP_7675.jpg",
+    "file": "portrait-032.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 33,
+    "original": "SFP_8501.jpg",
+    "file": "portrait-033.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 34,
+    "original": "ZSR_0008.jpg",
+    "file": "portrait-034.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 35,
+    "original": "ZSR_0026.jpg",
+    "file": "portrait-035.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 36,
+    "original": "ZSR_0034.jpg",
+    "file": "portrait-036.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 37,
+    "original": "ZSR_0042.jpg",
+    "file": "portrait-037.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 38,
+    "original": "ZSR_0043.jpg",
+    "file": "portrait-038.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 39,
+    "original": "ZSR_0045.jpg",
+    "file": "portrait-039.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 40,
+    "original": "ZSR_0069.jpg",
+    "file": "portrait-040.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 41,
+    "original": "ZSR_0072.jpg",
+    "file": "portrait-041.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 42,
+    "original": "ZSR_0075.jpg",
+    "file": "portrait-042.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 43,
+    "original": "ZSR_0087.jpg",
+    "file": "portrait-043.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 44,
+    "original": "ZSR_0185.jpg",
+    "file": "portrait-044.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 45,
+    "original": "ZSR_0232 (2).jpg",
+    "file": "portrait-045.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 46,
+    "original": "ZSR_0232.jpg",
+    "file": "portrait-046.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 47,
+    "original": "ZSR_0233.jpg",
+    "file": "portrait-047.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 48,
+    "original": "ZSR_0236.jpg",
+    "file": "portrait-048.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 49,
+    "original": "ZSR_0241.jpg",
+    "file": "portrait-049.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 50,
+    "original": "ZSR_0263.jpg",
+    "file": "portrait-050.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1731
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 51,
+    "original": "ZSR_0269.jpg",
+    "file": "portrait-051.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 52,
+    "original": "ZSR_0276.jpg",
+    "file": "portrait-052.webp",
+    "dimensions": {
+      "width": 1829,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 53,
+    "original": "ZSR_0282.jpg",
+    "file": "portrait-053.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 54,
+    "original": "ZSR_0291.jpg",
+    "file": "portrait-054.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 55,
+    "original": "ZSR_0305.jpg",
+    "file": "portrait-055.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 56,
+    "original": "ZSR_0309.jpg",
+    "file": "portrait-056.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 57,
+    "original": "ZSR_0341.jpg",
+    "file": "portrait-057.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1935
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 58,
+    "original": "ZSR_0349.jpg",
+    "file": "portrait-058.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1666
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 59,
+    "original": "ZSR_0359.jpg",
+    "file": "portrait-059.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 60,
+    "original": "ZSR_0432.jpg",
+    "file": "portrait-060.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 61,
+    "original": "ZSR_0450.jpg",
+    "file": "portrait-061.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 62,
+    "original": "ZSR_0493.jpg",
+    "file": "portrait-062.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 63,
+    "original": "ZSR_0549.jpg",
+    "file": "portrait-063.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 64,
+    "original": "ZSR_0610.jpg",
+    "file": "portrait-064.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 65,
+    "original": "ZSR_0642.jpg",
+    "file": "portrait-065.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 66,
+    "original": "ZSR_0752.jpg",
+    "file": "portrait-066.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 67,
+    "original": "ZSR_0798.jpg",
+    "file": "portrait-067.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 68,
+    "original": "ZSR_0803.jpg",
+    "file": "portrait-068.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 69,
+    "original": "ZSR_0808_V2.jpg",
+    "file": "portrait-069.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 70,
+    "original": "ZSR_0845.jpg",
+    "file": "portrait-070.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 71,
+    "original": "ZSR_0874.jpg",
+    "file": "portrait-071.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 72,
+    "original": "ZSR_1029.jpg",
+    "file": "portrait-072.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 73,
+    "original": "ZSR_1030.jpg",
+    "file": "portrait-073.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 74,
+    "original": "ZSR_1092.jpg",
+    "file": "portrait-074.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 75,
+    "original": "ZSR_1113.jpg",
+    "file": "portrait-075.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1945
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 76,
+    "original": "ZSR_1202.jpg",
+    "file": "portrait-076.webp",
+    "dimensions": {
+      "width": 2080,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 77,
+    "original": "ZSR_1315.jpg",
+    "file": "portrait-077.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 78,
+    "original": "ZSR_1534.jpg",
+    "file": "portrait-078.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 79,
+    "original": "ZSR_1536.jpg",
+    "file": "portrait-079.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1808
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 80,
+    "original": "ZSR_1574.jpg",
+    "file": "portrait-080.webp",
+    "dimensions": {
+      "width": 1701,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 81,
+    "original": "ZSR_1577.jpg",
+    "file": "portrait-081.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 82,
+    "original": "ZSR_1689.jpg",
+    "file": "portrait-082.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 83,
+    "original": "ZSR_1716_V2.jpg",
+    "file": "portrait-083.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 84,
+    "original": "ZSR_1787.jpg",
+    "file": "portrait-084.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 85,
+    "original": "ZSR_1800.jpg",
+    "file": "portrait-085.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 86,
+    "original": "ZSR_1858.jpg",
+    "file": "portrait-086.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 87,
+    "original": "ZSR_1888.jpg",
+    "file": "portrait-087.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 88,
+    "original": "ZSR_1912.jpg",
+    "file": "portrait-088.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 89,
+    "original": "ZSR_1923.jpg",
+    "file": "portrait-089.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 90,
+    "original": "ZSR_2012.jpg",
+    "file": "portrait-090.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 91,
+    "original": "ZSR_2090.jpg",
+    "file": "portrait-091.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 92,
+    "original": "ZSR_2357.jpg",
+    "file": "portrait-092.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 93,
+    "original": "ZSR_2362.jpg",
+    "file": "portrait-093.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 94,
+    "original": "ZSR_2420.jpg",
+    "file": "portrait-094.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1706
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 95,
+    "original": "ZSR_2524.jpg",
+    "file": "portrait-095.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 96,
+    "original": "ZSR_2623.jpg",
+    "file": "portrait-096.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 97,
+    "original": "ZSR_2657.jpg",
+    "file": "portrait-097.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 98,
+    "original": "ZSR_2705.jpg",
+    "file": "portrait-098.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 99,
+    "original": "ZSR_2831.jpg",
+    "file": "portrait-099.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 100,
+    "original": "ZSR_2925.jpg",
+    "file": "portrait-100.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 101,
+    "original": "ZSR_2941.jpg",
+    "file": "portrait-101.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 102,
+    "original": "ZSR_3116.jpg",
+    "file": "portrait-102.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 103,
+    "original": "ZSR_3793.jpg",
+    "file": "portrait-103.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  }
+]

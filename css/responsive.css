@@ -59,7 +59,7 @@
 
   .home-hero-section {
     min-height: 85vh;
-    padding-bottom: 40px;
+    padding-bottom: 24px;
   }
 
   .gallery-hero-section {
@@ -70,10 +70,43 @@
 
   .home-hero-title {
     font-size: clamp(30px, 7.5vw, 42px);
+    margin-bottom: 12px;
   }
 
   .home-hero-desc {
-    font-size: 14px;
+    font-size: 13.5px;
+  }
+
+  .hero-brand-seal-badge {
+    width: 74px;
+    height: 74px;
+    margin-bottom: 10px;
+  }
+
+  .hero-google-badge {
+    padding: 3px 10px 3px 5px;
+    margin-bottom: 10px;
+    gap: 6px;
+  }
+
+  .hero-badge-text {
+    font-size: 9.5px;
+  }
+
+  .home-hero-cta-group {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    padding: 9px 18px;
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+  }
+
+  .home-hero-bottom-bar {
+    margin-top: 16px;
   }
 
   .editorial-grid-3 {
@@ -543,4 +576,189 @@
     height: 220px;
   }
 }
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE: SERVICES 3-COL & WORKFLOW TIMELINE
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .services-columns-grid {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-three-col-section {
+    padding: 60px 0 50px;
+  }
+
+  .services-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .service-col-card {
+    padding: 0;
+  }
+
+  .service-col-icon-wrap {
+    margin-bottom: 18px;
+  }
+
+  .service-col-title {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  .service-col-desc {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE: AWWWARDS GRAND PRODUCTION WORKFLOW
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .awwwards-workflow-container {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .awwwards-workflow-sticky {
+    position: static;
+    padding-right: 0;
+    max-width: 620px;
+  }
+
+  .awwwards-phase-hud {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .awwwards-workflow-section {
+    padding: 70px 0 80px;
+  }
+
+  .awwwards-workflow-title {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .awwwards-workflow-lead {
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin-bottom: 28px;
+  }
+
+  .awwwards-timeline-track {
+    padding-left: 0;
+  }
+
+  .timeline-rail-bg,
+  .timeline-rail-fill {
+    left: 21px;
+    width: 4px;
+  }
+
+  .awwwards-step-list {
+    gap: 36px;
+  }
+
+  .awwwards-step-item {
+    grid-template-columns: 44px 1fr;
+    column-gap: 16px;
+  }
+
+  .step-node-halo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .step-node-core {
+    width: 20px;
+    height: 20px;
+  }
+
+  .step-content-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .step-heading {
+    font-size: 22px;
+  }
+
+  .step-paragraph {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .step-detail-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  /* Google Reviews Slider Mobile */
+  .google-reviews-section {
+    padding: 60px 0 50px;
+  }
+
+  .reviews-header-center {
+    margin-bottom: 32px;
+  }
+
+  .reviews-arch-badge {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+
+  .reviews-slider-card {
+    padding: 34px 20px 24px;
+    border-radius: 20px;
+  }
+
+  .review-quote-mark {
+    font-size: 56px;
+    margin-bottom: 4px;
+  }
+
+  .review-quote-text {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .review-author-row {
+    padding: 8px 16px;
+    gap: 12px;
+    flex-direction: row;
+  }
+
+  .review-avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .review-author-name {
+    font-size: 14px;
+  }
+
+  .review-meta {
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+
+  .reviews-slider-footer {
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+}
+
+
+
 

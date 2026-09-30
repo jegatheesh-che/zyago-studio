@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMagneticButtons();
   initConnectWidget();
   initCardEnquiry();
+  initAwwwardsWorkflowGsap();
 });
 
 /* --------------------------------------------------------------------------
@@ -348,11 +349,14 @@ function initExperienceTabs() {
 }
 
 /* --------------------------------------------------------------------------
-   7. TESTIMONIAL ROTATION (3 Distinct Quotes, Dots, Auto-Advance)
+   7. VERIFIED GOOGLE REVIEWS SLIDER ENGINE
    -------------------------------------------------------------------------- */
 function initTestimonialRotation() {
-  const slides = document.querySelectorAll('.testimonial-slide');
-  const dots = document.querySelectorAll('.testimonial-dot');
+  const slides = document.querySelectorAll('.google-review-slide, .testimonial-slide');
+  const dots = document.querySelectorAll('.reviews-dot, .testimonial-dot');
+  const prevBtn = document.getElementById('reviewPrevBtn');
+  const nextBtn = document.getElementById('reviewNextBtn');
+  const counterEl = document.getElementById('reviewsCurrentNum');
   if (!slides.length) return;
 
   let currentIndex = 0;
@@ -365,6 +369,9 @@ function initTestimonialRotation() {
     dots.forEach((d, i) => {
       d.classList.toggle('active', i === index);
     });
+    if (counterEl) {
+      counterEl.textContent = `0${index + 1}`;
+    }
     currentIndex = index;
   };
 
@@ -373,9 +380,14 @@ function initTestimonialRotation() {
     showSlide(next);
   };
 
+  const prevSlide = () => {
+    const prev = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(prev);
+  };
+
   const startAuto = () => {
     stopAuto();
-    timer = setInterval(nextSlide, 7000);
+    timer = setInterval(nextSlide, 2000);
   };
 
   const stopAuto = () => {
@@ -385,15 +397,50 @@ function initTestimonialRotation() {
   dots.forEach(dot => {
     dot.addEventListener('click', () => {
       const idx = parseInt(dot.dataset.slide, 10);
-      showSlide(idx);
-      startAuto();
+      if (!isNaN(idx)) {
+        showSlide(idx);
+        startAuto();
+      }
     });
   });
 
-  const container = document.querySelector('.testimonial-carousel-container');
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      startAuto();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      startAuto();
+    });
+  }
+
+  const container = document.querySelector('.reviews-slider-card, .testimonial-carousel-container');
   if (container) {
     container.addEventListener('mouseenter', stopAuto);
     container.addEventListener('mouseleave', startAuto);
+
+    // Touch Swipe Support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    container.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopAuto();
+    }, { passive: true });
+
+    container.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) nextSlide();
+        else prevSlide();
+      }
+      startAuto();
+    }, { passive: true });
   }
 
   showSlide(0);
@@ -471,32 +518,7 @@ function initGalleryLightbox() {
     events: 'Life Events'
   };
 
-  // 9.1 Dynamic Count Calculation
-  if (galleryItems.length) {
-    const counts = { all: galleryItems.length, elopements: 0, studio: 0, events: 0 };
-    galleryItems.forEach(item => {
-      const cat = item.dataset.category;
-      if (cat && counts[cat] !== undefined) counts[cat]++;
-    });
-
-    // Update Pill badges
-    filterBtns.forEach(btn => {
-      const cat = btn.dataset.filter;
-      const countEl = btn.querySelector('.filter-count');
-      if (countEl && counts[cat] !== undefined) {
-        countEl.textContent = counts[cat];
-      }
-    });
-
-    // Update Sheet badges
-    sheetItems.forEach(item => {
-      const cat = item.dataset.filter;
-      const countEl = item.querySelector('.sheet-item-count');
-      if (countEl && counts[cat] !== undefined) {
-        countEl.textContent = `${counts[cat]} works`;
-      }
-    });
-  }
+  // 9.1 Filter state initialized without count badges
 
   // 9.2 Core Filter Execution
   const applyFilter = (filter, originElement = null) => {
@@ -922,5 +944,123 @@ function submitCardInquiry() {
     msg.style.display = 'block';
   }
 }
+
+/* --------------------------------------------------------------------------
+   AWWWARDS-LEVEL GSAP SCROLLTRIGGER WORKFLOW ENGINE
+   -------------------------------------------------------------------------- */
+function initAwwwardsWorkflowGsap() {
+  const section = document.querySelector('.awwwards-workflow-section');
+  if (!section) return;
+
+  const track = document.getElementById('workflowTimelineTrack');
+  const railFill = document.getElementById('timelineRailFill');
+  const stepItems = document.querySelectorAll('.awwwards-step-item');
+  const hudCounter = document.getElementById('hudCounter');
+  const hudName = document.getElementById('hudName');
+  const hudProgressBar = document.getElementById('hudProgressBar');
+
+  // If GSAP and ScrollTrigger are loaded
+  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 1. Scrubbed vertical line drawing down with the scroll
+    if (railFill && track) {
+      gsap.fromTo(railFill, 
+        { scaleY: 0 },
+        {
+          scaleY: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: track,
+            start: "top 65%",
+            end: "bottom 70%",
+            scrub: 0.5
+          }
+        }
+      );
+    }
+
+    // 2. Animate step items and update HUD
+    stepItems.forEach((step, index) => {
+      const card = step.querySelector('.step-content-card');
+      const halo = step.querySelector('.step-node-halo');
+      const stepNum = step.getAttribute('data-step') || (index + 1);
+      const stepName = step.getAttribute('data-name') || '';
+
+      // Card smooth reveal
+      if (card) {
+        gsap.fromTo(card,
+          { opacity: 0.25, x: 28 },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 0.7,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: step,
+              start: "top 75%",
+              end: "bottom 30%",
+              toggleActions: "play reverse play reverse",
+              onEnter: () => activateStep(step, stepNum, stepName, index),
+              onEnterBack: () => activateStep(step, stepNum, stepName, index)
+            }
+          }
+        );
+      }
+
+      // Node pop / halo pulse
+      ScrollTrigger.create({
+        trigger: step,
+        start: "top 72%",
+        onEnter: () => {
+          step.classList.add('is-active');
+          if (halo) {
+            gsap.fromTo(halo, 
+              { scale: 0.85 }, 
+              { scale: 1.18, duration: 0.35, yoyo: true, repeat: 1, ease: "power1.inOut" }
+            );
+          }
+        },
+        onLeaveBack: () => {
+          if (index > 0) step.classList.remove('is-active');
+        }
+      });
+    });
+
+    function activateStep(activeStep, num, name, idx) {
+      stepItems.forEach((s, i) => {
+        if (i <= idx) {
+          s.classList.add('is-active');
+        } else {
+          s.classList.remove('is-active');
+        }
+      });
+
+      if (hudCounter) hudCounter.textContent = `0${num}`;
+      if (hudName) {
+        gsap.fromTo(hudName, { opacity: 0, y: -4 }, { opacity: 1, y: 0, duration: 0.25 });
+        hudName.textContent = name;
+      }
+      if (hudProgressBar) {
+        const pct = ((idx + 1) / stepItems.length) * 100;
+        gsap.to(hudProgressBar, { width: `${pct}%`, duration: 0.35, ease: "power2.out" });
+      }
+    }
+  } else {
+    // Graceful IntersectionObserver fallback if GSAP is unavailable
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-active');
+          const card = entry.target.querySelector('.step-content-card');
+          if (card) card.style.opacity = '1';
+        }
+      });
+    }, { threshold: 0.3 });
+
+    stepItems.forEach(step => observer.observe(step));
+  }
+}
+
 
 

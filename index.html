@@ -15,8 +15,20 @@
        ======================================================================== -->
   <div class="site-preloader" id="sitePreloader">
     <div class="preloader-content">
-      <div class="preloader-emblem">
-        <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+      <div class="circular-brand-badge" aria-label="Zyago Studio Emblem">
+        <div class="badge-logo-center">
+          <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+        </div>
+        <svg class="badge-rotating-text" viewBox="0 0 140 140">
+          <defs>
+            <path id="preloaderCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+          </defs>
+          <text>
+            <textPath href="#preloaderCirclePath" startOffset="0%">
+              · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+            </textPath>
+          </text>
+        </svg>
       </div>
       <img src="assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
       <div class="preloader-bar">
@@ -63,8 +75,21 @@
     </button>
 
     <div class="menu-overlay-brand">
-      <img src="assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo">
-      <span class="menu-overlay-tag">ZYAGO STUDIO</span>
+      <div class="circular-brand-badge" aria-label="Zyago Studio Crest">
+        <div class="badge-logo-center">
+          <img src="assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+        </div>
+        <svg class="badge-rotating-text" viewBox="0 0 140 140">
+          <defs>
+            <path id="menuCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+          </defs>
+          <text>
+            <textPath href="#menuCirclePath" startOffset="0%">
+              · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
     </div>
 
     <nav class="minimal-menu-nav">
@@ -98,27 +123,47 @@
     <section class="home-hero-section" id="heroSection">
       <!-- Crossfading Hero Slideshow Layers -->
       <div class="hero-slideshow-container" id="heroSlideshow">
-        <div class="hero-bg-slide active" style="background-image: url('assets/images/img8.webp'); background-position: center 20%;" data-slide="0"></div>
-        <div class="hero-bg-slide" style="background-image: url('assets/images/img1.webp'); background-position: center 25%;" data-slide="1"></div>
-        <div class="hero-bg-slide" style="background-image: url('assets/images/img10.webp'); background-position: center 25%;" data-slide="2"></div>
-        <div class="hero-bg-slide" style="background-image: url('assets/images/img3.webp'); background-position: center 20%;" data-slide="3"></div>
+        <div class="hero-bg-slide active" style="background-image: url('assets/images/weddings/wedding-001.webp'); background-position: center 25%;" data-slide="0"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/images/portraits/portrait-005.webp'); background-position: center 30%;" data-slide="1"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/images/weddings/wedding-015.webp'); background-position: center 25%;" data-slide="2"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/images/events/event-002.webp'); background-position: center 25%;" data-slide="3"></div>
       </div>
       <div class="home-hero-gradient-overlay"></div>
       
       <div class="container hero-container">
         <div class="home-hero-content">
-          <p class="home-hero-subhead">London Elopement &amp; Editorial Wedding Studio</p>
+          <!-- Minimalist Solid White Google Review Badge (Clickable Link to Google Profile) -->
+          <a href="https://maps.google.com/?q=Zyago+Studio" target="_blank" rel="noopener noreferrer" class="hero-google-badge" aria-label="View Zyago Studio 5.0 Star Google Profile and Reviews">
+            <div class="google-icon-box">
+              <svg class="google-svg" viewBox="0 0 24 24" width="13" height="13">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+            </div>
+            <div class="hero-stars-row">
+              <svg viewBox="0 0 20 20" class="star-icon" fill="currentColor"><polygon points="10 1 13.09 7.26 20 8.27 15 13.14 16.18 20.02 10 16.77 3.82 20.02 5 13.14 0 8.27 6.91 7.26 10 1"/></svg>
+              <svg viewBox="0 0 20 20" class="star-icon" fill="currentColor"><polygon points="10 1 13.09 7.26 20 8.27 15 13.14 16.18 20.02 10 16.77 3.82 20.02 5 13.14 0 8.27 6.91 7.26 10 1"/></svg>
+              <svg viewBox="0 0 20 20" class="star-icon" fill="currentColor"><polygon points="10 1 13.09 7.26 20 8.27 15 13.14 16.18 20.02 10 16.77 3.82 20.02 5 13.14 0 8.27 6.91 7.26 10 1"/></svg>
+              <svg viewBox="0 0 20 20" class="star-icon" fill="currentColor"><polygon points="10 1 13.09 7.26 20 8.27 15 13.14 16.18 20.02 10 16.77 3.82 20.02 5 13.14 0 8.27 6.91 7.26 10 1"/></svg>
+              <svg viewBox="0 0 20 20" class="star-icon" fill="currentColor"><polygon points="10 1 13.09 7.26 20 8.27 15 13.14 16.18 20.02 10 16.77 3.82 20.02 5 13.14 0 8.27 6.91 7.26 10 1"/></svg>
+            </div>
+            <span class="hero-badge-score">5.0</span>
+            <span class="hero-badge-sep">·</span>
+            <span class="hero-badge-text">Google Reviews</span>
+          </a>
+
           <h1 class="home-hero-title">
             Artful Storytelling,<br>
             <span class="italic">Captured with Quiet Elegance</span>
           </h1>
           <p class="home-hero-desc">
-            We craft bespoke photographic narratives for discerning international couples in London, Lake Como, and worldwide destinations — blending editorial elegance with unscripted, honest emotion.
+            Bespoke editorial and wedding photography capturing authentic emotion with timeless elegance across London, Lake Como, and worldwide destinations.
           </p>
         </div>
 
         <div class="home-hero-bottom-bar">
-          <div class="home-hero-bar-line"></div>
           <div class="hero-slideshow-nav" id="heroSlideNav">
             <button type="button" class="hero-nav-btn hero-nav-prev" id="heroPrevBtn" aria-label="Previous Slide">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
@@ -133,8 +178,6 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </button>
           </div>
-          <div class="home-hero-bar-text">London · Cotswolds · Lake Como · Worldwide</div>
-          <div class="home-hero-bar-line"></div>
         </div>
       </div>
     </section>
@@ -159,9 +202,8 @@
           <!-- Category 1: Studio Portrait -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/img9.webp">
-                <source src="assets/videos/portrait-reel.webm" type="video/webm">
-                <source src="assets/videos/portrait-reel.mp4" type="video/mp4">
+              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/portraits/portrait-004.webp">
+                <source src="assets/videos/bts/studio-shoot-bts-01.mp4" type="video/mp4">
               </video>
             </div>
             <h3 class="editorial-card-title">Studio Portrait &amp; Fine Art</h3>
@@ -171,9 +213,8 @@
           <!-- Category 2: Life Events -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/img3.webp">
-                <source src="assets/videos/elopement-reel.webm" type="video/webm">
-                <source src="assets/videos/elopement-reel.mp4" type="video/mp4">
+              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-004.webp">
+                <source src="assets/videos/events/pre-wedding-highlights.mp4" type="video/mp4">
               </video>
             </div>
             <h3 class="editorial-card-title">Life Events &amp; Celebrations</h3>
@@ -183,9 +224,8 @@
           <!-- Category 3: Master Galleries -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/img8.webp">
-                <source src="assets/videos/commercial-reel.webm" type="video/webm">
-                <source src="assets/videos/commercial-reel.mp4" type="video/mp4">
+              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-001.webp">
+                <source src="assets/videos/bts/commercial-shoot-01.mp4" type="video/mp4">
               </video>
             </div>
             <h3 class="editorial-card-title">Master Galleries &amp; Archives</h3>
@@ -197,49 +237,273 @@
     </section>
 
     <!-- ========================================================================
-         ROTATING TESTIMONIALS (3 Distinct Quotes with Couple & Location)
+         CORE PHOTOGRAPHY STYLES (Candid / Traditional / Wedding Film)
          ======================================================================== -->
-    <section class="section testimonial-section" style="background-color: var(--bg-ivory);">
-      <div class="container-narrow">
-        <p class="uppercase-track" style="margin-bottom: 20px;">Words of Distinction</p>
-        
-        <div class="testimonial-carousel-container">
+    <section class="section services-three-col-section reveal-on-scroll" id="photographyStyles">
+      <div class="container">
+        <div class="services-columns-grid">
           
-          <!-- Quote 1 -->
-          <div class="testimonial-slide active">
-            <blockquote class="testimonial-quote">
-              "Zyago Studio possesses an uncanny gift for capturing the stillness and profound intimacy between us. Looking back at our gallery feels like stepping inside a poetic film."
-            </blockquote>
-            <cite class="testimonial-author">Aleesa &amp; Marcus Davis</cite>
-            <div class="testimonial-location">The Cotswolds Estate Wedding</div>
+          <!-- Column 1: Candid/Artistic Photography -->
+          <article class="service-col-card">
+            <div class="service-col-icon-wrap" aria-hidden="true">
+              <svg class="service-col-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 11L17.5 7H26.5L29 11H36C38.2 11 40 12.8 40 15V35C40 37.2 38.2 39 36 39H8C5.8 39 4 37.2 4 35V15C4 12.8 5.8 11 8 11H15Z" fill="#17140F"/>
+                <circle cx="22" cy="25" r="7.5" fill="#FFFFFF"/>
+                <circle cx="22" cy="25" r="4.5" fill="#17140F"/>
+                <circle cx="34" cy="17" r="1.5" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <h3 class="service-col-title">Candid/Artistic Photography</h3>
+            <p class="service-col-desc">
+              Candid photography is not just about capturing moments — at Zyago Studios, it’s about celebrating authenticity. We believe in capturing natural smiles, unposed emotions, and genuine interactions. Our team is trained to blend into your celebrations, approach each moment with creativity, and work tirelessly to help you relive those precious memories for years to come.
+            </p>
+          </article>
+
+          <!-- Column 2: Traditional Photography -->
+          <article class="service-col-card">
+            <div class="service-col-icon-wrap" aria-hidden="true">
+              <svg class="service-col-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 34H9C6.79 34 5 32.21 5 30V11C5 8.79 6.79 7 9 7H35C37.21 7 39 8.79 39 11V30C39 32.21 37.21 34 35 34H32" stroke="#17140F" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polygon points="22,23 30.5,34 13.5,34" fill="#17140F"/>
+              </svg>
+            </div>
+            <h3 class="service-col-title">Traditional Photography</h3>
+            <p class="service-col-desc">
+              Traditional wedding photography is all about timeless, formal portraits. At Zyago Studios, we make sure each posed moment is captured beautifully. You’ll see classic, vibrant color photos where couples, families, and friends are looking toward the camera — all smiling and saying "Cheese!" These photos highlight rituals, group moments, and cultural significance, preserving them in an elegant, well-composed way.
+            </p>
+          </article>
+
+          <!-- Column 3: Wedding Film -->
+          <article class="service-col-card">
+            <div class="service-col-icon-wrap" aria-hidden="true">
+              <svg class="service-col-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="12" width="22" height="20" rx="4" fill="#17140F"/>
+                <path d="M29 18.5L40 12V32L29 25.5V18.5Z" fill="#17140F"/>
+              </svg>
+            </div>
+            <h3 class="service-col-title">Wedding Film</h3>
+            <p class="service-col-desc">
+              A wedding, we believe, is like a movie — a coming together of beautiful moments into one big happy story that becomes timeless. At Zyago Studios, we specialize in crafting cinematic wedding films that showcase emotions, traditions, and love stories with elegance. After all, isn't it important to capture this fairy-tale and preserve it forever!
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         VERIFIED GOOGLE REVIEWS SLIDER (Contact Page Arched Aesthetic)
+         ======================================================================== -->
+    <section class="section google-reviews-section reveal-on-scroll" id="clientReviews">
+      <div class="container">
+        
+        <!-- Section Header Arched Pill & Rating Badge (Links to Google Profile) -->
+        <div class="reviews-header-center">
+          <a href="https://share.google/iRQFnZDJj1G0quBq6" target="_blank" rel="noopener noreferrer" class="reviews-arch-badge" aria-label="Visit Zyago Studio on Google">
+            <svg class="reviews-badge-sparkle" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0 C12 6.627 6.627 12 0 12 C6.627 12 12 17.373 12 24 C12 17.373 17.373 12 24 12 C17.373 12 12 6.627 12 0 Z"/>
+            </svg>
+            <span class="reviews-badge-google">
+              <svg viewBox="0 0 24 24" class="google-svg-icon" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Google Reviews</span>
+            </span>
+            <span class="reviews-badge-divider">·</span>
+            <span class="reviews-badge-rating">5.0 ★★★★★</span>
+            <span class="reviews-badge-arrow">↗</span>
+          </a>
+
+          <h2 class="reviews-section-title">
+            Words of <span class="italic">Distinction &amp; Trust</span>
+          </h2>
+          <p class="reviews-section-sub">
+            Real experiences from couples and clients who trusted Zyago Studio to preserve their most cherished memories.
+          </p>
+        </div>
+
+        <!-- Contact Arched Review Slider Box -->
+        <div class="reviews-slider-card">
+          
+          <div class="reviews-track-container" id="googleReviewsTrack">
+            
+            <!-- Review 1: A Pavani Praneetha -->
+            <div class="google-review-slide active" data-index="0">
+              <div class="review-quote-mark">“</div>
+              <blockquote class="review-quote-text">
+                I had a wonderful experience! My photo was delivered within 24 hours of placing the order, which was really impressive. The finishing and overall quality were excellent. I also appreciated the friendly customer service and smooth communication throughout the process. Highly recommended for anyone looking for quality work and quick delivery. Thank you for the great service!
+              </blockquote>
+              <div class="review-author-row">
+                <div class="review-avatar review-avatar-coral">AP</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">
+                    <span>A Pavani Praneetha</span>
+                    <span class="review-verified-badge" title="Verified Google Review">
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+                  <div class="review-meta">
+                    <span class="review-stars">★★★★★</span>
+                    <span class="review-meta-dot">·</span>
+                    <span>2 reviews · 1 photo</span>
+                    <span class="review-meta-dot">·</span>
+                    <span class="review-date">2 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2: dharma A -->
+            <div class="google-review-slide" data-index="1">
+              <div class="review-quote-mark">“</div>
+              <blockquote class="review-quote-text">
+                I had an amazing experience with Venkatesh. The photo quality, editing, and overall presentation were outstanding. The photos exceeded our expectations and will be cherished forever. I highly recommend Venkatesh to anyone looking for a talented and reliable photographer.
+              </blockquote>
+              <div class="review-author-row">
+                <div class="review-avatar review-avatar-gold">DA</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">
+                    <span>dharma A</span>
+                    <span class="review-verified-badge" title="Verified Google Review">
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+                  <div class="review-meta">
+                    <span class="review-stars">★★★★★</span>
+                    <span class="review-meta-dot">·</span>
+                    <span>2 reviews · 3 photos</span>
+                    <span class="review-meta-dot">·</span>
+                    <span class="review-date">3 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3: D Jones Silvanes -->
+            <div class="google-review-slide" data-index="2">
+              <div class="review-quote-mark">“</div>
+              <blockquote class="review-quote-text">
+                Awesome experience, venkatesh is very excellent in his photography and makes sure the customer is satisfied. Photos has comes out really well
+              </blockquote>
+              <div class="review-author-row">
+                <div class="review-avatar review-avatar-blue">DJ</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">
+                    <span>D Jones Silvanes</span>
+                    <span class="review-verified-badge" title="Verified Google Review">
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+                  <div class="review-meta">
+                    <span class="review-stars">★★★★★</span>
+                    <span class="review-meta-dot">·</span>
+                    <span>4 reviews · 1 photo</span>
+                    <span class="review-meta-dot">·</span>
+                    <span class="review-date">a month ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4: Velu Velu -->
+            <div class="google-review-slide" data-index="3">
+              <div class="review-quote-mark">“</div>
+              <blockquote class="review-quote-text">
+                "Very professional service and excellent photo quality. Friendly staff, quick delivery, and reasonable pricing. Highly recommend Zyago Studio, Velachery!"
+              </blockquote>
+              <div class="review-author-row">
+                <div class="review-avatar review-avatar-stone">VV</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">
+                    <span>Velu Velu</span>
+                    <span class="review-verified-badge" title="Verified Google Review">
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+                  <div class="review-meta">
+                    <span class="review-stars">★★★★★</span>
+                    <span class="review-meta-dot">·</span>
+                    <span>1 review</span>
+                    <span class="review-meta-dot">·</span>
+                    <span class="review-date">3 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 5: Joel Joshua -->
+            <div class="google-review-slide" data-index="4">
+              <div class="review-quote-mark">“</div>
+              <blockquote class="review-quote-text">
+                Had a great experience at the studio. The photos came out really clean and professional. Friendly team and good atmosphere.
+              </blockquote>
+              <div class="review-author-row">
+                <div class="review-avatar review-avatar-sage">JJ</div>
+                <div class="review-author-info">
+                  <div class="review-author-name">
+                    <span>Joel Joshua</span>
+                    <span class="review-verified-badge" title="Verified Google Review">
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+                  <div class="review-meta">
+                    <span class="review-stars">★★★★★</span>
+                    <span class="review-meta-dot">·</span>
+                    <span>2 reviews</span>
+                    <span class="review-meta-dot">·</span>
+                    <span class="review-date">4 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <!-- Quote 2 -->
-          <div class="testimonial-slide">
-            <blockquote class="testimonial-quote">
-              "From our first conversation to receiving our Italian leather album, the care and artistry was beyond anything we imagined. Zyago Studio is a true master of light and narrative."
-            </blockquote>
-            <cite class="testimonial-author">Victoria &amp; Alexander Sterling</cite>
-            <div class="testimonial-location">Villa Balbiano, Lake Como</div>
-          </div>
+          <!-- Slider Navigation & Counter Controls -->
+          <div class="reviews-slider-footer">
+            <div class="reviews-counter-pill">
+              <span id="reviewsCurrentNum">01</span>
+              <span class="counter-sep">/</span>
+              <span>05</span>
+            </div>
 
-          <!-- Quote 3 -->
-          <div class="testimonial-slide">
-            <blockquote class="testimonial-quote">
-              "Completely effortless. Zyago Studio made two camera-shy people feel like royalty on the streets of Mayfair. These are family heirlooms we will treasure for generations."
-            </blockquote>
-            <cite class="testimonial-author">Sophia &amp; Julien Vance</cite>
-            <div class="testimonial-location">The Connaught, London</div>
+            <div class="reviews-slider-dots" id="googleReviewDots">
+              <button type="button" class="reviews-dot active" data-slide="0" aria-label="Review 1"></button>
+              <button type="button" class="reviews-dot" data-slide="1" aria-label="Review 2"></button>
+              <button type="button" class="reviews-dot" data-slide="2" aria-label="Review 3"></button>
+              <button type="button" class="reviews-dot" data-slide="3" aria-label="Review 4"></button>
+              <button type="button" class="reviews-dot" data-slide="4" aria-label="Review 5"></button>
+            </div>
+
+            <div class="reviews-slider-arrows">
+              <button type="button" class="reviews-arrow-btn reviews-arrow-prev" id="reviewPrevBtn" aria-label="Previous Google Review">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button type="button" class="reviews-arrow-btn reviews-arrow-next" id="reviewNextBtn" aria-label="Next Google Review">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
           </div>
 
         </div>
 
-        <!-- Pagination Dots -->
-        <div class="testimonial-dots">
-          <button type="button" class="testimonial-dot active" data-slide="0" aria-label="Testimonial 1"></button>
-          <button type="button" class="testimonial-dot" data-slide="1" aria-label="Testimonial 2"></button>
-          <button type="button" class="testimonial-dot" data-slide="2" aria-label="Testimonial 3"></button>
+        <!-- Direct Google Profile Visit Button -->
+        <div class="reviews-google-btn-wrap">
+          <a href="https://share.google/iRQFnZDJj1G0quBq6" target="_blank" rel="noopener noreferrer" class="btn-google-visit" aria-label="Visit Zyago Studio on Google Profile">
+            <svg viewBox="0 0 24 24" class="google-svg-icon" aria-hidden="true">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Visit Zyago Studio on Google</span>
+            <span class="btn-arrow-diag">↗</span>
+          </a>
         </div>
+
       </div>
     </section>
 
@@ -255,7 +519,7 @@
           <div class="sophie-profile-card">
             <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
             <div class="sophie-card-media">
-              <img src="assets/images/img9.webp" alt="Studio Portrait &amp; Fine Art Photography" class="sophie-portrait-img" loading="lazy">
+              <img src="assets/images/portraits/portrait-002.webp" alt="Studio Portrait &amp; Fine Art Photography" class="sophie-portrait-img" loading="lazy">
               <div class="sophie-media-gradient"></div>
             </div>
 
@@ -276,22 +540,11 @@
                 Sculpted lighting, timeless monochrome &amp; high-fashion studio editorial portraits.
               </p>
 
-              <!-- Bottom Action & Stats Row with WhatsApp Integration -->
+              <!-- Bottom Action Row with WhatsApp Integration -->
               <div class="sophie-card-footer">
-                <div class="sophie-stats-left">
-                  <span class="sophie-stat-chip">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                    <span>240</span>
-                  </span>
-                  <span class="sophie-stat-chip">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                    <span>36</span>
-                  </span>
-                </div>
-
                 <a href="https://wa.me/916381683178?text=Hello%20Zyago%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20your%20Studio%20Portrait%20%26%20Fine%20Art%20Sessions." target="_blank" rel="noopener noreferrer" class="sophie-follow-btn" aria-label="Inquire Studio Portrait on WhatsApp">
                   <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
-                  <span>Inquire +</span>
+                  <span>Inquire on WhatsApp</span>
                 </a>
               </div>
             </div>
@@ -301,7 +554,7 @@
           <div class="sophie-profile-card">
             <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
             <div class="sophie-card-media">
-              <img src="assets/images/img3.webp" alt="Life Events &amp; Celebrations Photography" class="sophie-portrait-img" loading="lazy">
+              <img src="assets/images/weddings/wedding-005.webp" alt="Life Events &amp; Celebrations Photography" class="sophie-portrait-img" loading="lazy">
               <div class="sophie-media-gradient"></div>
             </div>
 
@@ -322,28 +575,143 @@
                 Documenting intimate London vows, milestone celebrations &amp; grand destination estates.
               </p>
 
-              <!-- Bottom Action & Stats Row with WhatsApp Integration -->
+              <!-- Bottom Action Row with WhatsApp Integration -->
               <div class="sophie-card-footer">
-                <div class="sophie-stats-left">
-                  <span class="sophie-stat-chip">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                    <span>312</span>
-                  </span>
-                  <span class="sophie-stat-chip">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                    <span>48</span>
-                  </span>
-                </div>
-
                 <a href="https://wa.me/916381683178?text=Hello%20Zyago%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20your%20Life%20Events%20%26%20Celebrations%20photography." target="_blank" rel="noopener noreferrer" class="sophie-follow-btn" aria-label="Inquire Life Events on WhatsApp">
                   <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
-                  <span>Inquire +</span>
+                  <span>Inquire on WhatsApp</span>
                 </a>
               </div>
             </div>
 
           </div>
 
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         AWWWARDS-LEVEL GRAND PRODUCTION TIMELINE (Final Section Before Footer)
+         ======================================================================== -->
+    <section class="section awwwards-workflow-section" id="workflowSection">
+      <div class="container awwwards-workflow-container">
+        
+        <!-- Left Column: Sticky Editorial Header & Interactive Phase Tracker -->
+        <div class="awwwards-workflow-left">
+          <div class="awwwards-workflow-sticky">
+            <div class="awwwards-pill-badge">
+              <span class="pill-dot"></span>
+              <span>Workflow Matters A Lot</span>
+            </div>
+            
+            <h2 class="awwwards-workflow-title">
+              We provide high quality services <br>
+              <span class="awwwards-title-italic">since 2010</span>
+            </h2>
+
+            <p class="awwwards-workflow-lead">
+              A bespoke, highly choreographed production journey. Every wedding and editorial commission unfolds through rigorous creative intention, unobtrusive artistry, and master craftsmanship.
+            </p>
+
+            <!-- Dynamic Active Phase HUD -->
+            <div class="awwwards-phase-hud" id="workflowHud">
+              <div class="hud-label">CURRENT PRODUCTION PHASE</div>
+              <div class="hud-phase-row">
+                <span class="hud-counter" id="hudCounter">01</span>
+                <span class="hud-slash">/</span>
+                <span class="hud-total">04</span>
+                <span class="hud-name" id="hudName">Pre-Planning</span>
+              </div>
+              <div class="hud-progress-track">
+                <div class="hud-progress-bar" id="hudProgressBar"></div>
+              </div>
+            </div>
+
+            <!-- Signature Tag -->
+            <div class="awwwards-workflow-signature">
+              <span>✦ Zyago Bespoke Protocol · London &amp; Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Big Vertical Timeline with Scroll Progress Track -->
+        <div class="awwwards-workflow-right">
+          <div class="awwwards-timeline-track" id="workflowTimelineTrack">
+            <!-- Full continuous background line -->
+            <div class="timeline-rail-bg" aria-hidden="true"></div>
+            <!-- Dynamic GSAP animated scrub line -->
+            <div class="timeline-rail-fill" id="timelineRailFill" aria-hidden="true"></div>
+
+            <!-- The 4 Big Steps (Matching user's screenshot exactly) -->
+            <div class="awwwards-step-list">
+              
+              <!-- Step 1: Pre-Planning -->
+              <div class="awwwards-step-item is-active" data-step="1" data-name="Pre-Planning">
+                <div class="step-node-col">
+                  <div class="step-node-halo">
+                    <span class="step-node-core"></span>
+                  </div>
+                </div>
+                <div class="step-content-card">
+                  <span class="step-meta-num">PHASE 01</span>
+                  <h3 class="step-heading">Pre-Planning</h3>
+                  <p class="step-paragraph">
+                    We plan and analyze client requirements
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 2: On Shoot -->
+              <div class="awwwards-step-item" data-step="2" data-name="On Shoot">
+                <div class="step-node-col">
+                  <div class="step-node-halo">
+                    <span class="step-node-core"></span>
+                  </div>
+                </div>
+                <div class="step-content-card">
+                  <span class="step-meta-num">PHASE 02</span>
+                  <h3 class="step-heading">On Shoot</h3>
+                  <p class="step-paragraph">
+                    We capture the precise moments
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3: Post Processing -->
+              <div class="awwwards-step-item" data-step="3" data-name="Post Processing">
+                <div class="step-node-col">
+                  <div class="step-node-halo">
+                    <span class="step-node-core"></span>
+                  </div>
+                </div>
+                <div class="step-content-card">
+                  <span class="step-meta-num">PHASE 03</span>
+                  <h3 class="step-heading">Post Processing</h3>
+                  <p class="step-paragraph">
+                    Enhancing your moments
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4: Delivered -->
+              <div class="awwwards-step-item" data-step="4" data-name="Delivered">
+                <div class="step-node-col">
+                  <div class="step-node-halo">
+                    <span class="step-node-core"></span>
+                  </div>
+                </div>
+                <div class="step-content-card">
+                  <span class="step-meta-num">PHASE 04</span>
+                  <h3 class="step-heading">Delivered</h3>
+                  <p class="step-paragraph">
+                    Get a lifetime moment as deliverables
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>
@@ -367,8 +735,8 @@
       </div>
 
       <div class="footer-insta-strip">
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Coastline Romance Gallery on Instagram">
-          <img src="assets/images/img2.webp" alt="Intimate coastline sunset embrace" loading="lazy" width="400" height="400">
+        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Wedding Gallery on Instagram">
+          <img src="assets/images/weddings/wedding-008.webp" alt="Intimate wedding celebration portrait" loading="lazy" width="400" height="400">
           <div class="footer-insta-overlay">
             <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -377,8 +745,8 @@
             </svg>
           </div>
         </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View London Elopement Gallery on Instagram">
-          <img src="assets/images/img1.webp" alt="Joyful beach walk in white dress" loading="lazy" width="400" height="400">
+        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Studio Portrait Gallery on Instagram">
+          <img src="assets/images/portraits/portrait-003.webp" alt="Studio editorial portrait in sculpted light" loading="lazy" width="400" height="400">
           <div class="footer-insta-overlay">
             <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -387,8 +755,8 @@
             </svg>
           </div>
         </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Grand Wedding Gallery on Instagram">
-          <img src="assets/images/img3.webp" alt="Editorial wedding ceremony celebration" loading="lazy" width="400" height="400">
+        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Grand Wedding Moments on Instagram">
+          <img src="assets/images/weddings/wedding-012.webp" alt="Editorial wedding ceremony celebration" loading="lazy" width="400" height="400">
           <div class="footer-insta-overlay">
             <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -397,8 +765,8 @@
             </svg>
           </div>
         </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Architectural Romance Gallery on Instagram">
-          <img src="assets/images/img6.webp" alt="Couple on London architectural bridge" loading="lazy" width="400" height="400">
+        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Milestone Life Events on Instagram">
+          <img src="assets/images/events/event-001.webp" alt="Milestone life celebration moments" loading="lazy" width="400" height="400">
           <div class="footer-insta-overlay">
             <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -407,8 +775,8 @@
             </svg>
           </div>
         </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Lake Como Narrative Gallery on Instagram">
-          <img src="assets/images/img8.webp" alt="Lake Como dusk bridal cinematic gown" loading="lazy" width="400" height="400">
+        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Fine Art Studio Portrait on Instagram">
+          <img src="assets/images/portraits/portrait-006.webp" alt="Fine art black and white studio portrait" loading="lazy" width="400" height="400">
           <div class="footer-insta-overlay">
             <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -417,8 +785,8 @@
             </svg>
           </div>
         </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Studio Fine Art Gallery on Instagram">
-          <img src="assets/images/img12.webp" alt="Heirloom fine art portrait in sculpted studio light" loading="lazy" width="400" height="400">
+        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Heirloom Wedding Narrative on Instagram">
+          <img src="assets/images/weddings/wedding-020.webp" alt="Heirloom wedding celebration memories" loading="lazy" width="400" height="400">
           <div class="footer-insta-overlay">
             <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -431,6 +799,21 @@
 
       <div class="footer-main-grid">
         <div>
+          <div class="circular-brand-badge badge-sm" style="margin-bottom: 22px;" aria-label="Zyago Studio">
+            <div class="badge-logo-center">
+              <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+            </div>
+            <svg class="badge-rotating-text" viewBox="0 0 140 140">
+              <defs>
+                <path id="footerCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+              </defs>
+              <text>
+                <textPath href="#footerCirclePath" startOffset="0%">
+                  · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+                </textPath>
+              </text>
+            </svg>
+          </div>
           <img src="assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo">
           <p class="footer-brand-desc">
             London-based elopement and editorial wedding photography studio capturing timeless stories worldwide with intentional elegance.
@@ -545,6 +928,9 @@
     </button>
   </div>
 
+  <!-- GSAP & ScrollTrigger Engine for Award-Winning Motion -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

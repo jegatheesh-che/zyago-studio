@@ -96,7 +96,7 @@
          HERO SECTION (Recomposed Crop)
          ======================================================================== -->
     <section class="home-hero-section" style="min-height: 80vh; height: 80vh;">
-      <div class="hero-bg-layer" style="background-image: url('../assets/images/img9.webp'); background-position: center 25%;"></div>
+      <div class="hero-bg-layer" style="background-image: url('../assets/images/portraits/portrait-005.webp'); background-position: center 25%;"></div>
       <div class="home-hero-gradient-overlay"></div>
 
       <div class="container hero-container">
@@ -121,8 +121,20 @@
         <div class="about-collage-grid reveal-on-scroll">
           <div>
             <div class="brand-emblem-badge-wrap">
-              <div class="brand-emblem-badge">
-                <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+              <div class="circular-brand-badge badge-sm" aria-label="Zyago Studio Crest">
+                <div class="badge-logo-center">
+                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+                </div>
+                <svg class="badge-rotating-text" viewBox="0 0 140 140">
+                  <defs>
+                    <path id="studioCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+                  </defs>
+                  <text>
+                    <textPath href="#studioCirclePath" startOffset="0%">
+                      · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+                    </textPath>
+                  </text>
+                </svg>
               </div>
               <span class="uppercase-track" style="margin-bottom: 0;">The Portrait Vision</span>
             </div>
@@ -136,7 +148,7 @@
           </div>
 
           <div style="position: relative;">
-            <img src="../assets/images/img10.webp" alt="Editorial studio portrait" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);">
+            <img src="../assets/images/portraits/portrait-002.webp" alt="Editorial studio portrait" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);">
           </div>
         </div>
       </div>
@@ -160,27 +172,99 @@
         </div>
 
         <div class="masonry-gallery-grid">
-          <article class="gallery-item" data-category="studio">
-            <img src="../assets/images/img9.webp" alt="Bridal Fine Art Portrait" class="curated-photo" loading="lazy">
+          <article class="gallery-item item-portrait-tall" data-category="studio">
+            <img src="../assets/images/portraits/portrait-001.webp" alt="Editorial Fashion Portrait in Sculpted Light" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Haute Couture</span>
+              <h3 class="gallery-item-title">Sculpted Light Study · Series I</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait" data-category="studio">
+            <img src="../assets/images/portraits/portrait-002.webp" alt="High Fashion Editorial Portrait" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Fine Art Editorial</span>
+              <h3 class="gallery-item-title">Presence &amp; Form · Series II</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait" data-category="studio">
+            <img src="../assets/images/portraits/portrait-003.webp" alt="Classic Daylight Studio Portrait" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Daylight Atelier</span>
+              <h3 class="gallery-item-title">Quiet Reflection · Studio Mayfair</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait-tall" data-category="studio">
+            <img src="../assets/images/portraits/portrait-004.webp" alt="Fine Art Bridal Portrait" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Fine Art Bridal</span>
               <h3 class="gallery-item-title">Silk &amp; Chiaroscuro · Clara</h3>
             </div>
           </article>
 
-          <article class="gallery-item" data-category="studio">
-            <img src="../assets/images/img10.webp" alt="Editorial Fashion Portrait" class="curated-photo" loading="lazy">
+          <article class="gallery-item item-landscape" data-category="studio">
+            <img src="../assets/images/portraits/portrait-005.webp" alt="Cinematic Studio Silhouette" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
-              <span class="gallery-item-category">Haute Couture</span>
-              <h3 class="gallery-item-title">Architectural Form · Studio Mayfair</h3>
+              <span class="gallery-item-category">Cinematic Silhouette</span>
+              <h3 class="gallery-item-title">Atmospheric Light · Archive 05</h3>
             </div>
           </article>
 
-          <article class="gallery-item" data-category="studio">
-            <img src="../assets/images/img5.webp" alt="Heirloom Portraiture" class="curated-photo" loading="lazy">
+          <article class="gallery-item item-landscape" data-category="studio">
+            <img src="../assets/images/portraits/portrait-006.webp" alt="Monochrome Fine Art Composition" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Monochrome Series</span>
+              <h3 class="gallery-item-title">Tonal Harmony · London Atelier</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait" data-category="studio">
+            <img src="../assets/images/portraits/portrait-008.webp" alt="Architectural Portrait sitting" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Architectural Sitting</span>
+              <h3 class="gallery-item-title">Form &amp; Shadow · Beatrice</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-landscape" data-category="studio">
+            <img src="../assets/images/portraits/portrait-010.webp" alt="Editorial Beauty & Mood Portrait" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Mood &amp; Texture</span>
+              <h3 class="gallery-item-title">Subtle Grace · Sitting X</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait-tall" data-category="studio">
+            <img src="../assets/images/portraits/portrait-012.webp" alt="Heirloom Studio Portraiture" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Heirloom Details</span>
-              <h3 class="gallery-item-title">Intricate Lace Study · Beatrice</h3>
+              <h3 class="gallery-item-title">Intricate Lace Study · Elena</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait" data-category="studio">
+            <img src="../assets/images/portraits/portrait-013.webp" alt="Dramatic Chiaroscuro Portrait" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Dramatic Chiaroscuro</span>
+              <h3 class="gallery-item-title">Sculpted Shadow · Atelier XIII</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait" data-category="studio">
+            <img src="../assets/images/portraits/portrait-014.webp" alt="Modern Minimalist Studio Portrait" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Minimalist Modern</span>
+              <h3 class="gallery-item-title">Serene Composure · Series XIV</h3>
+            </div>
+          </article>
+
+          <article class="gallery-item item-portrait-tall" data-category="studio">
+            <img src="../assets/images/portraits/portrait-015.webp" alt="Couture Studio Masterwork" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Couture Masterwork</span>
+              <h3 class="gallery-item-title">Heirloom Fine Art · Sophia</h3>
             </div>
           </article>
         </div>

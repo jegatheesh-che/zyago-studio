@@ -1,0 +1,1202 @@
+[
+  {
+    "index": 1,
+    "original": "ANI00847.jpg",
+    "file": "wedding-001.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 2,
+    "original": "ANI00959.jpg",
+    "file": "wedding-002.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 3,
+    "original": "ANI09625.jpg",
+    "file": "wedding-003.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 4,
+    "original": "ASM02759.jpg",
+    "file": "wedding-004.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 5,
+    "original": "ASM02772.jpg",
+    "file": "wedding-005.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 6,
+    "original": "ASM02797.jpg",
+    "file": "wedding-006.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 7,
+    "original": "ASM02813.jpg",
+    "file": "wedding-007.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 8,
+    "original": "ASM02880.jpg",
+    "file": "wedding-008.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 9,
+    "original": "ATP_8543.jpg",
+    "file": "wedding-009.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 10,
+    "original": "ATP_9048.jpg",
+    "file": "wedding-010.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 2048
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 11,
+    "original": "DSC_7261.jpg",
+    "file": "wedding-011.webp",
+    "dimensions": {
+      "width": 1703,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 12,
+    "original": "DWG09774.jpg",
+    "file": "wedding-012.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 13,
+    "original": "DWG09804.jpg",
+    "file": "wedding-013.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 14,
+    "original": "DWG09823.jpg",
+    "file": "wedding-014.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 15,
+    "original": "IMG_0016.jpg",
+    "file": "wedding-015.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 16,
+    "original": "IMG_0388.jpg",
+    "file": "wedding-016.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 17,
+    "original": "IMG_0408.jpg",
+    "file": "wedding-017.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 18,
+    "original": "IMG_0441.jpg",
+    "file": "wedding-018.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 19,
+    "original": "IMG_0455.jpg",
+    "file": "wedding-019.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 20,
+    "original": "IMG_0474.jpg",
+    "file": "wedding-020.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 21,
+    "original": "IMG_0651.jpg",
+    "file": "wedding-021.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 22,
+    "original": "IMG_0698.jpg",
+    "file": "wedding-022.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 23,
+    "original": "IMG_0872.jpg",
+    "file": "wedding-023.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 24,
+    "original": "IMG_1347.jpg",
+    "file": "wedding-024.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 1638
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 25,
+    "original": "IMG_1357.jpg",
+    "file": "wedding-025.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 26,
+    "original": "IMG_1364.jpg",
+    "file": "wedding-026.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 1638
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 27,
+    "original": "IMG_1376.jpg",
+    "file": "wedding-027.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 1638
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 28,
+    "original": "IMG_1378.jpg",
+    "file": "wedding-028.webp",
+    "dimensions": {
+      "width": 2048,
+      "height": 1638
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 29,
+    "original": "IMG_1766.jpg",
+    "file": "wedding-029.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 30,
+    "original": "IMG_2083.jpg",
+    "file": "wedding-030.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 31,
+    "original": "IMG_2086.jpg",
+    "file": "wedding-031.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 32,
+    "original": "IMG_2091.jpg",
+    "file": "wedding-032.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 33,
+    "original": "IMG_2100.jpg",
+    "file": "wedding-033.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 34,
+    "original": "IMG_2173.jpg",
+    "file": "wedding-034.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 35,
+    "original": "IMG_2194.jpg",
+    "file": "wedding-035.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 36,
+    "original": "IMG_2214.jpg",
+    "file": "wedding-036.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 37,
+    "original": "IMG_2220.jpg",
+    "file": "wedding-037.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 38,
+    "original": "IMG_2991.jpg",
+    "file": "wedding-038.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 39,
+    "original": "IMG_3005.jpg",
+    "file": "wedding-039.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 40,
+    "original": "IMG_3028.jpg",
+    "file": "wedding-040.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 41,
+    "original": "IMG_3035.jpg",
+    "file": "wedding-041.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 42,
+    "original": "IMG_3052.jpg",
+    "file": "wedding-042.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 43,
+    "original": "IMG_3057.jpg",
+    "file": "wedding-043.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 44,
+    "original": "IMG_3066.jpg",
+    "file": "wedding-044.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 45,
+    "original": "IMG_3102.jpg",
+    "file": "wedding-045.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 46,
+    "original": "IMG_3157.jpg",
+    "file": "wedding-046.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 47,
+    "original": "IMG_3160.jpg",
+    "file": "wedding-047.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 48,
+    "original": "IMG_3185.jpg",
+    "file": "wedding-048.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 49,
+    "original": "IMG_3234.jpg",
+    "file": "wedding-049.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 50,
+    "original": "IMG_3245.jpg",
+    "file": "wedding-050.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 51,
+    "original": "IMG_3252.jpg",
+    "file": "wedding-051.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 52,
+    "original": "IMG_3268.jpg",
+    "file": "wedding-052.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 53,
+    "original": "IMG_3280.jpg",
+    "file": "wedding-053.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 54,
+    "original": "IMG_3854.JPG.jpg",
+    "file": "wedding-054.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 55,
+    "original": "IMG_3855.JPG.jpg",
+    "file": "wedding-055.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 56,
+    "original": "IMG_4609.jpg",
+    "file": "wedding-056.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 57,
+    "original": "IMG_5240.jpg",
+    "file": "wedding-057.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 58,
+    "original": "IMG_6317.jpg",
+    "file": "wedding-058.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 59,
+    "original": "IMG_6326.jpg",
+    "file": "wedding-059.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 60,
+    "original": "IMG_6428.jpg",
+    "file": "wedding-060.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 61,
+    "original": "IMG_6638.jpg",
+    "file": "wedding-061.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 62,
+    "original": "IMG_6648.jpg",
+    "file": "wedding-062.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 63,
+    "original": "IMG_6671.jpg",
+    "file": "wedding-063.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 64,
+    "original": "IMG_6717.jpg",
+    "file": "wedding-064.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 65,
+    "original": "IMG_6756.jpg",
+    "file": "wedding-065.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 66,
+    "original": "IMG_6955.jpg",
+    "file": "wedding-066.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 67,
+    "original": "IMG_7020.jpg",
+    "file": "wedding-067.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 68,
+    "original": "IMG_7025.jpg",
+    "file": "wedding-068.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 69,
+    "original": "IMG_7028.jpg",
+    "file": "wedding-069.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 70,
+    "original": "IMG_7973.jpg",
+    "file": "wedding-070.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 71,
+    "original": "IMG_7982.jpg",
+    "file": "wedding-071.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 72,
+    "original": "IMG_7985.jpg",
+    "file": "wedding-072.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 73,
+    "original": "IMG_9832.jpg",
+    "file": "wedding-073.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 74,
+    "original": "IMG_9848.jpg",
+    "file": "wedding-074.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 75,
+    "original": "MUT_0862.jpg",
+    "file": "wedding-075.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 76,
+    "original": "MUT_0880.jpg",
+    "file": "wedding-076.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 77,
+    "original": "MUT_0901.jpg",
+    "file": "wedding-077.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 78,
+    "original": "MUT_0911.jpg",
+    "file": "wedding-078.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 79,
+    "original": "MUT_0923.jpg",
+    "file": "wedding-079.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 80,
+    "original": "MUT_0950.jpg",
+    "file": "wedding-080.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 81,
+    "original": "MUT_0970.jpg",
+    "file": "wedding-081.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 82,
+    "original": "MUT_1412.JPG",
+    "file": "wedding-082.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 83,
+    "original": "MUT_1660.jpg",
+    "file": "wedding-083.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 84,
+    "original": "MUT_1669.jpg",
+    "file": "wedding-084.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 85,
+    "original": "MUT_1975.jpg",
+    "file": "wedding-085.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 86,
+    "original": "MUT_2165.jpg",
+    "file": "wedding-086.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 87,
+    "original": "SFP_3095.jpg",
+    "file": "wedding-087.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 88,
+    "original": "SFP_3098.jpg",
+    "file": "wedding-088.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 89,
+    "original": "SFP_3104.jpg",
+    "file": "wedding-089.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 90,
+    "original": "SFP_3110.jpg",
+    "file": "wedding-090.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 91,
+    "original": "SFP_3136.jpg",
+    "file": "wedding-091.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 92,
+    "original": "SFP_3196.jpg",
+    "file": "wedding-092.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 93,
+    "original": "SFP_3308.jpg",
+    "file": "wedding-093.webp",
+    "dimensions": {
+      "width": 1638,
+      "height": 2048
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 94,
+    "original": "SFP_3571.jpg",
+    "file": "wedding-094.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 95,
+    "original": "SFP_3575.jpg",
+    "file": "wedding-095.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 96,
+    "original": "SFP_3576.jpg",
+    "file": "wedding-096.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 97,
+    "original": "SFP_3676.jpg",
+    "file": "wedding-097.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 98,
+    "original": "SFP_3701.jpg",
+    "file": "wedding-098.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 99,
+    "original": "SFP_3705.jpg",
+    "file": "wedding-099.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 100,
+    "original": "SFP_3719.jpg",
+    "file": "wedding-100.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 101,
+    "original": "SFP_3992.jpg",
+    "file": "wedding-101.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 102,
+    "original": "SFP_4136.jpg",
+    "file": "wedding-102.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 103,
+    "original": "SFP_8299.jpg",
+    "file": "wedding-103.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 104,
+    "original": "SFP_8334.jpg",
+    "file": "wedding-104.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 105,
+    "original": "SFP_8354.jpg",
+    "file": "wedding-105.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 106,
+    "original": "SFP_8360.jpg",
+    "file": "wedding-106.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 107,
+    "original": "SFP_8653.jpg",
+    "file": "wedding-107.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 108,
+    "original": "SFP_8736.jpg",
+    "file": "wedding-108.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 109,
+    "original": "SFP_8978.jpg",
+    "file": "wedding-109.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 110,
+    "original": "SFP_9635.jpg",
+    "file": "wedding-110.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 111,
+    "original": "SFP_9669.jpg",
+    "file": "wedding-111.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 112,
+    "original": "SFP_9677.jpg",
+    "file": "wedding-112.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 113,
+    "original": "SFP_9681.jpg",
+    "file": "wedding-113.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 114,
+    "original": "IMG_2099.jpg",
+    "file": "wedding-114.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 115,
+    "original": "IMG_6675.jpg",
+    "file": "wedding-115.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 116,
+    "original": "IMG_6724.jpg",
+    "file": "wedding-116.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 117,
+    "original": "SFP_3137.jpg",
+    "file": "wedding-117.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 118,
+    "original": "SFP_3917.jpg",
+    "file": "wedding-118.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 119,
+    "original": "SFP_8310.jpg",
+    "file": "wedding-119.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 120,
+    "original": "SFP_8926.jpg",
+    "file": "wedding-120.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  }
+]

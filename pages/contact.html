@@ -130,12 +130,22 @@
               <path d="M12 0 C12 6.627 6.627 12 0 12 C6.627 12 12 17.373 12 24 C12 17.373 17.373 12 24 12 C17.373 12 12 6.627 12 0 Z"/>
             </svg>
 
-            <!-- Official Brand Logo Emblem -->
-            <div style="width: 76px; height: 76px; margin: 0 auto 16px auto; border-radius: 50%; overflow: hidden; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18), 0 3px 10px rgba(0, 0, 0, 0.08);">
-              <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" style="width: 100%; height: 100%; object-fit: cover;">
+            <!-- Official Brand Logo Emblem with Rotating Circular Text -->
+            <div class="circular-brand-badge" style="margin-bottom: 16px;" aria-label="Zyago Studio Logo">
+              <div class="badge-logo-center">
+                <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+              </div>
+              <svg class="badge-rotating-text" viewBox="0 0 140 140">
+                <defs>
+                  <path id="contactCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+                </defs>
+                <text>
+                  <textPath href="#contactCirclePath" startOffset="0%">
+                    · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+                  </textPath>
+                </text>
+              </svg>
             </div>
-
-            <div class="contact-arch-brand">ZYAGO STUDIO</div>
             <div style="font-size: 10px; letter-spacing: 0.22em; color: var(--color-gold); text-transform: uppercase; margin-top: -6px; margin-bottom: 16px; font-weight: 600;">CRAFTING VISUAL TALES</div>
             <h2 class="contact-arch-title">Contact Us</h2>
 

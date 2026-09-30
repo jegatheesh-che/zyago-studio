@@ -15,8 +15,20 @@
        ======================================================================== -->
   <div class="site-preloader" id="sitePreloader">
     <div class="preloader-content">
-      <div class="preloader-emblem">
-        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+      <div class="circular-brand-badge" aria-label="Zyago Studio Emblem">
+        <div class="badge-logo-center">
+          <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+        </div>
+        <svg class="badge-rotating-text" viewBox="0 0 140 140">
+          <defs>
+            <path id="galleriesPreloaderCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+          </defs>
+          <text>
+            <textPath href="#galleriesPreloaderCirclePath" startOffset="0%">
+              · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+            </textPath>
+          </text>
+        </svg>
       </div>
       <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
       <div class="preloader-bar">
@@ -63,8 +75,21 @@
     </button>
 
     <div class="menu-overlay-brand">
-      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo">
-      <span class="menu-overlay-tag">ZYAGO STUDIO</span>
+      <div class="circular-brand-badge" aria-label="Zyago Studio Crest">
+        <div class="badge-logo-center">
+          <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+        </div>
+        <svg class="badge-rotating-text" viewBox="0 0 140 140">
+          <defs>
+            <path id="galleriesMenuCirclePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"/>
+          </defs>
+          <text>
+            <textPath href="#galleriesMenuCirclePath" startOffset="0%">
+              · ZYAGO STUDIO · LONDON &amp; WORLDWIDE ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
     </div>
 
     <nav class="minimal-menu-nav">
@@ -96,7 +121,7 @@
          GALLERIES HERO (Disciplined Luxury Archive Banner)
          ======================================================================== -->
     <section class="home-hero-section gallery-hero-section">
-      <div class="hero-bg-layer" style="background-image: url('../assets/images/img8.webp'); background-position: center 25%;"></div>
+      <div class="hero-bg-layer" style="background-image: url('../assets/images/weddings/wedding-001.webp'); background-position: center 25%;"></div>
       <div class="home-hero-gradient-overlay"></div>
 
       <div class="container hero-container">
@@ -125,19 +150,15 @@
             <div class="gallery-filter-bar" id="galleryFilterBar" role="tablist" aria-label="Gallery category filters">
               <button type="button" class="gallery-filter-btn active" data-filter="all" role="tab" aria-selected="true">
                 <span class="btn-text">All Works</span>
-                <span class="filter-count">10</span>
               </button>
               <button type="button" class="gallery-filter-btn" data-filter="elopements" role="tab" aria-selected="false">
                 <span class="btn-text">Elopements &amp; Weddings</span>
-                <span class="filter-count">5</span>
               </button>
               <button type="button" class="gallery-filter-btn" data-filter="studio" role="tab" aria-selected="false">
                 <span class="btn-text">Studio Portraits</span>
-                <span class="filter-count">2</span>
               </button>
               <button type="button" class="gallery-filter-btn" data-filter="events" role="tab" aria-selected="false">
                 <span class="btn-text">Life Events</span>
-                <span class="filter-count">3</span>
               </button>
             </div>
           </div>
@@ -162,97 +183,169 @@
         <!-- Continuous Editorial Gallery System (Fluid CSS Multi-Column, Zero Dead Space) -->
         <div class="editorial-gallery-container" id="mainGalleryGrid">
           
-          <!-- Item 1: Tall Portrait (Top Anchor) -->
+          <!-- Item 1: Elopements / Wedding (Tall Portrait) -->
           <article class="gallery-item item-portrait-tall" data-category="elopements">
-            <img src="../assets/images/img1.webp" alt="Old Royal Naval College Elopement, London" class="curated-photo">
+            <img src="../assets/images/weddings/wedding-004.webp" alt="Old Royal Naval College Elopement, London" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">London Elopement</span>
               <h3 class="gallery-item-title">Old Royal Naval College · Elena &amp; Thomas</h3>
             </div>
           </article>
 
-          <!-- Item 2: Portrait -->
-          <article class="gallery-item item-portrait" data-category="elopements">
-            <img src="../assets/images/img4.webp" alt="Regent's Park Townhouse Vows" class="curated-photo">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-category">Destination Wedding</span>
-              <h3 class="gallery-item-title">Regent's Park Estate · Liam &amp; Maya</h3>
-            </div>
-          </article>
-
-          <!-- Item 3: Landscape (Rhythm Breaker) -->
-          <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/img11.webp" alt="Venetian Grand Canal Romance" class="curated-photo">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-category">Destination Archive</span>
-              <h3 class="gallery-item-title">Venetian Twilight · Marc &amp; Juliette</h3>
-            </div>
-          </article>
-
-          <!-- Item 4: Portrait -->
-          <article class="gallery-item item-portrait" data-category="events">
-            <img src="../assets/images/img6.webp" alt="Soho Evening Street Stroll" class="curated-photo">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-category">Life Events</span>
-              <h3 class="gallery-item-title">Soho Twilight Narrative · Chloe &amp; James</h3>
-            </div>
-          </article>
-
-          <!-- Item 5: Tall Portrait (Bottom Anchor) -->
-          <article class="gallery-item item-portrait-tall" data-category="elopements">
-            <img src="../assets/images/img12.webp" alt="Cotswolds Manor Romance" class="curated-photo">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-category">Destination Wedding</span>
-              <h3 class="gallery-item-title">Cotswolds Manor · Vivienne &amp; Arthur</h3>
-            </div>
-          </article>
-
-          <!-- Item 6: Offset Portrait -->
+          <!-- Item 2: Studio Portrait (Portrait) -->
           <article class="gallery-item item-portrait" data-category="studio">
-            <img src="../assets/images/img9.webp" alt="Sculpted Light Bridal Portrait" class="curated-photo">
+            <img src="../assets/images/portraits/portrait-001.webp" alt="Editorial Fashion Portrait in Sculpted Light" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Studio Portrait</span>
               <h3 class="gallery-item-title">Sculpted Light Study · Clara in Silk</h3>
             </div>
           </article>
 
-          <!-- Item 7: Landscape -->
+          <!-- Item 3: Life Events (Landscape) -->
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/img3.webp" alt="Somerset Countryside Celebration" class="curated-photo">
+            <img src="../assets/images/events/event-002.webp" alt="Venetian Grand Canal Romance" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Life Events</span>
+              <h3 class="gallery-item-title">Venetian Twilight · Marc &amp; Juliette</h3>
+            </div>
+          </article>
+
+          <!-- Item 4: Elopements / Wedding (Portrait) -->
+          <article class="gallery-item item-portrait" data-category="elopements">
+            <img src="../assets/images/weddings/wedding-005.webp" alt="Regent's Park Townhouse Vows" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Destination Wedding</span>
+              <h3 class="gallery-item-title">Regent's Park Estate · Liam &amp; Maya</h3>
+            </div>
+          </article>
+
+          <!-- Item 5: Studio Portrait (Tall Portrait) -->
+          <article class="gallery-item item-portrait-tall" data-category="studio">
+            <img src="../assets/images/portraits/portrait-002.webp" alt="High Fashion Editorial Sitting" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Studio Portrait</span>
+              <h3 class="gallery-item-title">Presence &amp; Form · Studio Mayfair</h3>
+            </div>
+          </article>
+
+          <!-- Item 6: Life Events (Portrait) -->
+          <article class="gallery-item item-portrait" data-category="events">
+            <img src="../assets/images/events/event-001.webp" alt="Milestone Life Celebration" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Life Events</span>
+              <h3 class="gallery-item-title">Soho Twilight Narrative · Chloe &amp; James</h3>
+            </div>
+          </article>
+
+          <!-- Item 7: Elopements / Wedding (Tall Portrait) -->
+          <article class="gallery-item item-portrait-tall" data-category="elopements">
+            <img src="../assets/images/weddings/wedding-015.webp" alt="Cotswolds Manor Romance" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Destination Wedding</span>
+              <h3 class="gallery-item-title">Cotswolds Manor · Vivienne &amp; Arthur</h3>
+            </div>
+          </article>
+
+          <!-- Item 8: Studio Portrait (Landscape) -->
+          <article class="gallery-item item-landscape" data-category="studio">
+            <img src="../assets/images/portraits/portrait-005.webp" alt="Cinematic Studio Silhouette" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Studio Portrait</span>
+              <h3 class="gallery-item-title">Atmospheric Silhouette · Atelier V</h3>
+            </div>
+          </article>
+
+          <!-- Item 9: Life Events (Landscape) -->
+          <article class="gallery-item item-landscape" data-category="events">
+            <img src="../assets/images/events/event-003.webp" alt="Somerset Countryside Celebration" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Life Events</span>
               <h3 class="gallery-item-title">Somerset Golden Vows · David &amp; Sarah</h3>
             </div>
           </article>
 
-          <!-- Item 8: Portrait -->
+          <!-- Item 10: Studio Portrait (Portrait) -->
           <article class="gallery-item item-portrait" data-category="studio">
-            <img src="../assets/images/img10.webp" alt="Mayfair Atelier Black & White" class="curated-photo">
+            <img src="../assets/images/portraits/portrait-004.webp" alt="Fine Art Bridal Portrait" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Studio Portrait</span>
-              <h3 class="gallery-item-title">Mayfair Atelier · Form &amp; Shadow</h3>
+              <h3 class="gallery-item-title">Silk &amp; Veil · Beatrice</h3>
             </div>
           </article>
 
-          <!-- Item 9: Tall Portrait -->
+          <!-- Item 11: Elopements / Wedding (Tall Portrait) -->
           <article class="gallery-item item-portrait-tall" data-category="elopements">
-            <img src="../assets/images/img2.webp" alt="Kensington Palace Gardens Vows" class="curated-photo">
+            <img src="../assets/images/weddings/wedding-020.webp" alt="Kensington Palace Gardens Vows" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">London Elopement</span>
               <h3 class="gallery-item-title">Kensington Gardens · Aanya &amp; Rohan</h3>
             </div>
           </article>
 
-          <!-- Item 10: Portrait -->
+          <!-- Item 12: Studio Portrait (Portrait) -->
+          <article class="gallery-item item-portrait" data-category="studio">
+            <img src="../assets/images/portraits/portrait-008.webp" alt="Architectural Portrait sitting" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Studio Portrait</span>
+              <h3 class="gallery-item-title">Form &amp; Shadow · Beatrice</h3>
+            </div>
+          </article>
+
+          <!-- Item 13: Life Events (Portrait) -->
+          <article class="gallery-item item-portrait" data-category="events">
+            <img src="../assets/images/events/event-011.webp" alt="Family Milestone Gathering" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Life Events</span>
+              <h3 class="gallery-item-title">Family Legacy · Autumn Gathering</h3>
+            </div>
+          </article>
+
+          <!-- Item 14: Elopements / Wedding (Landscape) -->
+          <article class="gallery-item item-landscape" data-category="elopements">
+            <img src="../assets/images/weddings/wedding-001.webp" alt="Grand Architecture Palace Vows" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Grand Wedding</span>
+              <h3 class="gallery-item-title">Palace Grand Entrance · Royal Celebration</h3>
+            </div>
+          </article>
+
+          <!-- Item 15: Life Events (Landscape) -->
+          <article class="gallery-item item-landscape" data-category="events">
+            <img src="../assets/images/events/event-005.webp" alt="Evening Gala Moments" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Life Events</span>
+              <h3 class="gallery-item-title">Twilight Gala · Celebration Nights</h3>
+            </div>
+          </article>
+
+          <!-- Item 16: Studio Portrait (Tall Portrait) -->
+          <article class="gallery-item item-portrait-tall" data-category="studio">
+            <img src="../assets/images/portraits/portrait-012.webp" alt="Heirloom Studio Portraiture" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Studio Portrait</span>
+              <h3 class="gallery-item-title">Intricate Lace Study · Elena</h3>
+            </div>
+          </article>
+
+          <!-- Item 17: Elopements / Wedding (Portrait) -->
           <article class="gallery-item item-portrait" data-category="elopements">
-            <img src="../assets/images/img5.webp" alt="Fine Art Heirloom Veil" class="curated-photo">
+            <img src="../assets/images/weddings/wedding-008.webp" alt="Fine Art Heirloom Details" class="curated-photo" loading="lazy">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Wedding Details</span>
               <h3 class="gallery-item-title">The Heirloom Veil · Beatrice &amp; Oliver</h3>
             </div>
           </article>
 
+          <!-- Item 18: Life Events (Portrait) -->
+          <article class="gallery-item item-portrait" data-category="events">
+            <img src="../assets/images/events/event-013.webp" alt="Milestone Portrait Celebration" class="curated-photo" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Life Events</span>
+              <h3 class="gallery-item-title">Timeless Portrait · Private Milestone</h3>
+            </div>
+          </article>
         </div>
+
       </div>
     </section>
   </main>
@@ -362,7 +455,6 @@
             <span class="sheet-item-name">All Masterworks</span>
             <span class="sheet-item-desc">Explore the complete curated archive across all disciplines</span>
           </div>
-          <span class="sheet-item-count">10 works</span>
         </button>
         <button type="button" class="category-sheet-item" data-filter="elopements">
           <div class="sheet-item-radio">
@@ -372,7 +464,6 @@
             <span class="sheet-item-name">Elopements &amp; Weddings</span>
             <span class="sheet-item-desc">Destination ceremonies, royal vows, &amp; intimate unions</span>
           </div>
-          <span class="sheet-item-count">5 works</span>
         </button>
         <button type="button" class="category-sheet-item" data-filter="studio">
           <div class="sheet-item-radio">
@@ -382,7 +473,6 @@
             <span class="sheet-item-name">Studio Portraits</span>
             <span class="sheet-item-desc">Fine art chiaroscuro, high fashion, &amp; sculpted lighting</span>
           </div>
-          <span class="sheet-item-count">2 works</span>
         </button>
         <button type="button" class="category-sheet-item" data-filter="events">
           <div class="sheet-item-radio">
@@ -392,7 +482,6 @@
             <span class="sheet-item-name">Life Events</span>
             <span class="sheet-item-desc">Unfiltered milestone celebrations &amp; romantic narratives</span>
           </div>
-          <span class="sheet-item-count">3 works</span>
         </button>
       </div>
     </div>
