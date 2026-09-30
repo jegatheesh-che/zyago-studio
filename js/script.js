@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCardEnquiry();
   initAwwwardsWorkflowGsap();
   initFounderCurtainReveal();
+  initAboutHeroSlideshow();
 });
 
 /* --------------------------------------------------------------------------
@@ -1084,6 +1085,26 @@ function initFounderCurtainReveal() {
   } else {
     curtainCards.forEach(card => card.classList.add('is-revealed'));
   }
+}
+
+/* --------------------------------------------------------------------------
+   17. ABOUT PAGE 2S CROSSFADING HERO SLIDESHOW
+   -------------------------------------------------------------------------- */
+function initAboutHeroSlideshow() {
+  const containers = document.querySelectorAll('.about-slideshow-container');
+  if (!containers.length) return;
+
+  containers.forEach(container => {
+    const slides = container.querySelectorAll('.about-slide');
+    if (slides.length <= 1) return;
+
+    let currentIdx = 0;
+    setInterval(() => {
+      slides[currentIdx].classList.remove('active');
+      currentIdx = (currentIdx + 1) % slides.length;
+      slides[currentIdx].classList.add('active');
+    }, 2000);
+  });
 }
 
 

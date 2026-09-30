@@ -2701,6 +2701,49 @@ img, video, iframe, picture,
   max-width: 620px;
 }
 
+/* About Hero Crossfading 2s Slideshow */
+.about-slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.about-hero-center-img .about-slideshow-container {
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.about-hero-aux-img .about-slideshow-container {
+  aspect-ratio: 3 / 4;
+}
+
+.about-slideshow-container .about-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.about-slideshow-container .about-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.about-hero-aux-img .about-slideshow-container .about-slide {
+  object-position: center 20%;
+  opacity: 0;
+}
+
+.about-hero-aux-img .about-slideshow-container .about-slide.active {
+  opacity: 0.9;
+}
+
 @media (max-width: 899px) {
   .about-hero-aux-img {
     display: none;
