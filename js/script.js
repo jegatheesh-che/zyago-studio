@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAwwwardsWorkflowGsap();
   initFounderCurtainReveal();
   initAboutHeroSlideshow();
+  initFooterStoriesSlider();
 });
 
 /* --------------------------------------------------------------------------
@@ -948,7 +949,7 @@ function submitCardInquiry() {
 }
 
 /* --------------------------------------------------------------------------
-   AWWWARDS-LEVEL GSAP SCROLLTRIGGER WORKFLOW ENGINE
+   AWWWARDS-LEVEL GSAP SCROLLTRIGGER WORKFLOW ENGINE (MINIMAL LUXURY)
    -------------------------------------------------------------------------- */
 function initAwwwardsWorkflowGsap() {
   const section = document.querySelector('.awwwards-workflow-section');
@@ -957,110 +958,90 @@ function initAwwwardsWorkflowGsap() {
   const track = document.getElementById('workflowTimelineTrack');
   const railFill = document.getElementById('timelineRailFill');
   const stepItems = document.querySelectorAll('.awwwards-step-item');
-  const hudCounter = document.getElementById('hudCounter');
-  const hudName = document.getElementById('hudName');
-  const hudProgressBar = document.getElementById('hudProgressBar');
+
+  function setActiveStep(idx) {
+    stepItems.forEach((item, i) => {
+      if (i === idx) {
+        item.classList.add('is-active');
+      } else {
+        item.classList.remove('is-active');
+      }
+    });
+  }
+
+  // Click handler on step items to smoothly scroll and activate
+  stepItems.forEach((step, idx) => {
+    step.addEventListener('click', () => {
+      setActiveStep(idx);
+    });
+  });
 
   // If GSAP and ScrollTrigger are loaded
   if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
 
-    // 1. Scrubbed vertical line drawing down with the scroll
+    // 1. Scrubbed vertical line drawing down with the scroll (continuous & smooth)
     if (railFill && track) {
       gsap.fromTo(railFill, 
         { scaleY: 0 },
         {
           scaleY: 1,
-          ease: "none",
+          ease: 'none',
           scrollTrigger: {
             trigger: track,
-            start: "top 65%",
-            end: "bottom 70%",
-            scrub: 0.5
+            start: 'top 55%',
+            end: 'bottom 75%',
+            scrub: 0.3
           }
         }
       );
     }
 
-    // 2. Animate step items and update HUD
+    // 2. Step Activation on Scroll
     stepItems.forEach((step, index) => {
-      const card = step.querySelector('.step-content-card');
       const halo = step.querySelector('.step-node-halo');
-      const stepNum = step.getAttribute('data-step') || (index + 1);
-      const stepName = step.getAttribute('data-name') || '';
 
-      // Card smooth reveal
-      if (card) {
-        gsap.fromTo(card,
-          { opacity: 0.25, x: 28 },
-          {
-            opacity: 1,
-            x: 0,
-            duration: 0.7,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: step,
-              start: "top 75%",
-              end: "bottom 30%",
-              toggleActions: "play reverse play reverse",
-              onEnter: () => activateStep(step, stepNum, stepName, index),
-              onEnterBack: () => activateStep(step, stepNum, stepName, index)
-            }
-          }
-        );
-      }
-
-      // Node pop / halo pulse
       ScrollTrigger.create({
         trigger: step,
-        start: "top 72%",
+        start: 'top 60%',
+        end: 'bottom 40%',
         onEnter: () => {
-          step.classList.add('is-active');
+          setActiveStep(index);
           if (halo) {
             gsap.fromTo(halo, 
-              { scale: 0.85 }, 
-              { scale: 1.18, duration: 0.35, yoyo: true, repeat: 1, ease: "power1.inOut" }
+              { scale: 0.95 }, 
+              { scale: 1.08, duration: 0.3, ease: 'back.out(2)' }
             );
           }
         },
-        onLeaveBack: () => {
-          if (index > 0) step.classList.remove('is-active');
+        onEnterBack: () => {
+          setActiveStep(index);
+          if (halo) {
+            gsap.fromTo(halo, 
+              { scale: 0.95 }, 
+              { scale: 1.08, duration: 0.3, ease: 'back.out(2)' }
+            );
+          }
         }
       });
     });
 
-    function activateStep(activeStep, num, name, idx) {
-      stepItems.forEach((s, i) => {
-        if (i <= idx) {
-          s.classList.add('is-active');
-        } else {
-          s.classList.remove('is-active');
-        }
-      });
-
-      if (hudCounter) hudCounter.textContent = `0${num}`;
-      if (hudName) {
-        gsap.fromTo(hudName, { opacity: 0, y: -4 }, { opacity: 1, y: 0, duration: 0.25 });
-        hudName.textContent = name;
-      }
-      if (hudProgressBar) {
-        const pct = ((idx + 1) / stepItems.length) * 100;
-        gsap.to(hudProgressBar, { width: `${pct}%`, duration: 0.35, ease: "power2.out" });
-      }
-    }
   } else {
-    // Graceful IntersectionObserver fallback if GSAP is unavailable
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-active');
-          const card = entry.target.querySelector('.step-content-card');
-          if (card) card.style.opacity = '1';
-        }
-      });
-    }, { threshold: 0.3 });
+    // High-performance IntersectionObserver fallback
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const index = Array.from(stepItems).indexOf(entry.target);
+            if (index !== -1) {
+              setActiveStep(index);
+            }
+          }
+        });
+      }, { threshold: 0.4 });
 
-    stepItems.forEach(step => observer.observe(step));
+      stepItems.forEach(step => observer.observe(step));
+    }
   }
 }
 
@@ -1107,5 +1088,156 @@ function initAboutHeroSlideshow() {
   });
 }
 
+/* --------------------------------------------------------------------------
+   18. FOOTER MINIMAL LUXURY LOVE STORIES SLIDER (DUAL-LAYER 2S & 1.5S SMOOTH SLIDE)
+   -------------------------------------------------------------------------- */
+function initFooterStoriesSlider() {
+  const container = document.getElementById('footerStoriesShowcase');
+  if (!container) return;
 
+  const fgSlides = Array.from(container.querySelectorAll('.footer-story-slide'));
+  const bgSlides = Array.from(container.querySelectorAll('.footer-story-bg-slide'));
+  const prevBtn = document.getElementById('storiesPrevBtn');
+  const nextBtn = document.getElementById('storiesNextBtn');
+  if (fgSlides.length <= 1) return;
+
+  let current = 0;
+  let isAnimating = false;
+  let timer = null;
+
+  // Initialize slides
+  fgSlides.forEach((slide, idx) => {
+    slide.classList.remove('is-active', 'is-prev', 'from-left', 'to-right');
+    if (idx === 0) slide.classList.add('is-active');
+  });
+  bgSlides.forEach((slide, idx) => {
+    slide.classList.remove('is-active', 'is-prev', 'from-left', 'to-right');
+    if (idx === 0) slide.classList.add('is-active');
+  });
+
+  function goToSlide(nextIdx, direction) {
+    if (isAnimating || nextIdx === current) return;
+    isAnimating = true;
+
+    const currFg = fgSlides[current];
+    const nextFg = fgSlides[nextIdx];
+    const currBg = bgSlides[current];
+    const nextBg = bgSlides[nextIdx];
+
+    // Clean any prior transition classes on other slides
+    fgSlides.forEach((s, i) => {
+      if (i !== current && i !== nextIdx) {
+        s.classList.remove('from-left', 'to-right', 'is-prev', 'is-active');
+      }
+    });
+    bgSlides.forEach((s, i) => {
+      if (i !== current && i !== nextIdx) {
+        s.classList.remove('from-left', 'to-right', 'is-prev', 'is-active');
+      }
+    });
+
+    if (direction === 1) {
+      // Forward: Next enters from right (default translateX(100%)), Current exits to left (is-prev)
+      nextFg.classList.remove('is-active', 'is-prev', 'from-left');
+      nextFg.classList.add('to-right');
+      if (nextBg) {
+        nextBg.classList.remove('is-active', 'is-prev', 'from-left');
+        nextBg.classList.add('to-right');
+      }
+
+      void nextFg.offsetWidth; // Force DOM reflow
+
+      currFg.classList.remove('is-active');
+      currFg.classList.add('is-prev');
+
+      nextFg.classList.remove('to-right');
+      nextFg.classList.add('is-active');
+
+      if (currBg) {
+        currBg.classList.remove('is-active');
+        currBg.classList.add('is-prev');
+      }
+      if (nextBg) {
+        nextBg.classList.remove('to-right');
+        nextBg.classList.add('is-active');
+      }
+    } else {
+      // Backward: Next enters from left (from-left), Current exits to right (to-right)
+      nextFg.classList.remove('is-active', 'is-prev', 'to-right');
+      nextFg.classList.add('from-left');
+      if (nextBg) {
+        nextBg.classList.remove('is-active', 'is-prev', 'to-right');
+        nextBg.classList.add('from-left');
+      }
+
+      void nextFg.offsetWidth; // Force DOM reflow
+
+      currFg.classList.remove('is-active');
+      currFg.classList.add('to-right');
+
+      nextFg.classList.remove('from-left');
+      nextFg.classList.add('is-active');
+
+      if (currBg) {
+        currBg.classList.remove('is-active');
+        currBg.classList.add('to-right');
+      }
+      if (nextBg) {
+        nextBg.classList.remove('from-left');
+        nextBg.classList.add('is-active');
+      }
+    }
+
+    current = nextIdx;
+
+    // Slide transition duration lock release
+    setTimeout(() => {
+      isAnimating = false;
+      fgSlides.forEach((s, i) => {
+        if (i !== current) s.classList.remove('is-prev', 'from-left', 'to-right', 'is-active');
+      });
+      bgSlides.forEach((s, i) => {
+        if (i !== current) s.classList.remove('is-prev', 'from-left', 'to-right', 'is-active');
+      });
+    }, 1250);
+  }
+
+  function nextSlide() {
+    const nextIdx = (current + 1) % fgSlides.length;
+    goToSlide(nextIdx, 1);
+  }
+
+  function prevSlide() {
+    const prevIdx = (current - 1 + fgSlides.length) % fgSlides.length;
+    goToSlide(prevIdx, -1);
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetTimer();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetTimer();
+    });
+  }
+
+  function startTimer() {
+    timer = setInterval(nextSlide, 1500);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    startTimer();
+  }
+
+  container.addEventListener('mouseenter', () => clearInterval(timer));
+  container.addEventListener('mouseleave', startTimer);
+
+  startTimer();
+}
 

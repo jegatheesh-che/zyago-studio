@@ -627,37 +627,9 @@
 /* --------------------------------------------------------------------------
    RESPONSIVE: AWWWARDS GRAND PRODUCTION WORKFLOW
    -------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
-  .awwwards-workflow-container {
-    grid-template-columns: 1fr;
-    gap: 56px;
-  }
-
-  .awwwards-workflow-sticky {
-    position: static;
-    padding-right: 0;
-    max-width: 620px;
-  }
-
-  .awwwards-phase-hud {
-    max-width: 480px;
-  }
-}
-
 @media (max-width: 768px) {
   .awwwards-workflow-section {
     padding: 70px 0 80px;
-  }
-
-  .awwwards-workflow-title {
-    font-size: 32px;
-    margin-bottom: 18px;
-  }
-
-  .awwwards-workflow-lead {
-    font-size: 14.5px;
-    line-height: 1.75;
-    margin-bottom: 28px;
   }
 
   .awwwards-timeline-track {
@@ -666,12 +638,13 @@
 
   .timeline-rail-bg,
   .timeline-rail-fill {
-    left: 21px;
-    width: 4px;
+    left: 22px;
+    transform: translateX(-50%);
+    width: 2.5px;
   }
 
   .awwwards-step-list {
-    gap: 36px;
+    gap: 32px;
   }
 
   .awwwards-step-item {
@@ -679,14 +652,17 @@
     column-gap: 16px;
   }
 
+  .step-node-col {
+    width: 44px;
+  }
+
   .step-node-halo {
     width: 44px;
     height: 44px;
   }
 
-  .step-node-core {
-    width: 20px;
-    height: 20px;
+  .step-node-num {
+    font-size: 12px;
   }
 
   .step-content-card {

@@ -234,18 +234,7 @@
             <a href="pages/studio-portrait.html" class="editorial-card-link">The Studio Experience</a>
           </article>
 
-          <!-- Category 2: Life Events -->
-          <article class="editorial-card">
-            <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-004.webp">
-                <source src="assets/videos/events/pre-wedding-highlights.mp4" type="video/mp4">
-              </video>
-            </div>
-            <h3 class="editorial-card-title">Life Events &amp; Celebrations</h3>
-            <a href="pages/life-events.html" class="editorial-card-link">Explore Stories</a>
-          </article>
-
-          <!-- Category 3: Master Galleries -->
+          <!-- Category 2: Master Galleries -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
               <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-001.webp">
@@ -256,62 +245,102 @@
             <a href="pages/galleries.html" class="editorial-card-link">View All Galleries</a>
           </article>
 
+          <!-- Category 3: Life Events -->
+          <article class="editorial-card">
+            <div class="editorial-card-img-wrap">
+              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-004.webp">
+                <source src="assets/videos/events/pre-wedding-highlights.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3 class="editorial-card-title">Life Events &amp; Celebrations</h3>
+            <a href="pages/life-events.html" class="editorial-card-link">Explore Stories</a>
+          </article>
+
         </div>
       </div>
     </section>
 
     <!-- ========================================================================
-         CORE PHOTOGRAPHY STYLES (Candid / Traditional / Wedding Film)
+         RESPONSIVE 2-CARD ENQUIRY SHOWCASE (Studio Portrait & Life Events)
          ======================================================================== -->
-    <section class="section services-three-col-section reveal-on-scroll" id="photographyStyles">
+    <section class="enquiry-card-section reveal-on-scroll" id="enquiryCardSection">
       <div class="container">
-        <div class="services-columns-grid">
+        
+        <div class="sophie-cards-grid">
           
-          <!-- Column 1: Candid/Artistic Photography -->
-          <article class="service-col-card">
-            <div class="service-col-icon-wrap" aria-hidden="true">
-              <svg class="service-col-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 11L17.5 7H26.5L29 11H36C38.2 11 40 12.8 40 15V35C40 37.2 38.2 39 36 39H8C5.8 39 4 37.2 4 35V15C4 12.8 5.8 11 8 11H15Z" fill="#17140F"/>
-                <circle cx="22" cy="25" r="7.5" fill="#FFFFFF"/>
-                <circle cx="22" cy="25" r="4.5" fill="#17140F"/>
-                <circle cx="34" cy="17" r="1.5" fill="#FFFFFF"/>
-              </svg>
+          <!-- Card 1: Studio Portrait -->
+          <div class="sophie-profile-card">
+            <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
+            <div class="sophie-card-media">
+              <img src="assets/images/portraits/portrait-002.webp" alt="Studio Portrait &amp; Fine Art Photography" class="sophie-portrait-img" loading="lazy">
+              <div class="sophie-media-gradient"></div>
             </div>
-            <h3 class="service-col-title">Candid/Artistic Photography</h3>
-            <p class="service-col-desc">
-              Candid photography is not just about capturing moments — at Zyago Studios, it’s about celebrating authenticity. We believe in capturing natural smiles, unposed emotions, and genuine interactions. Our team is trained to blend into your celebrations, approach each moment with creativity, and work tirelessly to help you relive those precious memories for years to come.
-            </p>
-          </article>
 
-          <!-- Column 2: Traditional Photography -->
-          <article class="service-col-card">
-            <div class="service-col-icon-wrap" aria-hidden="true">
-              <svg class="service-col-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 34H9C6.79 34 5 32.21 5 30V11C5 8.79 6.79 7 9 7H35C37.21 7 39 8.79 39 11V30C39 32.21 37.21 34 35 34H32" stroke="#17140F" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <polygon points="22,23 30.5,34 13.5,34" fill="#17140F"/>
-              </svg>
-            </div>
-            <h3 class="service-col-title">Traditional Photography</h3>
-            <p class="service-col-desc">
-              Traditional wedding photography is all about timeless, formal portraits. At Zyago Studios, we make sure each posed moment is captured beautifully. You’ll see classic, vibrant color photos where couples, families, and friends are looking toward the camera — all smiling and saying "Cheese!" These photos highlight rituals, group moments, and cultural significance, preserving them in an elegant, well-composed way.
-            </p>
-          </article>
+            <!-- Card Content Body -->
+            <div class="sophie-card-body">
+              <!-- Name & Green Verified Badge -->
+              <div class="sophie-name-row">
+                <h3 class="sophie-name">Studio Portrait</h3>
+                <span class="sophie-verified-badge" title="Verified Editorial Studio">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </span>
+              </div>
 
-          <!-- Column 3: Wedding Film -->
-          <article class="service-col-card">
-            <div class="service-col-icon-wrap" aria-hidden="true">
-              <svg class="service-col-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="5" y="12" width="22" height="20" rx="4" fill="#17140F"/>
-                <path d="M29 18.5L40 12V32L29 25.5V18.5Z" fill="#17140F"/>
-              </svg>
+              <!-- Subtitle -->
+              <p class="sophie-bio">
+                Sculpted lighting, timeless monochrome &amp; high-fashion studio editorial portraits.
+              </p>
+
+              <!-- Bottom Action Row with WhatsApp Integration -->
+              <div class="sophie-card-footer">
+                <a href="https://wa.me/916381683178?text=Hello%20Zyago%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20your%20Studio%20Portrait%20%26%20Fine%20Art%20Sessions." target="_blank" rel="noopener noreferrer" class="sophie-follow-btn" aria-label="Inquire Studio Portrait on WhatsApp">
+                  <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
+                  <span>Inquire on WhatsApp</span>
+                </a>
+              </div>
             </div>
-            <h3 class="service-col-title">Wedding Film</h3>
-            <p class="service-col-desc">
-              A wedding, we believe, is like a movie — a coming together of beautiful moments into one big happy story that becomes timeless. At Zyago Studios, we specialize in crafting cinematic wedding films that showcase emotions, traditions, and love stories with elegance. After all, isn't it important to capture this fairy-tale and preserve it forever!
-            </p>
-          </article>
+          </div>
+
+          <!-- Card 2: Life Events -->
+          <div class="sophie-profile-card">
+            <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
+            <div class="sophie-card-media">
+              <img src="assets/images/weddings/wedding-005.webp" alt="Life Events &amp; Celebrations Photography" class="sophie-portrait-img" loading="lazy">
+              <div class="sophie-media-gradient"></div>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="sophie-card-body">
+              <!-- Name & Green Verified Badge -->
+              <div class="sophie-name-row">
+                <h3 class="sophie-name">Life Events</h3>
+                <span class="sophie-verified-badge" title="Verified Editorial Studio">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </span>
+              </div>
+
+              <!-- Subtitle -->
+              <p class="sophie-bio">
+                Documenting intimate London vows, milestone celebrations &amp; grand destination estates.
+              </p>
+
+              <!-- Bottom Action Row with WhatsApp Integration -->
+              <div class="sophie-card-footer">
+                <a href="https://wa.me/916381683178?text=Hello%20Zyago%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20your%20Life%20Events%20%26%20Celebrations%20photography." target="_blank" rel="noopener noreferrer" class="sophie-follow-btn" aria-label="Inquire Life Events on WhatsApp">
+                  <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
+                  <span>Inquire on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
 
         </div>
+
       </div>
     </section>
 
@@ -532,134 +561,12 @@
     </section>
 
     <!-- ========================================================================
-         RESPONSIVE 2-CARD ENQUIRY SHOWCASE (Studio Portrait & Life Events)
-         ======================================================================== -->
-    <section class="enquiry-card-section reveal-on-scroll" id="enquiryCardSection">
-      <div class="container">
-        
-        <div class="sophie-cards-grid">
-          
-          <!-- Card 1: Studio Portrait -->
-          <div class="sophie-profile-card">
-            <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
-            <div class="sophie-card-media">
-              <img src="assets/images/portraits/portrait-002.webp" alt="Studio Portrait &amp; Fine Art Photography" class="sophie-portrait-img" loading="lazy">
-              <div class="sophie-media-gradient"></div>
-            </div>
-
-            <!-- Card Content Body -->
-            <div class="sophie-card-body">
-              <!-- Name & Green Verified Badge -->
-              <div class="sophie-name-row">
-                <h3 class="sophie-name">Studio Portrait</h3>
-                <span class="sophie-verified-badge" title="Verified Editorial Studio">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </span>
-              </div>
-
-              <!-- Subtitle -->
-              <p class="sophie-bio">
-                Sculpted lighting, timeless monochrome &amp; high-fashion studio editorial portraits.
-              </p>
-
-              <!-- Bottom Action Row with WhatsApp Integration -->
-              <div class="sophie-card-footer">
-                <a href="https://wa.me/916381683178?text=Hello%20Zyago%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20your%20Studio%20Portrait%20%26%20Fine%20Art%20Sessions." target="_blank" rel="noopener noreferrer" class="sophie-follow-btn" aria-label="Inquire Studio Portrait on WhatsApp">
-                  <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
-                  <span>Inquire on WhatsApp</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2: Life Events -->
-          <div class="sophie-profile-card">
-            <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
-            <div class="sophie-card-media">
-              <img src="assets/images/weddings/wedding-005.webp" alt="Life Events &amp; Celebrations Photography" class="sophie-portrait-img" loading="lazy">
-              <div class="sophie-media-gradient"></div>
-            </div>
-
-            <!-- Card Content Body -->
-            <div class="sophie-card-body">
-              <!-- Name & Green Verified Badge -->
-              <div class="sophie-name-row">
-                <h3 class="sophie-name">Life Events</h3>
-                <span class="sophie-verified-badge" title="Verified Editorial Studio">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </span>
-              </div>
-
-              <!-- Subtitle -->
-              <p class="sophie-bio">
-                Documenting intimate London vows, milestone celebrations &amp; grand destination estates.
-              </p>
-
-              <!-- Bottom Action Row with WhatsApp Integration -->
-              <div class="sophie-card-footer">
-                <a href="https://wa.me/916381683178?text=Hello%20Zyago%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20your%20Life%20Events%20%26%20Celebrations%20photography." target="_blank" rel="noopener noreferrer" class="sophie-follow-btn" aria-label="Inquire Life Events on WhatsApp">
-                  <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
-                  <span>Inquire on WhatsApp</span>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         AWWWARDS-LEVEL GRAND PRODUCTION TIMELINE (Final Section Before Footer)
+         MINIMAL LUXURY WORKFLOW / PROCESS TIMELINE (Final Section Before Footer)
          ======================================================================== -->
     <section class="section awwwards-workflow-section" id="workflowSection">
       <div class="container awwwards-workflow-container">
         
-        <!-- Left Column: Sticky Editorial Header & Interactive Phase Tracker -->
-        <div class="awwwards-workflow-left">
-          <div class="awwwards-workflow-sticky">
-            <div class="awwwards-pill-badge">
-              <span class="pill-dot"></span>
-              <span>Workflow Matters A Lot</span>
-            </div>
-            
-            <h2 class="awwwards-workflow-title">
-              We provide high quality services <br>
-              <span class="awwwards-title-italic">since 2010</span>
-            </h2>
-
-            <p class="awwwards-workflow-lead">
-              A bespoke, highly choreographed production journey. Every wedding and editorial commission unfolds through rigorous creative intention, unobtrusive artistry, and master craftsmanship.
-            </p>
-
-            <!-- Dynamic Active Phase HUD -->
-            <div class="awwwards-phase-hud" id="workflowHud">
-              <div class="hud-label">CURRENT PRODUCTION PHASE</div>
-              <div class="hud-phase-row">
-                <span class="hud-counter" id="hudCounter">01</span>
-                <span class="hud-slash">/</span>
-                <span class="hud-total">04</span>
-                <span class="hud-name" id="hudName">Pre-Planning</span>
-              </div>
-              <div class="hud-progress-track">
-                <div class="hud-progress-bar" id="hudProgressBar"></div>
-              </div>
-            </div>
-
-            <!-- Signature Tag -->
-            <div class="awwwards-workflow-signature">
-              <span>✦ Zyago Bespoke Protocol · London &amp; Worldwide</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Big Vertical Timeline with Scroll Progress Track -->
+        <!-- Minimal Luxury Vertical Timeline -->
         <div class="awwwards-workflow-right">
           <div class="awwwards-timeline-track" id="workflowTimelineTrack">
             <!-- Full continuous background line -->
@@ -667,70 +574,90 @@
             <!-- Dynamic GSAP animated scrub line -->
             <div class="timeline-rail-fill" id="timelineRailFill" aria-hidden="true"></div>
 
-            <!-- The 4 Big Steps (Matching user's screenshot exactly) -->
+            <!-- The 4 Steps -->
             <div class="awwwards-step-list">
               
-              <!-- Step 1: Pre-Planning -->
-              <div class="awwwards-step-item is-active" data-step="1" data-name="Pre-Planning">
+              <!-- Step 1: Pre-Planning & Vision -->
+              <div class="awwwards-step-item is-active" data-step="1">
                 <div class="step-node-col">
                   <div class="step-node-halo">
-                    <span class="step-node-core"></span>
+                    <span class="step-node-num">01</span>
                   </div>
                 </div>
                 <div class="step-content-card">
-                  <span class="step-meta-num">PHASE 01</span>
-                  <h3 class="step-heading">Pre-Planning</h3>
+                  <span class="step-meta-num">Phase 01</span>
+                  <h3 class="step-heading">Pre-Planning &amp; Vision</h3>
                   <p class="step-paragraph">
-                    We plan and analyze client requirements
+                    We delve deep into your aesthetic aspirations, venue architecture, and personal story. Every light transition, timeline milestone, and key portrait scenario is meticulously mapped out.
                   </p>
+                  <div class="step-tags-wrap">
+                    <span class="step-detail-tag">Creative Moodboard</span>
+                    <span class="step-detail-tag">Venue Reconnaissance</span>
+                    <span class="step-detail-tag">Timeline Choreography</span>
+                  </div>
                 </div>
               </div>
 
-              <!-- Step 2: On Shoot -->
-              <div class="awwwards-step-item" data-step="2" data-name="On Shoot">
+              <!-- Step 2: On Shoot & Artful Storytelling -->
+              <div class="awwwards-step-item" data-step="2">
                 <div class="step-node-col">
                   <div class="step-node-halo">
-                    <span class="step-node-core"></span>
+                    <span class="step-node-num">02</span>
                   </div>
                 </div>
                 <div class="step-content-card">
-                  <span class="step-meta-num">PHASE 02</span>
-                  <h3 class="step-heading">On Shoot</h3>
+                  <span class="step-meta-num">Phase 02</span>
+                  <h3 class="step-heading">On Shoot &amp; Artful Storytelling</h3>
                   <p class="step-paragraph">
-                    We capture the precise moments
+                    With quiet discretion and razor-sharp editorial instinct, our team blends seamlessly into your day. We capture unposed intimacy, authentic glances, and sculptural portraits in natural light.
                   </p>
+                  <div class="step-tags-wrap">
+                    <span class="step-detail-tag">Multi-Angle Coverage</span>
+                    <span class="step-detail-tag">Cinematic 4K Direction</span>
+                    <span class="step-detail-tag">Discreet Presence</span>
+                  </div>
                 </div>
               </div>
 
-              <!-- Step 3: Post Processing -->
-              <div class="awwwards-step-item" data-step="3" data-name="Post Processing">
+              <!-- Step 3: Post Processing & Color Mastery -->
+              <div class="awwwards-step-item" data-step="3">
                 <div class="step-node-col">
                   <div class="step-node-halo">
-                    <span class="step-node-core"></span>
+                    <span class="step-node-num">03</span>
                   </div>
                 </div>
                 <div class="step-content-card">
-                  <span class="step-meta-num">PHASE 03</span>
-                  <h3 class="step-heading">Post Processing</h3>
+                  <span class="step-meta-num">Phase 03</span>
+                  <h3 class="step-heading">Post Processing &amp; Color Mastery</h3>
                   <p class="step-paragraph">
-                    Enhancing your moments
+                    Every single frame is hand-curated and color-graded in our bespoke, warm filmic palette. Skin tones remain naturally luminous, with tailored tonal curves and custom orchestral sound design.
                   </p>
+                  <div class="step-tags-wrap">
+                    <span class="step-detail-tag">Signature Warm Grade</span>
+                    <span class="step-detail-tag">Fine Art Retouching</span>
+                    <span class="step-detail-tag">Audio Soundscape</span>
+                  </div>
                 </div>
               </div>
 
-              <!-- Step 4: Delivered -->
-              <div class="awwwards-step-item" data-step="4" data-name="Delivered">
+              <!-- Step 4: Master Delivery & Archival Keepsake -->
+              <div class="awwwards-step-item" data-step="4">
                 <div class="step-node-col">
                   <div class="step-node-halo">
-                    <span class="step-node-core"></span>
+                    <span class="step-node-num">04</span>
                   </div>
                 </div>
                 <div class="step-content-card">
-                  <span class="step-meta-num">PHASE 04</span>
-                  <h3 class="step-heading">Delivered</h3>
+                  <span class="step-meta-num">Phase 04</span>
+                  <h3 class="step-heading">Master Delivery &amp; Heirloom Archive</h3>
                   <p class="step-paragraph">
-                    Get a lifetime moment as deliverables
+                    Receive your curated highlight gallery within days, followed by full 4K film masters and private cloud access. Optional handcrafted Italian fine-art wedding albums ensure your legacy endures.
                   </p>
+                  <div class="step-tags-wrap">
+                    <span class="step-detail-tag">48-Hr Teaser Preview</span>
+                    <span class="step-detail-tag">Private Cloud Vault</span>
+                    <span class="step-detail-tag">Handcrafted Albums</span>
+                  </div>
                 </div>
               </div>
 
@@ -740,85 +667,80 @@
 
       </div>
     </section>
-  </main>
+    </main>
 
   <!-- ========================================================================
        MODERN LUXURY FOOTER (Warm Graded Instagram Feed)
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-insta-header">
-        <div class="experience-tag-badge" style="background: rgba(176, 141, 87, 0.15); margin-bottom: 0;">
-          <span class="experience-tag-dot"></span>
-          <span>The Visual Archive</span>
+      <!-- ====================================================================
+           MINIMAL LUXURY LOVE STORIES SHOWCASE (Dual-Layer B&W Background Slider)
+           ==================================================================== -->
+      <div class="footer-stories-showcase" id="footerStoriesShowcase">
+        <!-- Ambient Black & White Background Slides (2s Smooth Slide) -->
+        <div class="footer-stories-bg-track" aria-hidden="true">
+          <div class="footer-story-bg-slide is-active" data-index="0" style="background-image: url('assets/images/weddings/wedding-002.webp');"></div>
+          <div class="footer-story-bg-slide" data-index="1" style="background-image: url('assets/images/weddings/wedding-008.webp');"></div>
+          <div class="footer-story-bg-slide" data-index="2" style="background-image: url('assets/images/weddings/wedding-009.webp');"></div>
+          <div class="footer-story-bg-slide" data-index="3" style="background-image: url('assets/images/weddings/wedding-005.webp');"></div>
+          <div class="footer-story-bg-slide" data-index="4" style="background-image: url('assets/images/weddings/wedding-015.webp');"></div>
+          <div class="footer-story-bg-slide" data-index="5" style="background-image: url('assets/images/weddings/wedding-001.webp');"></div>
+          <div class="footer-stories-bg-scrim"></div>
         </div>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-handle" aria-label="Visit Zyago Studio on Instagram">
-          <span>@zyagostudio</span>
-          <span class="handle-sub">· Follow Archive ↗</span>
-        </a>
-      </div>
 
-      <div class="footer-insta-strip">
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Wedding Gallery on Instagram">
-          <img src="assets/images/weddings/wedding-008.webp" alt="Intimate wedding celebration portrait" loading="lazy" width="400" height="400">
-          <div class="footer-insta-overlay">
-            <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
+        <!-- Foreground Content Container -->
+        <div class="footer-stories-content-wrap">
+          <!-- Top Featured Frame (1.5s Smooth Slide) -->
+          <div class="footer-stories-frame">
+            <div class="footer-story-slide is-active" data-index="0">
+              <img src="assets/images/weddings/wedding-002.webp" alt="Historic architecture wedding walk" loading="lazy">
+            </div>
+            <div class="footer-story-slide" data-index="1">
+              <img src="assets/images/weddings/wedding-008.webp" alt="Intimate beach sunset embrace" loading="lazy">
+            </div>
+            <div class="footer-story-slide" data-index="2">
+              <img src="assets/images/weddings/wedding-009.webp" alt="Lake Como destination love story" loading="lazy">
+            </div>
+            <div class="footer-story-slide" data-index="3">
+              <img src="assets/images/weddings/wedding-005.webp" alt="Euphoric wedding celebration" loading="lazy">
+            </div>
+            <div class="footer-story-slide" data-index="4">
+              <img src="assets/images/weddings/wedding-015.webp" alt="Palace reception grand romance" loading="lazy">
+            </div>
+            <div class="footer-story-slide" data-index="5">
+              <img src="assets/images/weddings/wedding-001.webp" alt="Sacred vows in historic estate" loading="lazy">
+            </div>
           </div>
-        </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Studio Portrait Gallery on Instagram">
-          <img src="assets/images/portraits/portrait-003.webp" alt="Studio editorial portrait in sculpted light" loading="lazy" width="400" height="400">
-          <div class="footer-insta-overlay">
-            <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
+
+          <!-- Bottom Narrative Bar with Minimal Thin Navigation Arrows -->
+          <div class="footer-stories-bar">
+            <div class="footer-stories-header-row">
+              <h3 class="footer-stories-title">
+                OUR<br>
+                FAVOURITE<br>
+                LOVE STORIES
+              </h3>
+              <div class="footer-stories-arrows">
+                <button type="button" class="stories-arrow-btn" id="storiesPrevBtn" aria-label="Previous Love Story Photograph">
+                  <svg width="48" height="18" viewBox="0 0 48 18" fill="none" stroke="currentColor">
+                    <line x1="46" y1="9" x2="2" y2="9" stroke-width="1.3"/>
+                    <polyline points="12 2 2 9 12 16" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button type="button" class="stories-arrow-btn" id="storiesNextBtn" aria-label="Next Love Story Photograph">
+                  <svg width="48" height="18" viewBox="0 0 48 18" fill="none" stroke="currentColor">
+                    <line x1="2" y1="9" x2="46" y2="9" stroke-width="1.3"/>
+                    <polyline points="36 2 46 9 36 16" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <p class="footer-stories-desc">
+              Our all-time favourite photographs, where every image is a window into love at its most honest.
+            </p>
           </div>
-        </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Grand Wedding Moments on Instagram">
-          <img src="assets/images/weddings/wedding-012.webp" alt="Editorial wedding ceremony celebration" loading="lazy" width="400" height="400">
-          <div class="footer-insta-overlay">
-            <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Fine Art Portrait on Instagram">
-          <img src="assets/images/portraits/portrait-067.webp" alt="Fine art portrait in sculpted lighting" loading="lazy" width="400" height="400">
-          <div class="footer-insta-overlay">
-            <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Fine Art Studio Portrait on Instagram">
-          <img src="assets/images/portraits/portrait-006.webp" alt="Fine art black and white studio portrait" loading="lazy" width="400" height="400">
-          <div class="footer-insta-overlay">
-            <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/zyagostudio?igsi=MW1tZWFuN2djYThxdQ==" target="_blank" rel="noopener noreferrer" class="footer-insta-item" aria-label="View Heirloom Wedding Narrative on Instagram">
-          <img src="assets/images/weddings/wedding-020.webp" alt="Heirloom wedding celebration memories" loading="lazy" width="400" height="400">
-          <div class="footer-insta-overlay">
-            <svg class="footer-insta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </div>
-        </a>
+        </div>
       </div>
 
       <div class="footer-main-grid">
