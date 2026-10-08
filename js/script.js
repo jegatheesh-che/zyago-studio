@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFounderCurtainReveal();
   initAboutHeroSlideshow();
   initFooterStoriesSlider();
+  initMapsCardSlider();
 });
 
 /* --------------------------------------------------------------------------
@@ -516,7 +517,6 @@ function initGalleryLightbox() {
   // Category Names Map
   const categoryNames = {
     all: 'Masterworks',
-    elopements: 'Elopements & Weddings',
     studio: 'Studio Portraits',
     events: 'Life Events'
   };
@@ -1190,6 +1190,17 @@ function initFooterStoriesSlider() {
 
     current = nextIdx;
 
+    // Update live slide progress and active story metadata
+    const currentNumEl = document.getElementById('storiesCurrentNum');
+    const progressFillEl = document.getElementById('storiesProgressFill');
+    const titleEl = document.getElementById('storiesActiveTitle');
+    const locEl = document.getElementById('storiesActiveLoc');
+
+    if (currentNumEl) currentNumEl.textContent = String(nextIdx + 1).padStart(2, '0');
+    if (progressFillEl) progressFillEl.style.width = `${((nextIdx + 1) / fgSlides.length) * 100}%`;
+    if (titleEl && nextFg.dataset.title) titleEl.textContent = nextFg.dataset.title;
+    if (locEl && nextFg.dataset.location) locEl.textContent = nextFg.dataset.location;
+
     // Slide transition duration lock release
     setTimeout(() => {
       isAnimating = false;
@@ -1240,4 +1251,63 @@ function initFooterStoriesSlider() {
 
   startTimer();
 }
+
+/* --------------------------------------------------------------------------
+   STUDIO MAP PREVIEW CARD PHOTO SLIDER
+   -------------------------------------------------------------------------- */
+function initMapsCardSlider() {
+  const card = document.getElementById('mapsPreviewCard');
+  if (!card) return;
+
+  const photos = card.querySelectorAll('.maps-card-photo');
+  const dots = card.querySelectorAll('.maps-dot');
+  if (!photos.length || !dots.length) return;
+
+  let currentIndex = 0;
+  let timer = null;
+
+  function setSlide(index) {
+    currentIndex = index;
+    photos.forEach((photo, idx) => {
+      photo.classList.toggle('active', idx === currentIndex);
+    });
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === currentIndex);
+    });
+  }
+
+  dots.forEach((dot, idx) => {
+    dot.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setSlide(idx);
+      resetTimer();
+    });
+  });
+
+  function nextSlide() {
+    const nextIdx = (currentIndex + 1) % photos.length;
+    setSlide(nextIdx);
+  }
+
+  function startTimer() {
+    timer = setInterval(nextSlide, 4500);
+  }
+
+  function resetTimer() {
+    if (timer) clearInterval(timer);
+    startTimer();
+  }
+
+  card.addEventListener('mouseenter', () => {
+    if (timer) clearInterval(timer);
+  });
+
+  card.addEventListener('mouseleave', () => {
+    startTimer();
+  });
+
+  startTimer();
+}
+
 
