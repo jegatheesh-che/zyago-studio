@@ -1,10 +1,12 @@
 # Raw Photoshoot Dumps & Unprocessed Media
-BTS Videos/
-Events/
-Studio Portrait/
-raw_assets/
+/BTS Videos/
+/Events/
+/Studio Portrait/
+/raw_assets/
 *.zip
 assets/videos/events/
+/highlight/
+/document/
 
 # Internal QA Audits, Crops & Test Scratch Scripts
 scratch/

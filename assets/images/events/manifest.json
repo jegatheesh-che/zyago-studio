@@ -1,0 +1,262 @@
+[
+  {
+    "index": 1,
+    "original": "12-18.jpg",
+    "file": "event-001.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 2,
+    "original": "IMG_0386.jpg",
+    "file": "event-002.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 3,
+    "original": "IMG_0447.jpg",
+    "file": "event-003.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1620
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 4,
+    "original": "IMG_0465.jpg",
+    "file": "event-004.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 5,
+    "original": "IMG_2230.jpg",
+    "file": "event-005.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 6,
+    "original": "IMG_2286.jpg",
+    "file": "event-006.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 7,
+    "original": "IMG_2379.jpg",
+    "file": "event-007.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 8,
+    "original": "IMG_3027.jpg",
+    "file": "event-008.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 9,
+    "original": "IMG_5791.jpg",
+    "file": "event-009.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 10,
+    "original": "IMG_8827.jpg",
+    "file": "event-010.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 11,
+    "original": "SFP_5467.jpg",
+    "file": "event-011.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 12,
+    "original": "SFP_5721.jpg",
+    "file": "event-012.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 13,
+    "original": "SFP_5819.jpg",
+    "file": "event-013.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 14,
+    "original": "SFP_5853.jpg",
+    "file": "event-014.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 15,
+    "original": "SFP_5900.jpg",
+    "file": "event-015.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 16,
+    "original": "ZSR_0077.jpg",
+    "file": "event-016.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 17,
+    "original": "ZSR_0085 (2).jpg",
+    "file": "event-017.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 18,
+    "original": "ZSR_0085.jpg",
+    "file": "event-018.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 19,
+    "original": "ZSR_0109.jpg",
+    "file": "event-019.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 20,
+    "original": "ZSR_0112.jpg",
+    "file": "event-020.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 21,
+    "original": "ZSR_0141.jpg",
+    "file": "event-021.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 22,
+    "original": "ZSR_0226.jpg",
+    "file": "event-022.webp",
+    "dimensions": {
+      "width": 1706,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 23,
+    "original": "ZSR_0573.jpg",
+    "file": "event-023.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 24,
+    "original": "_89A0564.jpg",
+    "file": "event-024.webp",
+    "dimensions": {
+      "width": 2560,
+      "height": 1707
+    },
+    "orientation": "landscape"
+  },
+  {
+    "index": 25,
+    "original": "_89A0698.jpg",
+    "file": "event-025.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  },
+  {
+    "index": 26,
+    "original": "IMG_5133.jpg",
+    "file": "event-026.webp",
+    "dimensions": {
+      "width": 1707,
+      "height": 2560
+    },
+    "orientation": "portrait"
+  }
+]

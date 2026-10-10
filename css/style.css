@@ -118,13 +118,13 @@ img, video, iframe, picture,
    Ultra-Smooth Ambient Breathing & Hardware-Accelerated Interactive Zoom
    ========================================================================== */
 
-/* Keyframes for subtle organic breathing zoom (feels genuinely alive) */
+/* Keyframes for subtle organic breathing zoom in & zoom out (feels genuinely alive) */
 @keyframes livePhotoBreathe {
   0% {
     transform: scale(1.0);
   }
   50% {
-    transform: scale(1.045);
+    transform: scale(1.05);
   }
   100% {
     transform: scale(1.0);
@@ -133,13 +133,13 @@ img, video, iframe, picture,
 
 @keyframes livePhotoBreatheAlt {
   0% {
-    transform: scale(1.045);
+    transform: scale(1.05);
   }
   50% {
     transform: scale(1.0);
   }
   100% {
-    transform: scale(1.045);
+    transform: scale(1.05);
   }
 }
 
@@ -147,6 +147,7 @@ img, video, iframe, picture,
 .editorial-card-img-wrap,
 .gallery-item,
 .sophie-card-media,
+.sophie-profile-card,
 .exp-card-media,
 .experience-card-item,
 .media-block-wrap,
@@ -158,6 +159,8 @@ img, video, iframe, picture,
 .about-hero-center-img,
 .about-slideshow-container,
 .founder-curtain-container,
+.maps-media-slider,
+.maps-card-media-wrap,
 .stagger-col {
   overflow: hidden !important;
   position: relative;
@@ -176,6 +179,7 @@ img, video, iframe, picture,
 .footer-insta-item img,
 .exp-card-media img,
 .media-block-wrap img,
+.maps-card-photo,
 .founder-curtain-img {
   filter: contrast(102%) brightness(98%) sepia(6%);
   will-change: transform;
@@ -184,8 +188,8 @@ img, video, iframe, picture,
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  animation: livePhotoBreathe 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
-  transition: transform 0.8s var(--ease-luxury), filter 0.6s var(--ease-luxury);
+  animation: livePhotoBreathe 11s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  transition: transform 0.95s cubic-bezier(0.25, 1, 0.5, 1), filter 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* Alternate rhythm & negative delay for alternating items to prevent mechanical synchrony */
@@ -193,29 +197,37 @@ img, video, iframe, picture,
 .editorial-card:nth-child(even) .editorial-card-video,
 .editorial-card:nth-child(even) img,
 .footer-story-slide:nth-child(even) img,
-.about-collage-item:nth-child(even) img {
+.about-collage-item:nth-child(even) img,
+.sophie-profile-card:nth-child(even) .sophie-portrait-img {
   animation-name: livePhotoBreatheAlt;
-  animation-duration: 14s;
+  animation-duration: 13s;
   animation-delay: -3.5s;
 }
 
 .gallery-item:nth-child(3n) img,
 .footer-story-slide:nth-child(3n) img {
-  animation-duration: 13s;
+  animation-duration: 12s;
   animation-delay: -6s;
 }
 
-/* Interactive magnification on hover overrides ambient breathing smoothly */
+/* Interactive magnification on hover: smooth zoom-in on enter, smooth zoom-out on leave */
 .gallery-item:hover img,
 .editorial-card:hover .editorial-card-video,
 .editorial-card:hover img,
 .sophie-profile-card:hover .sophie-portrait-img,
+.sophie-card-media:hover .sophie-portrait-img,
 .footer-story-slide:hover img,
 .footer-insta-item:hover img,
 .about-collage-item:hover img,
-.experience-card-item:hover .exp-card-media img {
-  animation-play-state: paused;
-  transform: scale(1.075) !important;
+.about-portrait-wrap:hover img,
+.experience-card-item:hover .exp-card-media img,
+.maps-media-slider:hover .maps-card-photo,
+.maps-card-media-wrap:hover .maps-card-photo,
+.about-hero-center-img:hover .about-slide.active,
+.about-hero-aux-img:hover .about-slide.active,
+.curated-photo:hover {
+  animation: none !important;
+  transform: scale(1.085) !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -1467,7 +1479,7 @@ img, video, iframe, picture,
   transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-/* Smooth Image De-Zoom Settling */
+/* Smooth Image Filter Settling */
 .editorial-card-img-wrap img,
 .editorial-card-img-wrap video,
 .experience-card-img-wrap img,
@@ -1478,9 +1490,8 @@ img, video, iframe, picture,
 .media-block-wrap video,
 .gallery-item img,
 .footer-insta-item img {
-  transform: scale(1.1);
   filter: contrast(99%) brightness(95%);
-  transition: transform 1.2s var(--ease-luxury), filter 0.8s ease, opacity 0.8s ease;
+  transition: transform 0.95s cubic-bezier(0.25, 1, 0.5, 1), filter 0.8s ease, opacity 0.8s ease;
   will-change: transform, filter;
 }
 
@@ -1493,17 +1504,7 @@ img, video, iframe, picture,
 .media-block-wrap.is-revealed img,
 .gallery-item.is-revealed img,
 .footer-insta-item.is-revealed img {
-  transform: scale(1);
   filter: contrast(102%) brightness(98%) sepia(6%);
-}
-
-/* Hover scales still smoothly work */
-.editorial-card:hover .editorial-card-img-wrap video,
-.editorial-card:hover .editorial-card-img-wrap img,
-.experience-process-card:hover .experience-card-img-wrap img,
-.gallery-item:hover img,
-.footer-insta-item:hover img {
-  transform: scale(1.06) !important;
 }
 
 /* Shimmer Sweep Animation on Image Entry */
@@ -2665,10 +2666,6 @@ img, video, iframe, picture,
   aspect-ratio: 16 / 10.5;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.03);
-}
-
 .gallery-item-overlay {
   position: absolute;
   inset: 0;
@@ -2861,7 +2858,7 @@ img, video, iframe, picture,
   object-fit: cover;
   object-position: center center;
   opacity: 0;
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.95s cubic-bezier(0.25, 1, 0.5, 1);
   pointer-events: none;
 }
 
@@ -5714,7 +5711,7 @@ img, video, iframe, picture,
   object-fit: cover;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.95s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .maps-card-photo.active {
@@ -5879,6 +5876,268 @@ img, video, iframe, picture,
 .maps-directions-btn:active {
   transform: translateY(1px);
   box-shadow: 0 2px 10px rgba(0, 208, 132, 0.35);
+}
+
+/* ==========================================================================
+   ZYAGO STUDIO CONTENT REF_V2 COMPONENTS (Pillars, Founder, FAQ)
+   ========================================================================== */
+
+/* 1. WHY ZYAGO STUDIO (6 PILLARS) */
+.zyago-pillars-section {
+  background-color: var(--bg-warm-stone);
+  padding: 100px 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.zyago-pillars-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 60px;
+}
+
+.zyago-pillars-header .uppercase-track {
+  margin-bottom: 14px;
+}
+
+.zyago-pillars-title {
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 4.4vw, 56px);
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.zyago-pillars-desc {
+  font-size: 15.5px;
+  color: var(--text-dark-secondary);
+  line-height: 1.85;
+}
+
+.zyago-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 992px) {
+  .zyago-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .zyago-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.zyago-pillar-card {
+  background: #ffffff;
+  border: 1px solid rgba(23, 20, 15, 0.08);
+  border-radius: 4px;
+  padding: 34px 28px;
+  transition: all 0.35s var(--ease-luxury);
+  position: relative;
+  overflow: hidden;
+}
+
+.zyago-pillar-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-gold);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.zyago-pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(23, 20, 15, 0.06);
+  border-color: var(--border-gold);
+}
+
+.zyago-pillar-card:hover::before {
+  opacity: 1;
+}
+
+.zyago-pillar-num {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.zyago-pillar-heading {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.zyago-pillar-text {
+  font-size: 14.5px;
+  color: var(--text-dark-secondary);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* 2. FOUNDER SECTION SPOTLIGHT */
+.zyago-founder-section {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.zyago-founder-quote-banner {
+  background: var(--bg-charcoal);
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 44px 50px;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-left: 4px solid var(--color-gold);
+}
+
+.zyago-founder-quote-text {
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0 auto 12px;
+  max-width: 900px;
+  color: #ffffff;
+}
+
+.zyago-founder-quote-author {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+/* 3. FAQ ACCORDION SECTION */
+.zyago-faq-section {
+  background-color: #ffffff;
+  padding: 100px 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.zyago-faq-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.zyago-faq-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.zyago-faq-title {
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 4.4vw, 54px);
+  color: var(--text-dark);
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.zyago-faq-sub {
+  font-size: 15px;
+  color: var(--text-dark-secondary);
+}
+
+.faq-accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-accordion-item {
+  border: 1px solid rgba(23, 20, 15, 0.08);
+  border-radius: 4px;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.faq-accordion-item.is-open {
+  border-color: var(--color-gold);
+  box-shadow: 0 8px 24px rgba(23, 20, 15, 0.04);
+}
+
+.faq-accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 22px 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: color 0.2s ease;
+  gap: 18px;
+}
+
+.faq-accordion-btn:hover {
+  color: var(--color-gold);
+}
+
+.faq-accordion-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(23, 20, 15, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.faq-accordion-item.is-open .faq-accordion-icon {
+  transform: rotate(45deg);
+  background: var(--color-gold);
+  color: #ffffff;
+}
+
+.faq-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s var(--ease-luxury), padding 0.3s ease;
+  padding: 0 28px;
+}
+
+.faq-accordion-item.is-open .faq-accordion-body {
+  max-height: 400px;
+  padding: 0 28px 26px;
+}
+
+.faq-accordion-body p {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--text-dark-secondary);
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------------

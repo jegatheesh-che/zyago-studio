@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAboutHeroSlideshow();
   initFooterStoriesSlider();
   initMapsCardSlider();
+  initFaqAccordion();
 });
 
 /* --------------------------------------------------------------------------
@@ -1310,4 +1311,35 @@ function initMapsCardSlider() {
   startTimer();
 }
 
+/* --------------------------------------------------------------------------
+   FAQ ACCORDION TOGGLE
+   -------------------------------------------------------------------------- */
+function initFaqAccordion() {
+  const items = document.querySelectorAll('.faq-accordion-item');
+  if (!items.length) return;
 
+  items.forEach((item) => {
+    const btn = item.querySelector('.faq-accordion-btn');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+      // Close other accordions for clean single view
+      items.forEach((other) => {
+        if (other !== item) {
+          other.classList.remove('is-open');
+          const otherBtn = other.querySelector('.faq-accordion-btn');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isOpen) {
+        item.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
