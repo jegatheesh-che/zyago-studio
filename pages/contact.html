@@ -21,49 +21,72 @@
   <meta property="og:description" content="Get in touch with Zyago Studio in Velachery, Chennai for studio portraits, weddings, life events, headshots, and fashion campaigns.">
   <meta property="og:image" content="../assets/images/portraits/portrait-067.webp">
 
-  <!-- JSON-LD Structured Data: ContactPage -->
+    <!-- JSON-LD Entity Graph: BreadcrumbList & ContactPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact Zyago Studio",
-    "description": "Book a studio portrait session or inquire about wedding and life event photography at Zyago Studio in Chennai.",
-    "mainEntity": {
-      "@type": "PhotographyStudio",
-      "name": "Zyago Studio",
-      "telephone": "+91-63816-83178",
-      "email": "zyagostudio@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Velachery",
-        "addressLocality": "Chennai",
-        "addressRegion": "Tamil Nadu",
-        "postalCode": "600042",
-        "addressCountry": "IN"
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://zyagostudio.com/pages/contact.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zyagostudio.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://zyagostudio.com/pages/contact.html"
+          }
+        ]
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 12.9796126,
-        "longitude": 80.22909
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "09:00",
-        "closes": "19:30"
+      {
+        "@type": "ContactPage",
+        "@id": "https://zyagostudio.com/pages/contact.html#contact",
+        "name": "Contact Zyago Studio | Studio Bookings & Inquiries",
+        "url": "https://zyagostudio.com/pages/contact.html",
+        "description": "Connect directly with Zyago Studio concierge in Velachery, Chennai via WhatsApp, phone, or online inquiry form.",
+        "mainEntity": {
+          "@type": "PhotographyStudio",
+          "@id": "https://zyagostudio.com/#studio",
+          "name": "Zyago Studio",
+          "telephone": "+916381683178",
+          "email": "zyagostudio@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Velachery",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600042",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 12.9796126,
+            "longitude": 80.22909
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "09:30",
+              "closes": "19:30"
+            }
+          ]
+        }
       }
-    }
+    ]
   }
   </script>
 
+    <!-- Preconnect & Asynchronous Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
@@ -75,9 +98,9 @@
   <div class="site-preloader" id="sitePreloader">
     <div class="preloader-content">
       <div class="preloader-emblem">
-        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
       </div>
-      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
+      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo" decoding="async">
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
@@ -89,7 +112,7 @@
        ======================================================================== -->
   <header class="site-header light-header" id="mainHeader">
     <a href="../index.html" class="header-brand" aria-label="Zyago Studio Home">
-      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo">
+      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo" decoding="async">
     </a>
 
     <div class="header-nav-wrapper">
@@ -122,7 +145,7 @@
     </button>
 
     <div class="menu-overlay-brand">
-      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo">
+      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo" decoding="async">
       <span class="menu-overlay-tag">ZYAGO STUDIO</span>
     </div>
 
@@ -168,7 +191,7 @@
           </div>
 
           <div class="stamp-badge-wrap" style="align-self: center;">
-            <img src="../assets/images/stamp-badge.svg" alt="Zyago Studio Seal" class="stamp-rotating-svg">
+            <img src="../assets/images/stamp-badge.svg" alt="Zyago Studio Seal" class="stamp-rotating-svg" decoding="async">
           </div>
         </div>
       </div>
@@ -192,7 +215,7 @@
             <!-- Official Brand Logo Emblem with Rotating Circular Text -->
             <div class="circular-brand-badge" style="margin-bottom: 16px;" aria-label="Zyago Studio Logo">
               <div class="badge-logo-center">
-                <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+                <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
               </div>
               <svg class="badge-rotating-text" viewBox="0 0 140 140">
                 <defs>
@@ -386,9 +409,9 @@
               <!-- Location Image Banner with Carousel Indicators -->
               <div class="maps-card-media-wrap">
                 <div class="maps-media-slider" id="mapsCardSlider">
-                  <img src="../assets/images/portraits/portrait-067.webp" alt="Zyago Studio Atelier" class="maps-card-photo active" data-index="0" loading="lazy">
-                  <img src="../assets/images/portraits/portrait-002.webp" alt="Zyago Studio Daylight Space" class="maps-card-photo" data-index="1" loading="lazy">
-                  <img src="../assets/images/portraits/portrait-028.webp" alt="Zyago Studio Sitting Room" class="maps-card-photo" data-index="2" loading="lazy">
+                  <img src="../assets/images/portraits/portrait-067.webp" alt="Zyago Studio Atelier" class="maps-card-photo active" data-index="0" loading="lazy" decoding="async">
+                  <img src="../assets/images/portraits/portrait-002.webp" alt="Zyago Studio Daylight Space" class="maps-card-photo" data-index="1" loading="lazy" decoding="async">
+                  <img src="../assets/images/portraits/portrait-028.webp" alt="Zyago Studio Sitting Room" class="maps-card-photo" data-index="2" loading="lazy" decoding="async">
                 </div>
                 
                 <!-- Micro Pagination Dots -->
@@ -462,7 +485,7 @@
     <div class="container">
       <div class="footer-main-grid">
         <div>
-          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo">
+          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo" decoding="async">
           <p class="footer-brand-desc">
             Chennai-based contemporary photography and cinematography studio founded by Venkatesh. Specializing in studio portraits, family sessions, professional headshots, fashion, weddings and life events.
           </p>
@@ -577,8 +600,8 @@
   </div>
 
   <!-- GSAP & ScrollTrigger Engine -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="../js/script.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="../js/script.js"></script>
 </body>
 </html>

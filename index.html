@@ -28,141 +28,209 @@
   <meta name="twitter:description" content="Contemporary photography &amp; cinematography studio in Chennai creating timeless portraits &amp; stories with an authentic human touch.">
   <meta name="twitter:image" content="assets/images/highlights/portraits/portrait-hl-001.webp">
 
+    <!-- Preconnect & Asynchronous Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+  <!-- High-Priority LCP Hero Preload -->
+  <link rel="preload" as="image" href="assets/images/highlights/portraits/portrait-hl-001.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- JSON-LD Structured Data: LocalBusiness & PhotographyStudio -->
+    <!-- JSON-LD Entity Graph: LocalBusiness, PhotographyStudio, WebSite & FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "PhotographyStudio",
-    "name": "Zyago Studio",
-    "image": "https://zyagostudio.com/assets/images/brand-logo.webp",
-    "@id": "https://zyagostudio.com/#studio",
-    "url": "https://zyagostudio.com/",
-    "telephone": "+916381683178",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Velachery",
-      "addressLocality": "Chennai",
-      "addressRegion": "Tamil Nadu",
-      "postalCode": "600042",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 12.9796126,
-      "longitude": 80.22909
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "09:30",
-      "closes": "19:30"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Venkatesh",
-      "jobTitle": "Director of Photography & Founder"
-    },
-    "sameAs": [
-      "https://www.instagram.com/zyagostudio",
-      "https://maps.google.com/maps?q=12.9796126,80.22909"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "5"
-    }
-  }
-  </script>
-
-  <!-- JSON-LD Structured Data: FAQPage (AEO & GEO Optimization) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "What type of photography does Zyago Studio offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Zyago Studio offers studio portrait photography and cinematography, including family portraits, kids portraits, couple portraits, maternity photography, professional headshots, LinkedIn and business profile portraits, graduation portraits, commercial portraits and fashion photography. We also photograph weddings and life events such as engagements, receptions, baby showers, birthdays and family celebrations."
+        "@type": "WebSite",
+        "@id": "https://zyagostudio.com/#website",
+        "url": "https://zyagostudio.com/",
+        "name": "Zyago Studio",
+        "description": "Contemporary portrait and wedding photography studio in Chennai.",
+        "publisher": {
+          "@id": "https://zyagostudio.com/#studio"
+        },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": ["PhotographyStudio", "ProfessionalService", "LocalBusiness"],
+        "@id": "https://zyagostudio.com/#studio",
+        "name": "Zyago Studio",
+        "alternateName": [
+          "Zyago Studio Chennai",
+          "Zyago Portrait Studio Velachery",
+          "Zyago Wedding Photography Chennai"
+        ],
+        "url": "https://zyagostudio.com/",
+        "logo": "https://zyagostudio.com/assets/images/brand-logo.webp",
+        "image": [
+          "https://zyagostudio.com/assets/images/highlights/portraits/portrait-hl-001.webp",
+          "https://zyagostudio.com/assets/images/highlights/events/event-hl-001.webp",
+          "https://zyagostudio.com/assets/images/brand/brand-director-seal.webp"
+        ],
+        "description": "Zyago Studio is a contemporary photography and cinematography studio in Velachery, Chennai specializing in studio portraits, candid weddings, family photography, LinkedIn headshots, and editorial visual storytelling.",
+        "telephone": "+916381683178",
+        "email": "zyagostudio@gmail.com",
+        "priceRange": "₹₹",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, Credit Card, UPI, Bank Transfer",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Velachery",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600042",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 12.9796126,
+          "longitude": 80.22909
+        },
+        "hasMap": "https://maps.google.com/maps?q=12.9796126,80.22909",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Velachery, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Adyar, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Besant Nagar, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Thiruvanmiyur, Chennai" },
+          { "@type": "AdministrativeArea", "name": "OMR (Old Mahabalipuram Road), Chennai" },
+          { "@type": "AdministrativeArea", "name": "ECR (East Coast Road), Chennai" },
+          { "@type": "AdministrativeArea", "name": "Guindy, Chennai" },
+          { "@type": "AdministrativeArea", "name": "T. Nagar, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Alwarpet, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Anna Nagar, Chennai" },
+          { "@type": "City", "name": "Chennai" },
+          { "@type": "State", "name": "Tamil Nadu" },
+          { "@type": "Country", "name": "India" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "09:30",
+            "closes": "19:30"
+          }
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Venkatesh",
+          "jobTitle": "Director of Photography & Founder",
+          "sameAs": "https://zyagostudio.com/pages/about.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5.0",
+          "worstRating": "1.0",
+          "ratingCount": "5",
+          "reviewCount": "5"
+        },
+        "sameAs": [
+          "https://www.instagram.com/zyagostudio",
+          "https://maps.google.com/maps?q=12.9796126,80.22909"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Zyago Studio Photography & Film Experiences",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Studio Portrait Photography (Family, Kids, Maternity & Couple)",
+                "description": "Bespoke fine art studio portrait sessions in sculpted light at our Velachery atelier in Chennai."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Professional Headshots & LinkedIn Executive Profiles",
+                "description": "High-impact business headshots, corporate portraits, and personal branding in Chennai."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Candid Wedding Photography & Cinematography",
+                "description": "Artful, candid documentary wedding coverage capturing raw emotions and authentic family celebrations across Chennai & South India."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Life Events & Milestones (Baby Shower, Engagements, Receptions)",
+                "description": "Meaningful visual documentation of life milestones and cultural ceremonies."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Fashion & Commercial Editorial Campaigns",
+                "description": "Creative direction, model portfolios, lookbooks, and brand campaigns."
+              }
+            }
+          ]
         }
       },
       {
-        "@type": "Question",
-        "name": "Where is Zyago Studio located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Zyago Studio is a photography and portrait studio based in Velachery, Chennai, Tamil Nadu, serving clients in Chennai and across India."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Zyago Studio provide both photography and videography?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Zyago Studio provides photography and cinematography services for studio portraits, weddings, celebrations, events and selected commercial projects."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Zyago Studio do LinkedIn headshots?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Zyago Studio provides professional LinkedIn and business profile headshots for professionals, entrepreneurs, executives and business owners."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I book a studio portrait session?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Studio portrait sessions are available by prior booking. We recommend contacting the studio in advance so we can understand your requirements and reserve an appropriate session slot."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you photograph weddings?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Zyago Studio provides wedding photography and cinematography, including coverage for weddings, engagements, receptions and related celebrations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you travel for photography assignments?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Zyago Studio is available for selected destination weddings, events, fashion assignments and commercial projects outside Chennai."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I book a photoshoot?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Contact Zyago Studio through WhatsApp, phone or the enquiry form. Our team will understand your requirements, discuss availability and recommend the appropriate photography service."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How far in advance should I book?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We recommend booking as early as possible for weddings and major events because dates can become unavailable quickly. Studio portrait sessions can generally be scheduled based on studio availability."
-        }
+        "@type": "FAQPage",
+        "@id": "https://zyagostudio.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What type of photography does Zyago Studio offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zyago Studio offers studio portrait photography and cinematography, including family portraits, kids portraits, couple portraits, maternity photography, professional headshots, LinkedIn and business profile portraits, graduation portraits, commercial portraits and fashion photography. We also photograph weddings and life events such as engagements, receptions, baby showers, birthdays and family celebrations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Zyago Studio located in Chennai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zyago Studio is located in Velachery, Chennai (600042), conveniently accessible from Adyar, OMR, ECR, Besant Nagar, and Guindy. We serve clients across Chennai, Tamil Nadu, and destination locations worldwide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Zyago Studio provide both photography and videography?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Zyago Studio provides complete photography and cinematic 4K film coverage for studio portraits, weddings, celebrations, events, and selected commercial campaigns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Zyago Studio do professional LinkedIn headshots?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Zyago Studio provides executive LinkedIn and corporate headshots with custom sculpted lighting, tailored coaching, and fast delivery for professionals, founders, executives, and creators in Chennai."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a photoshoot session at Zyago Studio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book easily by contacting Zyago Studio via direct WhatsApp (+91 63816 83178), phone, or the website enquiry form. Our studio concierge will discuss dates, creative vision, and package details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you travel for destination weddings and shoots outside Chennai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Zyago Studio travels across Tamil Nadu, Bangalore, Kerala, and pan-India destination venues for weddings, editorial campaigns, and outdoor shoots."
+            }
+          }
+        ]
       }
     ]
   }
@@ -177,7 +245,7 @@
     <div class="preloader-content">
       <div class="circular-brand-badge" aria-label="Zyago Studio Emblem">
         <div class="badge-logo-center">
-          <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+          <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
         </div>
         <svg class="badge-rotating-text" viewBox="0 0 140 140">
           <defs>
@@ -190,7 +258,7 @@
           </text>
         </svg>
       </div>
-      <img src="assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
+      <img src="assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo" decoding="async">
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
@@ -202,7 +270,7 @@
        ======================================================================== -->
   <header class="site-header hero-transparent-nav" id="mainHeader">
     <a href="index.html" class="header-brand" aria-label="Zyago Studio Home">
-      <img src="assets/images/logo-white.png" data-light-src="assets/images/logo-white.png" data-dark-src="assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo">
+      <img src="assets/images/logo-white.png" data-light-src="assets/images/logo-white.png" data-dark-src="assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo" decoding="async">
     </a>
 
     <div class="header-nav-wrapper">
@@ -237,7 +305,7 @@
     <div class="menu-overlay-brand">
       <div class="circular-brand-badge" aria-label="Zyago Studio Crest">
         <div class="badge-logo-center">
-          <img src="assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+          <img src="assets/images/brand-logo.webp" alt="Zyago Studio Crest" decoding="async">
         </div>
         <svg class="badge-rotating-text" viewBox="0 0 140 140">
           <defs>
@@ -397,7 +465,7 @@
           <!-- Category 1: Studio Portrait -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/portraits/portrait-004.webp">
+              <video class="editorial-card-video" preload="none" autoplay loop muted playsinline poster="assets/images/portraits/portrait-004.webp">
                 <source src="assets/videos/bts/studio-shoot-bts-01.mp4" type="video/mp4">
               </video>
             </div>
@@ -408,7 +476,7 @@
           <!-- Category 2: Master Galleries -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-001.webp">
+              <video class="editorial-card-video" preload="none" autoplay loop muted playsinline poster="assets/images/weddings/wedding-001.webp">
                 <source src="assets/videos/bts/commercial-shoot-01.mp4" type="video/mp4">
               </video>
             </div>
@@ -419,7 +487,7 @@
           <!-- Category 3: Life Events -->
           <article class="editorial-card">
             <div class="editorial-card-img-wrap">
-              <video class="editorial-card-video" autoplay loop muted playsinline poster="assets/images/weddings/wedding-004.webp">
+              <video class="editorial-card-video" preload="none" autoplay loop muted playsinline poster="assets/images/weddings/wedding-004.webp">
                 <source src="assets/videos/events/pre-wedding-highlights.mp4" type="video/mp4">
               </video>
             </div>
@@ -443,7 +511,7 @@
           <div class="sophie-profile-card">
             <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
             <div class="sophie-card-media">
-              <img src="assets/images/highlights/portraits/portrait-hl-001.webp" alt="Studio Portrait &amp; Fine Art Photography" class="sophie-portrait-img" loading="lazy">
+              <img src="assets/images/highlights/portraits/portrait-hl-001.webp" alt="Studio Portrait &amp; Fine Art Photography" class="sophie-portrait-img" loading="lazy" decoding="async">
               <div class="sophie-media-gradient"></div>
             </div>
 
@@ -478,7 +546,7 @@
           <div class="sophie-profile-card">
             <!-- Top Full-Bleed Portrait Image (No border radius on img) -->
             <div class="sophie-card-media">
-              <img src="assets/images/highlights/events/event-hl-003.webp" alt="Life Events &amp; Celebrations Photography" class="sophie-portrait-img" loading="lazy">
+              <img src="assets/images/highlights/events/event-hl-003.webp" alt="Life Events &amp; Celebrations Photography" class="sophie-portrait-img" loading="lazy" decoding="async">
               <div class="sophie-media-gradient"></div>
             </div>
 
@@ -904,9 +972,9 @@
               <!-- Location Image Banner with Carousel Indicators -->
               <div class="maps-card-media-wrap">
                 <div class="maps-media-slider" id="mapsCardSlider">
-                  <img src="assets/images/portraits/portrait-067.webp" alt="Zyago Studio Atelier" class="maps-card-photo active" data-index="0" loading="lazy">
-                  <img src="assets/images/portraits/portrait-002.webp" alt="Zyago Studio Daylight Space" class="maps-card-photo" data-index="1" loading="lazy">
-                  <img src="assets/images/portraits/portrait-028.webp" alt="Zyago Studio Sitting Room" class="maps-card-photo" data-index="2" loading="lazy">
+                  <img src="assets/images/portraits/portrait-067.webp" alt="Zyago Studio Atelier" class="maps-card-photo active" data-index="0" loading="lazy" decoding="async">
+                  <img src="assets/images/portraits/portrait-002.webp" alt="Zyago Studio Daylight Space" class="maps-card-photo" data-index="1" loading="lazy" decoding="async">
+                  <img src="assets/images/portraits/portrait-028.webp" alt="Zyago Studio Sitting Room" class="maps-card-photo" data-index="2" loading="lazy" decoding="async">
                 </div>
                 
                 <!-- Micro Pagination Dots -->
@@ -1175,22 +1243,22 @@
           <!-- Featured Photography Frame (1.2s Smooth Glide) -->
           <div class="footer-stories-frame">
             <div class="footer-story-slide is-active" data-index="0" data-title="Historic Architecture Walk" data-location="Heritage Mandapam, Chennai">
-              <img src="assets/images/weddings/wedding-002.webp" alt="Historic architecture wedding walk" loading="lazy">
+              <img src="assets/images/weddings/wedding-002.webp" alt="Historic architecture wedding walk" loading="lazy" decoding="async">
             </div>
             <div class="footer-story-slide" data-index="1" data-title="Intimate Beach Sunset Embrace" data-location="ECR Coastline, Chennai">
-              <img src="assets/images/weddings/wedding-008.webp" alt="Intimate beach sunset embrace" loading="lazy">
+              <img src="assets/images/weddings/wedding-008.webp" alt="Intimate beach sunset embrace" loading="lazy" decoding="async">
             </div>
             <div class="footer-story-slide" data-index="2" data-title="Destination Romance" data-location="Golden Hour Promenade, Mahabalipuram">
-              <img src="assets/images/weddings/wedding-009.webp" alt="Coastal destination love story" loading="lazy">
+              <img src="assets/images/weddings/wedding-009.webp" alt="Coastal destination love story" loading="lazy" decoding="async">
             </div>
             <div class="footer-story-slide" data-index="3" data-title="Euphoric Sunset Celebration" data-location="Grand Lawn Celebration, Chennai">
-              <img src="assets/images/weddings/wedding-005.webp" alt="Euphoric wedding celebration" loading="lazy">
+              <img src="assets/images/weddings/wedding-005.webp" alt="Euphoric wedding celebration" loading="lazy" decoding="async">
             </div>
             <div class="footer-story-slide" data-index="4" data-title="Palace Reception Grandeur" data-location="Palace Reception, Rajasthan">
-              <img src="assets/images/weddings/wedding-015.webp" alt="Palace reception grand romance" loading="lazy">
+              <img src="assets/images/weddings/wedding-015.webp" alt="Palace reception grand romance" loading="lazy" decoding="async">
             </div>
             <div class="footer-story-slide" data-index="5" data-title="Sacred Vows &amp; Heritage Rituals" data-location="Traditional Celebrations, Tamil Nadu">
-              <img src="assets/images/weddings/wedding-001.webp" alt="Sacred vows in traditional celebration" loading="lazy">
+              <img src="assets/images/weddings/wedding-001.webp" alt="Sacred vows in traditional celebration" loading="lazy" decoding="async">
             </div>
           </div>
 
@@ -1257,7 +1325,7 @@
         <div>
           <div class="circular-brand-badge badge-sm" style="margin-bottom: 22px;" aria-label="Zyago Studio">
             <div class="badge-logo-center">
-              <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+              <img src="assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
             </div>
             <svg class="badge-rotating-text" viewBox="0 0 140 140">
               <defs>
@@ -1270,7 +1338,7 @@
               </text>
             </svg>
           </div>
-          <img src="assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo">
+          <img src="assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo" decoding="async">
           <p class="footer-brand-desc">
             Photography • Cinematography • Visual Storytelling.<br>
             Creating portraits, celebrations and visual stories with intention, authenticity and timeless elegance.
@@ -1393,8 +1461,8 @@
   </div>
 
   <!-- GSAP & ScrollTrigger Engine for Award-Winning Motion -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="js/script.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="js/script.js"></script>
 </body>
 </html>

@@ -15,31 +15,65 @@
   <meta name="geo.position" content="12.9796126;80.22909">
   <meta name="ICBM" content="12.9796126, 80.22909">
 
+    <!-- Preconnect & Asynchronous Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+  <!-- High-Priority LCP Hero Preload -->
+  <link rel="preload" as="image" href="../assets/images/weddings/wedding-001.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
 
-  <!-- JSON-LD Structured Data: AboutPage & Person/Organization -->
+    <!-- JSON-LD Entity Graph: BreadcrumbList & AboutPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "mainEntity": {
-      "@type": "PhotographyStudio",
-      "name": "Zyago Studio",
-      "description": "A Studio Built Around People, Stories & Visual Craft. Contemporary photography and cinematography studio based in Velachery, Chennai.",
-      "founder": {
-        "@type": "Person",
-        "name": "Venkatesh",
-        "jobTitle": "Director of Photography & Founder"
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://zyagostudio.com/pages/about.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zyagostudio.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://zyagostudio.com/pages/about.html"
+          }
+        ]
       },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Velachery, Chennai",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
-      },
-      "telephone": "+916381683178"
-    }
+      {
+        "@type": "AboutPage",
+        "@id": "https://zyagostudio.com/pages/about.html#about",
+        "name": "About Zyago Studio & Founder Venkatesh",
+        "url": "https://zyagostudio.com/pages/about.html",
+        "description": "Learn about the philosophy, craftsmanship, and people behind Zyago Studio. Founded by Director of Photography Venkatesh in Chennai.",
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://zyagostudio.com/pages/about.html#founder",
+          "name": "Venkatesh",
+          "jobTitle": "Director of Photography & Founder",
+          "worksFor": {
+            "@type": "PhotographyStudio",
+            "@id": "https://zyagostudio.com/#studio",
+            "name": "Zyago Studio"
+          },
+          "knowsAbout": [
+            "Studio Portraiture",
+            "Fine Art Photography",
+            "Candid Wedding Cinematography",
+            "Editorial Lighting",
+            "Fashion Photography"
+          ]
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -51,9 +85,9 @@
   <div class="site-preloader" id="sitePreloader">
     <div class="preloader-content">
       <div class="preloader-emblem">
-        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
       </div>
-      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
+      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo" decoding="async">
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
@@ -65,7 +99,7 @@
        ======================================================================== -->
   <header class="site-header light-header" id="mainHeader">
     <a href="../index.html" class="header-brand" aria-label="Zyago Studio Home">
-      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo">
+      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo" decoding="async">
     </a>
 
     <div class="header-nav-wrapper">
@@ -98,7 +132,7 @@
     </button>
 
     <div class="menu-overlay-brand">
-      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo">
+      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo" decoding="async">
       <span class="menu-overlay-tag">ZYAGO STUDIO · CHENNAI</span>
     </div>
 
@@ -164,32 +198,32 @@
           <!-- Left auxiliary crop -->
           <div class="about-hero-aux-img">
             <div class="about-slideshow-container" id="aboutAuxLeftSlideshow">
-              <img src="../assets/images/portraits/portrait-001.webp" alt="Editorial portrait" class="about-slide active curated-photo">
-              <img src="../assets/images/portraits/portrait-002.webp" alt="Editorial portrait sitting" class="about-slide curated-photo">
-              <img src="../assets/images/portraits/portrait-003.webp" alt="Fine art daylight portrait" class="about-slide curated-photo">
-              <img src="../assets/images/portraits/portrait-008.webp" alt="Sculpted form sitting" class="about-slide curated-photo">
+              <img src="../assets/images/portraits/portrait-001.webp" alt="Editorial portrait" class="about-slide active curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-002.webp" alt="Editorial portrait sitting" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-003.webp" alt="Fine art daylight portrait" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-008.webp" alt="Sculpted form sitting" class="about-slide curated-photo" decoding="async">
             </div>
           </div>
 
           <!-- Center focal image: Romantic Editorial Couple (2s Smooth Slideshow) -->
           <div class="about-hero-center-img">
             <div class="about-slideshow-container" id="aboutCenterSlideshow">
-              <img src="../assets/images/weddings/wedding-001.webp" alt="Editorial wedding couple in golden light" class="about-slide active curated-photo">
-              <img src="../assets/images/weddings/wedding-004.webp" alt="Sacred wedding vows celebration" class="about-slide curated-photo">
-              <img src="../assets/images/weddings/wedding-005.webp" alt="Joyful couple embrace" class="about-slide curated-photo">
-              <img src="../assets/images/weddings/wedding-008.webp" alt="Bridal joy and laughter" class="about-slide curated-photo">
-              <img src="../assets/images/portraits/portrait-067.webp" alt="Fine art portrait in sculpted light" class="about-slide curated-photo">
-              <img src="../assets/images/weddings/wedding-012.webp" alt="Grand wedding celebration" class="about-slide curated-photo">
+              <img src="../assets/images/weddings/wedding-001.webp" alt="Editorial wedding couple in golden light" class="about-slide active curated-photo" decoding="async">
+              <img src="../assets/images/weddings/wedding-004.webp" alt="Sacred wedding vows celebration" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/weddings/wedding-005.webp" alt="Joyful couple embrace" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/weddings/wedding-008.webp" alt="Bridal joy and laughter" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-067.webp" alt="Fine art portrait in sculpted light" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/weddings/wedding-012.webp" alt="Grand wedding celebration" class="about-slide curated-photo" decoding="async">
             </div>
           </div>
 
           <!-- Right auxiliary crop -->
           <div class="about-hero-aux-img">
             <div class="about-slideshow-container" id="aboutAuxRightSlideshow">
-              <img src="../assets/images/portraits/portrait-004.webp" alt="Fine art bridal portrait" class="about-slide active curated-photo">
-              <img src="../assets/images/portraits/portrait-012.webp" alt="Intricate lace heirloom portrait" class="about-slide curated-photo">
-              <img src="../assets/images/portraits/portrait-014.webp" alt="Minimalist editorial sitting" class="about-slide curated-photo">
-              <img src="../assets/images/portraits/portrait-015.webp" alt="Couture fine art portrait" class="about-slide curated-photo">
+              <img src="../assets/images/portraits/portrait-004.webp" alt="Fine art bridal portrait" class="about-slide active curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-012.webp" alt="Intricate lace heirloom portrait" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-014.webp" alt="Minimalist editorial sitting" class="about-slide curated-photo" decoding="async">
+              <img src="../assets/images/portraits/portrait-015.webp" alt="Couture fine art portrait" class="about-slide curated-photo" decoding="async">
             </div>
           </div>
         </div>
@@ -207,7 +241,7 @@
           <div class="founder-curtain-wrapper">
             <div class="founder-curtain-container" id="founderCurtainCard">
               <div class="founder-curtain-wipe" aria-hidden="true"></div>
-              <img src="../assets/images/brand/brand-director-seal.webp" alt="Venkatesh - Founder &amp; Director of Photography, Zyago Studio" class="founder-curtain-img" loading="lazy">
+              <img src="../assets/images/brand/brand-director-seal.webp" alt="Venkatesh - Founder &amp; Director of Photography, Zyago Studio" class="founder-curtain-img" loading="lazy" decoding="async">
               
               <div class="founder-curtain-badge">
                 <div class="founder-badge-content">
@@ -220,7 +254,7 @@
                   </div>
                   <div class="founder-badge-role">Director of Photography &amp; Founder</div>
                 </div>
-                <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Seal" class="founder-badge-logo">
+                <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Seal" class="founder-badge-logo" decoding="async">
               </div>
             </div>
           </div>
@@ -230,7 +264,7 @@
             <div class="brand-emblem-badge-wrap">
               <div class="circular-brand-badge badge-sm" aria-label="Zyago Studio Emblem">
                 <div class="badge-logo-center">
-                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
                 </div>
                 <svg class="badge-rotating-text" viewBox="0 0 140 140">
                   <defs>
@@ -639,7 +673,7 @@
     <div class="container">
       <div class="footer-main-grid">
         <div>
-          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo">
+          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo" decoding="async">
           <p class="footer-brand-desc">
             Photography • Cinematography • Visual Storytelling.<br>
             Creating portraits, celebrations and visual stories with intention, authenticity and timeless elegance.
@@ -747,6 +781,6 @@
     </button>
   </div>
 
-  <script src="../js/script.js"></script>
+  <script defer src="../js/script.js"></script>
 </body>
 </html>

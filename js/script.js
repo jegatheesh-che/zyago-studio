@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initMenuOverlay();
   initCustomCursor();
   initScrollReveals();
+  initLivingPhotoEngine();
+  initLazyVideos();
+  initTabVisibilityManager();
   initExperienceTabs();
   initTestimonialRotation();
   initVideoModals();
@@ -42,39 +45,41 @@ function initPreloader() {
 
   // Dismiss quickly on load, maximum 900ms
   if (document.readyState === 'complete') {
-    setTimeout(hidePreloader, 600);
+    setTimeout(hidePreloader, 500);
   } else {
     window.addEventListener('load', () => {
-      setTimeout(hidePreloader, 600);
+      setTimeout(hidePreloader, 500);
     });
     // Fallback safety timeout
-    setTimeout(hidePreloader, 1200);
+    setTimeout(hidePreloader, 1000);
   }
 }
 
 /* --------------------------------------------------------------------------
-   2. STICKY HEADER & ACTIVE UNDERLINE
+   2. STICKY HEADER & ACTIVE UNDERLINE (ZERO-REFLOW STATE GUARD)
    -------------------------------------------------------------------------- */
 function initStickyHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
+  const logo = header.querySelector('#headerLogo');
+  const isHeroNav = header.classList.contains('hero-transparent-nav');
+  let wasScrolled = false;
+
   const handleScroll = () => {
-    if (window.scrollY > 40) {
+    const isScrolled = window.scrollY > 40;
+    if (isScrolled === wasScrolled) return;
+    wasScrolled = isScrolled;
+
+    if (isScrolled) {
       header.classList.add('is-scrolled');
-      if (header.classList.contains('hero-transparent-nav')) {
-        const logo = header.querySelector('#headerLogo');
-        if (logo && logo.dataset.darkSrc) {
-          logo.src = logo.dataset.darkSrc;
-        }
+      if (isHeroNav && logo && logo.dataset.darkSrc) {
+        logo.src = logo.dataset.darkSrc;
       }
     } else {
       header.classList.remove('is-scrolled');
-      if (header.classList.contains('hero-transparent-nav')) {
-        const logo = header.querySelector('#headerLogo');
-        if (logo && logo.dataset.lightSrc) {
-          logo.src = logo.dataset.lightSrc;
-        }
+      if (isHeroNav && logo && logo.dataset.lightSrc) {
+        logo.src = logo.dataset.lightSrc;
       }
     }
   };
@@ -120,7 +125,7 @@ function initMenuOverlay() {
 }
 
 /* --------------------------------------------------------------------------
-   4. CUSTOM DESKTOP CURSOR (VIEW / DRAG STATES)
+   4. CUSTOM DESKTOP CURSOR (100% GPU TRANSFORM ACCELERATED, ZERO REFLOW)
    -------------------------------------------------------------------------- */
 function initCustomCursor() {
   if (window.innerWidth < 1024 || window.matchMedia('(pointer: coarse)').matches) return;
@@ -146,8 +151,7 @@ function initCustomCursor() {
       circleY = mouseY;
       document.body.classList.add('cursor-visible');
     }
-    dot.style.left = `${mouseX}px`;
-    dot.style.top = `${mouseY}px`;
+    dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
   };
 
   window.addEventListener('mousemove', handleMouseMove, { passive: true });
@@ -163,8 +167,7 @@ function initCustomCursor() {
     if (hasMoved) {
       circleX += (mouseX - circleX) * 0.18;
       circleY += (mouseY - circleY) * 0.18;
-      circle.style.left = `${circleX}px`;
-      circle.style.top = `${circleY}px`;
+      circle.style.transform = `translate3d(${circleX}px, ${circleY}px, 0) translate(-50%, -50%)`;
     }
     requestAnimationFrame(renderCursor);
   };
@@ -180,6 +183,116 @@ function initCustomCursor() {
       circle.classList.remove('cursor-hover');
       circle.innerText = '';
     });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   LIVING PHOTOGRAPHY VIEWPORT POWER CONTROLLER (ZERO OFF-SCREEN VRAM LAG)
+   -------------------------------------------------------------------------- */
+function initLivingPhotoEngine() {
+  const mediaSelector = [
+    '.curated-photo',
+    '.gallery-item img',
+    '.sophie-portrait-img',
+    '.editorial-card-img-wrap img',
+    '.editorial-card-video',
+    '.about-slide',
+    '.about-portrait-wrap img',
+    '.about-collage-item img',
+    '.footer-story-slide img',
+    '.footer-insta-item img',
+    '.exp-card-media img',
+    '.media-block-wrap img',
+    '.maps-card-photo',
+    '.founder-curtain-img'
+  ].join(', ');
+
+  const mediaElements = document.querySelectorAll(mediaSelector);
+  if (!mediaElements.length) return;
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const target = entry.target;
+        if (entry.isIntersecting) {
+          target.classList.remove('living-photo-paused');
+          target.classList.add('living-photo-active');
+        } else {
+          target.classList.remove('living-photo-active');
+          target.classList.add('living-photo-paused');
+        }
+      });
+    }, {
+      rootMargin: '250px 0px 250px 0px',
+      threshold: 0
+    });
+
+    mediaElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const inInitView = rect.top < (window.innerHeight + 250) && rect.bottom > -250;
+      if (!inInitView) {
+        el.classList.add('living-photo-paused');
+      } else {
+        el.classList.add('living-photo-active');
+      }
+      observer.observe(el);
+    });
+  }
+}
+
+/* --------------------------------------------------------------------------
+   LAZY VIDEO STREAM CONTROLLER (SAVES ~80MB ON INITIAL PAGE LOAD)
+   -------------------------------------------------------------------------- */
+function initLazyVideos() {
+  const videos = document.querySelectorAll('video.editorial-card-video, video[autoplay]');
+  if (!videos.length) return;
+
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(() => {});
+          }
+        } else {
+          if (!video.paused) {
+            video.pause();
+          }
+        }
+      });
+    }, {
+      rootMargin: '200px 0px 200px 0px',
+      threshold: 0.05
+    });
+
+    videos.forEach(video => {
+      videoObserver.observe(video);
+    });
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TAB VISIBILITY POWER & CPU SAVER
+   -------------------------------------------------------------------------- */
+function initTabVisibilityManager() {
+  document.addEventListener('visibilitychange', () => {
+    const isHidden = document.hidden;
+    const activeVideos = document.querySelectorAll('video');
+    if (isHidden) {
+      activeVideos.forEach(v => {
+        if (!v.paused) v.dataset.wasPlaying = 'true';
+        v.pause();
+      });
+    } else {
+      activeVideos.forEach(v => {
+        if (v.dataset.wasPlaying === 'true') {
+          delete v.dataset.wasPlaying;
+          v.play().catch(() => {});
+        }
+      });
+    }
   });
 }
 

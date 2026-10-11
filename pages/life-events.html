@@ -21,39 +21,68 @@
   <meta property="og:description" content="Documenting weddings, engagements, baby showers, and family milestones across Chennai with authentic storytelling and cinematic artistry.">
   <meta property="og:image" content="../assets/images/weddings/wedding-002.webp">
 
-  <!-- JSON-LD Structured Data: Service & Local Business -->
+    <!-- JSON-LD Entity Graph: BreadcrumbList & Life Events Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Life Events & Wedding Photography in Chennai",
-    "serviceType": "Wedding & Event Photography and Cinematography",
-    "provider": {
-      "@type": "PhotographyStudio",
-      "name": "Zyago Studio",
-      "telephone": "+91-63816-83178",
-      "email": "zyagostudio@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Velachery",
-        "addressLocality": "Chennai",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://zyagostudio.com/pages/life-events.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zyagostudio.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Life Events",
+            "item": "https://zyagostudio.com/pages/life-events.html"
+          }
+        ]
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 12.9796126,
-        "longitude": 80.22909
+      {
+        "@type": "Service",
+        "@id": "https://zyagostudio.com/pages/life-events.html#service",
+        "name": "Candid Wedding & Life Events Photography in Chennai",
+        "serviceType": "Wedding Photography, Candid Cinematography, Engagements & Family Milestones",
+        "url": "https://zyagostudio.com/pages/life-events.html",
+        "provider": {
+          "@type": "PhotographyStudio",
+          "@id": "https://zyagostudio.com/#studio",
+          "name": "Zyago Studio",
+          "telephone": "+916381683178",
+          "url": "https://zyagostudio.com/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Velachery",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600042",
+            "addressCountry": "IN"
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Chennai" },
+          { "@type": "State", "name": "Tamil Nadu" },
+          { "@type": "Country", "name": "India" }
+        ],
+        "description": "Documentary and candid wedding photography and cinematography capturing unposed emotions, sacred rituals, and heartfelt family celebrations across Chennai, Mahabalipuram, ECR, and South India."
       }
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Chennai"
-    },
-    "description": "Zyago Studio documents weddings, engagements, receptions, baby showers, birthdays, and family celebrations through candid photography and cinematography that feels genuine, emotional, and timeless."
+    ]
   }
   </script>
 
+    <!-- Preconnect & Asynchronous Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+  <!-- High-Priority LCP Hero Preload -->
+  <link rel="preload" as="image" href="../assets/images/highlights/events/event-hl-003.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
@@ -65,9 +94,9 @@
   <div class="site-preloader" id="sitePreloader">
     <div class="preloader-content">
       <div class="preloader-emblem">
-        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
       </div>
-      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
+      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo" decoding="async">
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
@@ -79,7 +108,7 @@
        ======================================================================== -->
   <header class="site-header hero-transparent-nav" id="mainHeader">
     <a href="../index.html" class="header-brand" aria-label="Zyago Studio Home">
-      <img src="../assets/images/logo-white.png" data-light-src="../assets/images/logo-white.png" data-dark-src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo">
+      <img src="../assets/images/logo-white.png" data-light-src="../assets/images/logo-white.png" data-dark-src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo" decoding="async">
     </a>
 
     <div class="header-nav-wrapper">
@@ -112,7 +141,7 @@
     </button>
 
     <div class="menu-overlay-brand">
-      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo">
+      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo" decoding="async">
       <span class="menu-overlay-tag">ZYAGO STUDIO</span>
     </div>
 
@@ -176,7 +205,7 @@
             <div class="brand-emblem-badge-wrap">
               <div class="circular-brand-badge badge-sm" aria-label="Zyago Studio Crest">
                 <div class="badge-logo-center">
-                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" decoding="async">
                 </div>
                 <svg class="badge-rotating-text" viewBox="0 0 140 140">
                   <defs>
@@ -204,7 +233,7 @@
           </div>
 
           <div style="position: relative; overflow: hidden; border-radius: 2px;">
-            <img src="../assets/images/highlights/events/event-hl-003.webp" alt="Wedding celebration moments" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);">
+            <img src="../assets/images/highlights/events/event-hl-003.webp" alt="Wedding celebration moments" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" decoding="async">
           </div>
         </div>
 
@@ -286,84 +315,84 @@
 
                 <div class="masonry-gallery-grid">
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-001.webp" alt="Sacred Vows & Rituals Heritage Wedding Celebration" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-001.webp" alt="Sacred Vows & Rituals Heritage Wedding Celebration" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Grand Wedding</span>
               <h3 class="gallery-item-title">Sacred Vows &amp; Rituals · Elena &amp; Thomas</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-003.webp" alt="Bride & Groom Euphoric Moment" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-003.webp" alt="Bride & Groom Euphoric Moment" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Intimate Moments</span>
               <h3 class="gallery-item-title">Timeless Union · Aanya &amp; Rohan</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-002.webp" alt="Evening Radiance Celebration Moments" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-002.webp" alt="Evening Radiance Celebration Moments" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Grand Banquet</span>
               <h3 class="gallery-item-title">Evening Lights &amp; Joy · Grand Banquet</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-004.webp" alt="Heritage Mandap Sacred Traditions" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-004.webp" alt="Heritage Mandap Sacred Traditions" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Ceremonial Rituals</span>
               <h3 class="gallery-item-title">Heritage Mandap · Sacred Traditions</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-005.webp" alt="Candid Wedding Laughter" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-005.webp" alt="Candid Wedding Laughter" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Candid Joy</span>
               <h3 class="gallery-item-title">Unfiltered Laughter · Vows &amp; Cheers</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-006.webp" alt="Atmospheric Gathering & Celebration" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-006.webp" alt="Atmospheric Gathering & Celebration" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Celebratory Gathering</span>
               <h3 class="gallery-item-title">Twilight Banquet · Festive Atmosphere</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-007.webp" alt="Intimate Moments Euphoric Cheers" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-007.webp" alt="Intimate Moments Euphoric Cheers" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Euphoric Moments</span>
               <h3 class="gallery-item-title">Intimate Moments · Euphoric Cheers</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-008.webp" alt="Golden Vows Milestone Celebration" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-008.webp" alt="Golden Vows Milestone Celebration" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Milestone Ceremony</span>
               <h3 class="gallery-item-title">Golden Vows · Milestone Celebration</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-011.webp" alt="Scenic Destination Couple Walk" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-011.webp" alt="Scenic Destination Couple Walk" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Destination Romance</span>
               <h3 class="gallery-item-title">Sunset Promenade · Golden Hour Moments</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-013.webp" alt="Vibrant Wedding Celebration" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-013.webp" alt="Vibrant Wedding Celebration" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Celebration Symphony</span>
               <h3 class="gallery-item-title">Vibrant Euphoria · Sangeet Revelry</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-014.webp" alt="Grand Procession Ceremonial Splendor" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-014.webp" alt="Grand Procession Ceremonial Splendor" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Grand Procession</span>
               <h3 class="gallery-item-title">Grand Procession · Ceremonial Splendor</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-015.webp" alt="Coastal Reception Twilight Radiance" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/events/event-hl-015.webp" alt="Coastal Reception Twilight Radiance" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Grand Estate</span>
               <h3 class="gallery-item-title">Coastal Reception · Twilight Radiance</h3>
@@ -394,7 +423,7 @@
     <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous Image">‹</button>
     <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next Image">›</button>
     <div class="lightbox-content-wrap">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" decoding="async">
       <div class="lightbox-caption">
         <div class="lightbox-caption-cat" id="lightboxCat"></div>
         <div class="lightbox-caption-title" id="lightboxTitle"></div>
@@ -409,7 +438,7 @@
     <div class="container">
       <div class="footer-main-grid">
         <div>
-          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo">
+          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo" decoding="async">
           <p class="footer-brand-desc">
             Chennai-based contemporary photography and cinematography studio founded by Venkatesh. Specializing in studio portraits, family sessions, professional headshots, fashion, weddings and life events.
           </p>
@@ -523,6 +552,6 @@
     </button>
   </div>
 
-  <script src="../js/script.js"></script>
+  <script defer src="../js/script.js"></script>
 </body>
 </html>

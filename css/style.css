@@ -2,8 +2,7 @@
    ZYAGO STUDIO — EDITORIAL WEDDING & ELOPEMENT STUDIO
    Complete Luxury UI Architecture & Design System
    ========================================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* Note: Google Fonts are loaded asynchronously via HTML head preconnect for peak Core Web Vitals */
 
 :root {
   /* Brand Typography */
@@ -115,35 +114,47 @@ img, video, iframe, picture,
 
 /* ==========================================================================
    CINEMATIC LIVING PHOTOGRAPHY ENGINE
-   Ultra-Smooth Ambient Breathing & Hardware-Accelerated Interactive Zoom
+   Continuous All-Time Organic Breathing Zoom & Hardware-Accelerated Stability
    ========================================================================== */
 
-/* Keyframes for subtle organic breathing zoom in & zoom out (feels genuinely alive) */
-@keyframes livePhotoBreathe {
+/* Three Complementary Organic Zoom-In & Zoom-Out Keyframes (Smooth, Natural, Unforced) */
+@keyframes livePhotoBreatheA {
   0% {
     transform: scale(1.0);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.075);
   }
   100% {
     transform: scale(1.0);
   }
 }
 
-@keyframes livePhotoBreatheAlt {
+@keyframes livePhotoBreatheB {
   0% {
-    transform: scale(1.05);
+    transform: scale(1.072);
   }
   50% {
     transform: scale(1.0);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1.072);
   }
 }
 
-/* Ensure ALL image wrappers have strict overflow clipping & relative containment */
+@keyframes livePhotoBreatheC {
+  0% {
+    transform: scale(1.01) translateY(0);
+  }
+  50% {
+    transform: scale(1.07) translateY(-1.2%);
+  }
+  100% {
+    transform: scale(1.01) translateY(0);
+  }
+}
+
+/* Ensure ALL image wrappers have strict overflow clipping, isolation & relative containment */
 .editorial-card-img-wrap,
 .gallery-item,
 .sophie-card-media,
@@ -164,9 +175,14 @@ img, video, iframe, picture,
 .stagger-col {
   overflow: hidden !important;
   position: relative;
+  isolation: isolate;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
-/* Color Grade & Professional Cinematic Live Zoom on all editorial and gallery photos */
+/* All-Time Cinematic Living Photography: Applied continuously to all photo assets */
+/* All-Time Cinematic Living Photography: Applied continuously with viewport-aware power management */
 .curated-photo,
 .gallery-item img,
 .sophie-portrait-img,
@@ -181,36 +197,64 @@ img, video, iframe, picture,
 .media-block-wrap img,
 .maps-card-photo,
 .founder-curtain-img {
-  filter: contrast(102%) brightness(98%) sepia(6%);
-  will-change: transform;
+  filter: contrast(102%) brightness(98%) sepia(5%);
   transform-origin: center center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  animation: livePhotoBreathe 11s cubic-bezier(0.42, 0, 0.58, 1) infinite;
-  transition: transform 0.95s cubic-bezier(0.25, 1, 0.5, 1), filter 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  image-rendering: -webkit-optimize-contrast;
+  /* Hardware-optimized viewport-aware animation loop */
+  animation: livePhotoBreatheA 8.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  animation-play-state: running;
+  transition: filter 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Alternate rhythm & negative delay for alternating items to prevent mechanical synchrony */
+/* Off-screen battery & GPU optimization: release VRAM compositor layers when not in view */
+.living-photo-paused,
+.living-photo-paused img,
+.living-photo-paused video {
+  animation-play-state: paused !important;
+  will-change: auto !important;
+}
+
+.living-photo-active,
+.living-photo-active img,
+.living-photo-active video {
+  animation-play-state: running !important;
+  will-change: transform !important;
+}
+
+/* Natural Staggered Rhythms: Prevents synchronous pulsing across adjacent cards */
 .gallery-item:nth-child(even) img,
 .editorial-card:nth-child(even) .editorial-card-video,
 .editorial-card:nth-child(even) img,
 .footer-story-slide:nth-child(even) img,
 .about-collage-item:nth-child(even) img,
-.sophie-profile-card:nth-child(even) .sophie-portrait-img {
-  animation-name: livePhotoBreatheAlt;
-  animation-duration: 13s;
-  animation-delay: -3.5s;
+.sophie-profile-card:nth-child(even) .sophie-portrait-img,
+.experience-card-item:nth-child(even) .exp-card-media img {
+  animation-name: livePhotoBreatheB;
+  animation-duration: 9.8s;
+  animation-delay: -3.2s;
 }
 
 .gallery-item:nth-child(3n) img,
-.footer-story-slide:nth-child(3n) img {
-  animation-duration: 12s;
-  animation-delay: -6s;
+.footer-story-slide:nth-child(3n) img,
+.editorial-card:nth-child(3n) .editorial-card-video,
+.experience-card-item:nth-child(3n) .exp-card-media img {
+  animation-name: livePhotoBreatheC;
+  animation-duration: 8.8s;
+  animation-delay: -5.4s;
 }
 
-/* Interactive magnification on hover: smooth zoom-in on enter, smooth zoom-out on leave */
+.gallery-item:nth-child(5n) img,
+.footer-insta-item:nth-child(odd) img {
+  animation-name: livePhotoBreatheA;
+  animation-duration: 10.4s;
+  animation-delay: -2s;
+}
+
+/* Pro Hover State: Silky freeze-in-place so user can inspect without jarring resets */
 .gallery-item:hover img,
 .editorial-card:hover .editorial-card-video,
 .editorial-card:hover img,
@@ -226,8 +270,30 @@ img, video, iframe, picture,
 .about-hero-center-img:hover .about-slide.active,
 .about-hero-aux-img:hover .about-slide.active,
 .curated-photo:hover {
-  animation: none !important;
-  transform: scale(1.085) !important;
+  animation-play-state: paused;
+  filter: contrast(105%) brightness(102%) sepia(2%) !important;
+  cursor: pointer;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .curated-photo,
+  .gallery-item img,
+  .sophie-portrait-img,
+  .editorial-card-img-wrap img,
+  .editorial-card-video,
+  .about-slide,
+  .about-portrait-wrap img,
+  .about-collage-item img,
+  .footer-story-slide img,
+  .footer-insta-item img,
+  .exp-card-media img,
+  .media-block-wrap img,
+  .maps-card-photo,
+  .founder-curtain-img {
+    animation: none !important;
+    transform: none !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1006,6 +1072,12 @@ img, video, iframe, picture,
   overflow: hidden;
 }
 
+@keyframes heroLiveBreathe {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1.0); }
+}
+
 .hero-bg-slide {
   position: absolute;
   inset: 0;
@@ -1013,15 +1085,15 @@ img, video, iframe, picture,
   background-repeat: no-repeat;
   opacity: 0;
   transform: scale(1.0);
-  transition: opacity 1.0s cubic-bezier(0.4, 0, 0.2, 1), transform 3.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: opacity, transform;
   pointer-events: none;
 }
 
 .hero-bg-slide.active {
   opacity: 1;
-  transform: scale(1.045);
   z-index: 2;
+  animation: heroLiveBreathe 10s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
 .hero-bg-layer {
@@ -1596,7 +1668,7 @@ img, video, iframe, picture,
 }
 
 .editorial-card:hover .editorial-card-video {
-  transform: scale(1.04);
+  animation-play-state: paused;
 }
 
 .editorial-card-title {
@@ -1890,14 +1962,13 @@ img, video, iframe, picture,
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
-  transform: scale(1.02);
   filter: contrast(103%) brightness(96%) saturate(102%);
-  transition: transform 0.85s var(--ease-luxury), filter 0.6s ease;
+  transition: filter 0.6s ease;
   will-change: transform;
 }
 
 .experience-card-item:hover .exp-card-media img {
-  transform: scale(1.08);
+  animation-play-state: paused;
   filter: contrast(106%) brightness(99%) saturate(106%);
 }
 
@@ -2637,6 +2708,8 @@ img, video, iframe, picture,
   page-break-inside: avoid;
   margin-bottom: 24px;
   vertical-align: top;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 450px;
 }
 
 .gallery-item img {

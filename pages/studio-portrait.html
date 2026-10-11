@@ -15,28 +15,81 @@
   <meta name="geo.position" content="12.9796126;80.22909">
   <meta name="ICBM" content="12.9796126, 80.22909">
 
+    <!-- Preconnect & Asynchronous Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+  <!-- High-Priority LCP Hero Preload -->
+  <link rel="preload" as="image" href="../assets/images/highlights/portraits/portrait-hl-001.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
 
-  <!-- JSON-LD Structured Data: Service / Photography -->
+    <!-- JSON-LD Entity Graph: BreadcrumbList & Studio Portrait Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Studio Portrait Photography & Cinematography",
-    "provider": {
-      "@type": "PhotographyStudio",
-      "name": "Zyago Studio",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Velachery, Chennai",
-        "addressRegion": "Tamil Nadu",
-        "addressCountry": "IN"
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://zyagostudio.com/pages/studio-portrait.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zyagostudio.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Studio Portrait",
+            "item": "https://zyagostudio.com/pages/studio-portrait.html"
+          }
+        ]
       },
-      "telephone": "+916381683178"
-    },
-    "serviceType": "Studio Portraits, Headshots, Family & Fashion Photography",
-    "areaServed": "Chennai, Tamil Nadu, India"
+      {
+        "@type": "Service",
+        "@id": "https://zyagostudio.com/pages/studio-portrait.html#service",
+        "name": "Studio Portrait Photography & Fine Art Cinematography in Chennai",
+        "serviceType": "Studio Portraits, Executive Headshots, Family Photography, Maternity & Fashion Shoots",
+        "url": "https://zyagostudio.com/pages/studio-portrait.html",
+        "provider": {
+          "@type": "PhotographyStudio",
+          "@id": "https://zyagostudio.com/#studio",
+          "name": "Zyago Studio",
+          "telephone": "+916381683178",
+          "url": "https://zyagostudio.com/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Velachery",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600042",
+            "addressCountry": "IN"
+          }
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Velachery, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Adyar, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Besant Nagar, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Thiruvanmiyur, Chennai" },
+          { "@type": "AdministrativeArea", "name": "OMR, Chennai" },
+          { "@type": "AdministrativeArea", "name": "ECR, Chennai" },
+          { "@type": "AdministrativeArea", "name": "Guindy, Chennai" },
+          { "@type": "AdministrativeArea", "name": "T. Nagar, Chennai" },
+          { "@type": "City", "name": "Chennai" }
+        ],
+        "description": "Bespoke studio portraiture crafted in sculpted light and shadow at Zyago Studio Velachery, Chennai. Specializing in timeless family portraits, kids sittings, professional LinkedIn headshots, and haute couture editorial fashion.",
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "INR",
+          "lowPrice": "4999",
+          "highPrice": "35000",
+          "offerCount": "4"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -48,9 +101,9 @@
   <div class="site-preloader" id="sitePreloader">
     <div class="preloader-content">
       <div class="preloader-emblem">
-        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo">
+        <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Logo" decoding="async">
       </div>
-      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo">
+      <img src="../assets/images/logo-dark.png" alt="Zyago Studio" class="preloader-logo" decoding="async">
       <div class="preloader-bar">
         <div class="preloader-progress"></div>
       </div>
@@ -62,7 +115,7 @@
        ======================================================================== -->
   <header class="site-header hero-transparent-nav" id="mainHeader">
     <a href="../index.html" class="header-brand" aria-label="Zyago Studio Home">
-      <img src="../assets/images/logo-white.png" data-light-src="../assets/images/logo-white.png" data-dark-src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo">
+      <img src="../assets/images/logo-white.png" data-light-src="../assets/images/logo-white.png" data-dark-src="../assets/images/logo-dark.png" alt="Zyago Studio" class="header-logo" id="headerLogo" decoding="async">
     </a>
 
     <div class="header-nav-wrapper">
@@ -95,7 +148,7 @@
     </button>
 
     <div class="menu-overlay-brand">
-      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo">
+      <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" class="menu-overlay-logo" decoding="async">
       <span class="menu-overlay-tag">ZYAGO STUDIO · CHENNAI</span>
     </div>
 
@@ -155,7 +208,7 @@
             <div class="brand-emblem-badge-wrap">
               <div class="circular-brand-badge badge-sm" aria-label="Zyago Studio Emblem">
                 <div class="badge-logo-center">
-                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest">
+                  <img src="../assets/images/brand-logo.webp" alt="Zyago Studio Crest" decoding="async">
                 </div>
                 <svg class="badge-rotating-text" viewBox="0 0 140 140">
                   <defs>
@@ -183,7 +236,7 @@
           </div>
 
           <div style="position: relative; overflow: hidden; border-radius: 2px;">
-            <img src="../assets/images/highlights/portraits/portrait-hl-001.webp" alt="Editorial studio portrait in Chennai" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);">
+            <img src="../assets/images/highlights/portraits/portrait-hl-001.webp" alt="Editorial studio portrait in Chennai" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" decoding="async">
           </div>
         </div>
       </div>
@@ -208,84 +261,84 @@
 
                 <div class="masonry-gallery-grid">
           <article class="gallery-item item-portrait" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-001.webp" alt="Editorial Fashion Portrait in Sculpted Light" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-001.webp" alt="Editorial Fashion Portrait in Sculpted Light" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Haute Couture</span>
               <h3 class="gallery-item-title">Sculpted Light Study · Series I</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-002.webp" alt="High Fashion Editorial Portrait" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-002.webp" alt="High Fashion Editorial Portrait" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Fine Art Editorial</span>
               <h3 class="gallery-item-title">Presence &amp; Form · Series II</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-003.webp" alt="Classic Daylight Studio Portrait" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-003.webp" alt="Classic Daylight Studio Portrait" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Daylight Atelier</span>
               <h3 class="gallery-item-title">Quiet Reflection · Fine Art Study</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-004.webp" alt="Architectural Daylight Sitting" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-004.webp" alt="Architectural Daylight Sitting" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Architectural Atelier</span>
               <h3 class="gallery-item-title">Daylight Studio · Series IV</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-005.webp" alt="Cinematic Studio Silhouette" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-005.webp" alt="Cinematic Studio Silhouette" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Cinematic Silhouette</span>
               <h3 class="gallery-item-title">Atmospheric Light · Archive 05</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-006.webp" alt="Monochrome Fine Art Composition" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-006.webp" alt="Monochrome Fine Art Composition" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Monochrome Series</span>
               <h3 class="gallery-item-title">Tonal Harmony · Chennai Studio Atelier</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-007.webp" alt="Fine Art Chiaroscuro Beatrice Sitting" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-007.webp" alt="Fine Art Chiaroscuro Beatrice Sitting" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Dramatic Chiaroscuro</span>
               <h3 class="gallery-item-title">Silk &amp; Chiaroscuro · Beatrice</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-008.webp" alt="Architectural Portrait Sitting" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-008.webp" alt="Architectural Portrait Sitting" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Architectural Sitting</span>
               <h3 class="gallery-item-title">Form &amp; Shadow · Beatrice</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait-tall" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-009.webp" alt="Modern Poise Studio Sitting" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-009.webp" alt="Modern Poise Studio Sitting" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Modern Poise</span>
               <h3 class="gallery-item-title">Subtle Grace · Sitting IX</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-011.webp" alt="Cinematographic Frame Daylight Archive" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-011.webp" alt="Cinematographic Frame Daylight Archive" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Cinematographic Frame</span>
               <h3 class="gallery-item-title">Daylight Panoramas · Archive XI</h3>
             </div>
           </article>
           <article class="gallery-item item-portrait" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-012.webp" alt="Heirloom Studio Portraiture" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-012.webp" alt="Heirloom Studio Portraiture" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Heirloom Details</span>
               <h3 class="gallery-item-title">Intricate Lace Study · Elena</h3>
             </div>
           </article>
           <article class="gallery-item item-landscape" data-category="studio">
-            <img src="../assets/images/highlights/portraits/portrait-hl-013.webp" alt="Silk & Shadow Fine Art Composition" class="curated-photo" loading="lazy">
+            <img src="../assets/images/highlights/portraits/portrait-hl-013.webp" alt="Silk & Shadow Fine Art Composition" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
               <span class="gallery-item-category">Silk &amp; Shadow</span>
               <h3 class="gallery-item-title">Pure Composition · Study XIII</h3>
@@ -316,7 +369,7 @@
     <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous Image">‹</button>
     <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next Image">›</button>
     <div class="lightbox-content-wrap">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg" decoding="async">
       <div class="lightbox-caption">
         <div class="lightbox-caption-cat" id="lightboxCat"></div>
         <div class="lightbox-caption-title" id="lightboxTitle"></div>
@@ -331,7 +384,7 @@
     <div class="container">
       <div class="footer-main-grid">
         <div>
-          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo">
+          <img src="../assets/images/logo-white.png" alt="Zyago Studio" class="footer-brand-logo" decoding="async">
           <p class="footer-brand-desc">
             Photography • Cinematography • Visual Storytelling.<br>
             Creating portraits, celebrations and visual stories with intention, authenticity and timeless elegance.
@@ -447,6 +500,6 @@
     </button>
   </div>
 
-  <script src="../js/script.js"></script>
+  <script defer src="../js/script.js"></script>
 </body>
 </html>
