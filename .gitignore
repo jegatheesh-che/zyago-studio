@@ -4,6 +4,8 @@
 /Studio Portrait/
 /raw_assets/
 *.zip
+*.jpeg
+*.bak
 assets/videos/events/
 /highlight/
 /document/
