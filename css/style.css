@@ -1082,6 +1082,7 @@ img, video, iframe, picture,
   position: absolute;
   inset: 0;
   background-size: cover;
+  background-position: center 25%;
   background-repeat: no-repeat;
   opacity: 0;
   transform: scale(1.0);
@@ -5526,6 +5527,68 @@ img, video, iframe, picture,
   transform: translate(2px, -2px);
 }
 
+.btn-instagram-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #17140F;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.btn-instagram-visit:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(220, 39, 67, 0.3);
+}
+
+.btn-instagram-visit:hover .btn-arrow-diag {
+  transform: translate(2px, -2px);
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #d1d5db;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  text-decoration: none;
+}
+
+.footer-social-icon-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.footer-social-icon-btn:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: #121212;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.35);
+}
+
 /* --------------------------------------------------------------------------
    STUDIO ATELIER & VERIFIED GOOGLE MAPS SECTION (APPLE / GOOGLE MAPS CARD UI)
    -------------------------------------------------------------------------- */
@@ -5698,7 +5761,7 @@ img, video, iframe, picture,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 30%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, transform 0.95s cubic-bezier(0.25, 1, 0.5, 1);
@@ -6128,6 +6191,131 @@ img, video, iframe, picture,
   line-height: 1.85;
   color: var(--text-dark-secondary);
   margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   PORTRAIT VISION 2-SLIDE SHOWCASE
+   -------------------------------------------------------------------------- */
+.portrait-vision-slider-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  background-color: #121212;
+  user-select: none;
+}
+
+.portrait-vision-slides-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.portrait-vision-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.02);
+  transition: opacity 0.7s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform 0.9s cubic-bezier(0.25, 1, 0.5, 1),
+              visibility 0.7s;
+  pointer-events: none;
+}
+
+.portrait-vision-photo.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* Subtle luxury navigation arrows */
+.portrait-vision-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(18, 18, 18, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.portrait-vision-slider-wrap:hover .portrait-vision-nav-btn {
+  opacity: 1;
+}
+
+.portrait-vision-nav-btn:hover {
+  background: rgba(18, 18, 18, 0.85);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.portrait-vision-nav-btn.prev {
+  left: 14px;
+}
+
+.portrait-vision-nav-btn.next {
+  right: 14px;
+}
+
+@media (max-width: 768px) {
+  .portrait-vision-nav-btn {
+    opacity: 0.85;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* Elegant Pill Pagination Dots */
+.portrait-vision-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(18, 18, 18, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 5;
+}
+
+.portrait-vision-dot {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portrait-vision-dot.active {
+  width: 22px;
+  background: #ffffff;
 }
 
 /* --------------------------------------------------------------------------

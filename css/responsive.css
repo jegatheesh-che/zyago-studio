@@ -31,6 +31,17 @@
   }
 }
 
+@media (max-width: 540px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-main-grid > div:first-child,
+  .footer-main-grid > div:last-child {
+    grid-column: span 1;
+  }
+}
+
 /* --------------------------------------------------------------------------
    MOBILE SCREENS (max-width: 768px)
    -------------------------------------------------------------------------- */

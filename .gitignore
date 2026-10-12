@@ -5,6 +5,7 @@
 /raw_assets/
 *.zip
 *.jpeg
+!assets/ZSR_1536.jpg.jpeg
 *.bak
 assets/videos/events/
 /highlight/

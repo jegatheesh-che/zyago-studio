@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFooterStoriesSlider();
   initMapsCardSlider();
   initFaqAccordion();
+  initPortraitVisionSlider();
 });
 
 /* --------------------------------------------------------------------------
@@ -1456,3 +1457,105 @@ function initFaqAccordion() {
     });
   });
 }
+
+/* --------------------------------------------------------------------------
+   PORTRAIT VISION & LIFE EVENTS 2-SLIDE SHOWCASE ENGINE
+   -------------------------------------------------------------------------- */
+function initPortraitVisionSlider() {
+  const containers = document.querySelectorAll('.portrait-vision-slider-wrap');
+  if (!containers.length) return;
+
+  containers.forEach((container) => {
+    const slides = container.querySelectorAll('.portrait-vision-photo');
+    const dots = container.querySelectorAll('.portrait-vision-dot');
+    const prevBtn = container.querySelector('.portrait-vision-nav-btn.prev');
+    const nextBtn = container.querySelector('.portrait-vision-nav-btn.next');
+    if (!slides.length) return;
+
+    let currentIndex = 0;
+    let timer = null;
+
+    function showSlide(index) {
+      currentIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, idx) => {
+        slide.classList.toggle('active', idx === currentIndex);
+      });
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentIndex);
+        dot.setAttribute('aria-selected', idx === currentIndex ? 'true' : 'false');
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    function startTimer() {
+      stopTimer();
+      timer = setInterval(nextSlide, 4500);
+    }
+
+    function stopTimer() {
+      if (timer) clearInterval(timer);
+    }
+
+    function resetTimer() {
+      stopTimer();
+      startTimer();
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        prevSlide();
+        resetTimer();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        nextSlide();
+        resetTimer();
+      });
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        showSlide(idx);
+        resetTimer();
+      });
+    });
+
+    // Pause on hover
+    container.addEventListener('mouseenter', stopTimer);
+    container.addEventListener('mouseleave', startTimer);
+
+    // Touch swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    container.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopTimer();
+    }, { passive: true });
+
+    container.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+      if (Math.abs(diff) > 40) {
+        if (diff < 0) nextSlide();
+        else prevSlide();
+      }
+      startTimer();
+    }, { passive: true });
+
+    startTimer();
+  });
+}
+

@@ -12,7 +12,7 @@
   <link rel="icon" type="image/webp" href="../assets/images/brand-logo.webp">
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon-192.png">
   <link rel="apple-touch-icon" sizes="192x192" href="../assets/images/favicon-192.png">
-  <link rel="canonical" href="https://zyagostudio.com/pages/life-events.html">
+  <link rel="canonical" href="https://www.zyagostudio.in/pages/life-events.html">
 
   <!-- Local SEO & Geo Meta Tags -->
   <meta name="geo.region" content="IN-TN">
@@ -22,7 +22,7 @@
 
   <!-- OpenGraph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zyagostudio.com/pages/life-events.html">
+  <meta property="og:url" content="https://www.zyagostudio.in/pages/life-events.html">
   <meta property="og:title" content="Wedding &amp; Life Events Photography | Zyago Studio">
   <meta property="og:description" content="Candid wedding and life events photography in Chennai by Zyago Studio. Authentic storytelling, sacred rituals, and heartfelt celebrations.">
   <meta property="og:image" content="../assets/images/highlights/events/event-hl-023.webp">
@@ -34,34 +34,34 @@
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "@id": "https://zyagostudio.com/pages/life-events.html#breadcrumb",
+        "@id": "https://www.zyagostudio.in/pages/life-events.html#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://zyagostudio.com/"
+            "item": "https://www.zyagostudio.in/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Life Events",
-            "item": "https://zyagostudio.com/pages/life-events.html"
+            "item": "https://www.zyagostudio.in/pages/life-events.html"
           }
         ]
       },
       {
         "@type": "Service",
-        "@id": "https://zyagostudio.com/pages/life-events.html#service",
+        "@id": "https://www.zyagostudio.in/pages/life-events.html#service",
         "name": "Candid Wedding & Life Events Photography in Chennai",
         "serviceType": "Wedding Photography, Candid Cinematography, Engagements & Family Milestones",
-        "url": "https://zyagostudio.com/pages/life-events.html",
+        "url": "https://www.zyagostudio.in/pages/life-events.html",
         "provider": {
           "@type": "PhotographyStudio",
-          "@id": "https://zyagostudio.com/#studio",
+          "@id": "https://www.zyagostudio.in/#studio",
           "name": "Zyago Studio",
           "telephone": "+916381683178",
-          "url": "https://zyagostudio.com/",
+          "url": "https://www.zyagostudio.in/",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Velachery",
@@ -180,7 +180,14 @@
          HERO SECTION (Intentional Recomposition & Cinematic Crop)
          ======================================================================== -->
     <section class="home-hero-section" style="min-height: 80vh; height: 80vh;">
-      <div class="hero-bg-layer" style="background-image: url('../assets/images/highlights/events/event-hl-023.webp'); background-position: center 25%;"></div>
+      <!-- Crossfading Hero Slideshow Layers -->
+      <div class="hero-slideshow-container" id="heroSlideshow">
+        <div class="hero-bg-slide active" style="background-image: url('../assets/images/slides/life-events/03.webp'); background-position: center 25%;" data-slide="0"></div>
+        <div class="hero-bg-slide" style="background-image: url('../assets/images/slides/life-events/08.webp'); background-position: center 25%;" data-slide="1"></div>
+        <div class="hero-bg-slide" style="background-image: url('../assets/images/slides/life-events/11.webp'); background-position: center 25%;" data-slide="2"></div>
+        <div class="hero-bg-slide" style="background-image: url('../assets/images/slides/life-events/18.webp'); background-position: center 25%;" data-slide="3"></div>
+        <div class="hero-bg-slide" style="background-image: url('../assets/images/slides/life-events/IMG_6756.webp'); background-position: center 25%;" data-slide="4"></div>
+      </div>
       <div class="home-hero-gradient-overlay"></div>
 
       <div class="container hero-container">
@@ -196,6 +203,24 @@
           <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
             <a href="contact.html" class="btn-contact">Inquire For Your Celebration</a>
             <a href="#photographyStyles" class="btn-editorial-outline">Our Approach</a>
+          </div>
+        </div>
+
+        <div class="home-hero-bottom-bar">
+          <div class="hero-slideshow-nav" id="heroSlideNav">
+            <button type="button" class="hero-nav-btn hero-nav-prev" id="heroPrevBtn" aria-label="Previous Slide">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="hero-slide-indicators" id="heroSlideDots">
+              <button type="button" class="hero-dot active" data-slide="0" aria-label="Hero Slide 1"></button>
+              <button type="button" class="hero-dot" data-slide="1" aria-label="Hero Slide 2"></button>
+              <button type="button" class="hero-dot" data-slide="2" aria-label="Hero Slide 3"></button>
+              <button type="button" class="hero-dot" data-slide="3" aria-label="Hero Slide 4"></button>
+              <button type="button" class="hero-dot" data-slide="4" aria-label="Hero Slide 5"></button>
+            </div>
+            <button type="button" class="hero-nav-btn hero-nav-next" id="heroNextBtn" aria-label="Next Slide">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
           </div>
         </div>
       </div>
@@ -238,8 +263,30 @@
             <a href="contact.html" class="btn-contact" style="margin-top: 10px;">Inquire For Your Date</a>
           </div>
 
-          <div style="position: relative; overflow: hidden; border-radius: 2px;">
-            <img src="../assets/images/highlights/events/event-hl-021.webp" alt="Wedding celebration moments" class="curated-photo" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 2px; box-shadow: 0 16px 40px rgba(0,0,0,0.1);" decoding="async">
+          <!-- Two-Slide Editorial Life Events Showcase Slider -->
+          <div class="portrait-vision-slider-wrap" id="lifeEventsVisionSlider" aria-roledescription="carousel" aria-label="Life Events Vision Showcase Carousel">
+            <div class="portrait-vision-slides-track">
+              <img src="../assets/images/highlights/events/event-hl-021.webp" alt="Wedding celebration moments - Ring &amp; Intimate Touch" class="portrait-vision-photo active" decoding="async">
+              <img src="../assets/images/highlights/events/event-vision-slide2.webp" alt="Zyago Studio celebratory life events" class="portrait-vision-photo" loading="lazy" decoding="async">
+            </div>
+
+            <!-- Subtle Navigation Buttons -->
+            <button type="button" class="portrait-vision-nav-btn prev" aria-label="Previous Slide">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="portrait-vision-nav-btn next" aria-label="Next Slide">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="portrait-vision-dots" role="tablist" aria-label="Slide indicators">
+              <button type="button" class="portrait-vision-dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+              <button type="button" class="portrait-vision-dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+            </div>
           </div>
         </div>
 
@@ -453,13 +500,6 @@
               <h3 class="gallery-item-title">Sacred Vows &amp; Rituals · Elena &amp; Thomas</h3>
             </div>
           </article>
-          <article class="gallery-item item-portrait-tall" data-category="events">
-            <img src="../assets/images/highlights/events/event-hl-048.webp" alt="Bride & Groom Euphoric Moment" class="curated-photo" loading="lazy" decoding="async">
-            <div class="gallery-item-overlay">
-              <span class="gallery-item-category">Intimate Moments</span>
-              <h3 class="gallery-item-title">Timeless Union · Aanya &amp; Rohan</h3>
-            </div>
-          </article>
           <article class="gallery-item item-landscape" data-category="events">
             <img src="../assets/images/highlights/events/event-hl-002.webp" alt="Evening Radiance Celebration Moments" class="curated-photo" loading="lazy" decoding="async">
             <div class="gallery-item-overlay">
@@ -531,6 +571,17 @@
             </div>
           </article>
         </div>
+
+        <!-- Instagram Integration Visit Button -->
+        <div class="reviews-google-btn-wrap" style="text-align: center; margin-top: 48px;">
+          <a href="https://www.instagram.com/zyagostudio/" target="_blank" rel="noopener noreferrer" class="btn-instagram-visit" aria-label="Follow Zyago Studio on Instagram @zyagostudio">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Follow Zyago Studio on Instagram</span>
+            <span class="btn-arrow-diag">↗</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -555,7 +606,7 @@
     <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous Image">‹</button>
     <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next Image">›</button>
     <div class="lightbox-content-wrap">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg" decoding="async">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Enlarged gallery photograph" class="lightbox-img" id="lightboxImg" decoding="async">
       <div class="lightbox-caption">
         <div class="lightbox-caption-cat" id="lightboxCat"></div>
         <div class="lightbox-caption-title" id="lightboxTitle"></div>
@@ -576,6 +627,20 @@
           </p>
           <div class="footer-location-tag">
             <span>✦ Velachery, Chennai · Tamil Nadu · Worldwide</span>
+          </div>
+          <div class="footer-social-links" aria-label="Zyago Studio Social Links">
+            <a href="https://www.instagram.com/zyagostudio/" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/zyagostudio" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/zyagostudio/" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/916381683178" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.08 7.41 8.84 7.67C8.61 7.94 7.94 8.57 7.94 9.87C7.94 11.17 8.89 12.43 9.02 12.6C9.15 12.78 10.87 15.42 13.5 16.56C14.13 16.83 14.62 17 15 17.13C15.65 17.33 16.24 17.3 16.71 17.23C17.23 17.15 18.31 16.58 18.54 15.93C18.77 15.28 18.77 14.73 18.7 14.61C18.63 14.5 18.46 14.43 18.2 14.3C17.94 14.17 16.68 13.55 16.45 13.46C16.21 13.38 16.05 13.34 15.88 13.6C15.71 13.86 15.23 14.43 15.08 14.61C14.94 14.78 14.79 14.8 14.53 14.67C14.27 14.54 13.44 14.27 12.45 13.39C11.69 12.7 11.17 11.86 11.02 11.6C10.88 11.34 11 11.2 11.13 11.07C11.25 10.95 11.39 10.77 11.53 10.61C11.66 10.45 11.71 10.33 11.79 10.16C11.88 10 11.84 9.86 11.77 9.73C11.71 9.6 11.2 8.35 10.98 7.84C10.78 7.34 10.57 7.41 10.41 7.41C10.26 7.4 10.08 7.39 9.91 7.39C9.74 7.39 9.53 7.34 9.53 7.34Z"/></svg>
+            </a>
           </div>
         </div>
 
