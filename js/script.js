@@ -611,6 +611,7 @@ function initVideoModals() {
    9. GALLERY LIGHTBOX & PRO CATEGORY FILTER SYSTEM
    -------------------------------------------------------------------------- */
 function initGalleryLightbox() {
+  window.initGalleryLightbox = initGalleryLightbox;
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
   const sheetItems = document.querySelectorAll('.category-sheet-item');
   const galleryItems = document.querySelectorAll('.gallery-item');
@@ -852,7 +853,7 @@ function initWhatsAppEnquiryForm() {
       waText += `📍 *Location / Details:* ${message}\n`;
     }
     waText += `━━━━━━━━━━━━━━━━━━━━\n`;
-    waText += `Sent via zyagostudio.com`;
+    waText += `Sent via zyagostudio.in`;
 
     const encodedText = encodeURIComponent(waText);
     const whatsappNumber = '916381683178';

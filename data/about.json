@@ -1,0 +1,70 @@
+{
+    "last_updated": "2026-10-13T09:11:48+05:30",
+    "hero": {
+        "tagline": "A Studio Built Around People, Stories & Visual Craft",
+        "title_main": "About",
+        "title_italic": "ZYAGO",
+        "title_sub": "STUDIO"
+    },
+    "founder": {
+        "role": "DIRECTOR OF PHOTOGRAPHY & FOUNDER",
+        "name": "Meet Venkatesh.",
+        "subhead": "The vision behind Zyago Studio.",
+        "bio_paragraphs": [
+            "Zyago Studio began with a simple belief: photography should feel personal.",
+            "For Venkatesh, photography is about more than creating a beautiful image. It's about understanding people, noticing the details others might miss, and capturing moments that have meaning beyond the frame.",
+            "From the personality of a studio portrait to the emotion of a wedding day, his approach brings together thoughtful direction, an eye for detail and a genuine appreciation for every story being told.",
+            "Today, that philosophy shapes Zyago Studio — a growing creative brand working across portraits, weddings, fashion, events and commercial photography.",
+            "His ambition is to build a studio that continues to evolve creatively, collaborate with exceptional talent and create work that reaches beyond geographical boundaries, while never losing sight of the people at the heart of every photograph."
+        ],
+        "quote": "Every photograph has a story. Our job is to make sure it is worth remembering."
+    },
+    "story": {
+        "title": "OUR STORY",
+        "block1_heading": "More than photographs. Stories that stay with you.",
+        "block1_text": "At Zyago Studio, we believe the best photographs aren't always the perfectly posed ones. They're the moments when people forget about the camera and simply be themselves.\n\nA child being playful, a family sharing a laugh, a couple caught in a quiet moment, or a bride taking a breath before her big day — these are the little moments that often mean the most. And they're the moments we love capturing.\n\nBased in Chennai, Zyago Studio brings together studio portraits, weddings, life events, fashion and commercial photography, with one simple goal: to make every shoot a comfortable experience and create photographs that feel genuine, personal and timeless.\n\nBecause years from now, we want you to look at your photographs and remember not just how everything looked, but how it felt.",
+        "block2_heading": "From a camera to a creative vision.",
+        "block2_text": "Zyago Studio is still growing. And that's intentional. We want to build something that goes beyond being another photography studio. Something with its own visual language, its own way of working and its own relationship with the people we photograph.\n\nToday, our work includes studio portraits, weddings, events, fashion and commercial projects. Tomorrow, we want to take that further — working with more artists, brands, creators and people across India and eventually around the world.",
+        "block2_highlight": "Chennai is where the journey begins. The vision is much bigger."
+    },
+    "vision": {
+        "title": "OUR VISION",
+        "subhead": "To create work that people feel, remember and return to.",
+        "text": "We want Zyago Studio to become more than a name in photography. We want it to be a brand people trust for the way we see things, the way we tell stories and the way we make them feel.\n\nEvery photograph we create becomes part of someone's life. It might be a family portrait displayed at home, a photograph that captures a new beginning, a wedding memory revisited years later or a professional portrait that opens a new door.\n\nOur vision is to create work that remains meaningful long after the moment has passed, while growing Zyago Studio into a recognised creative brand in India and beyond.",
+        "highlight": "We want our work to go places, but we never want to lose sight of the people behind every photograph."
+    },
+    "mission": {
+        "title": "OUR MISSION",
+        "subhead": "Keep learning. Keep creating. Keep becoming better.",
+        "intro": "Every photograph is an opportunity to learn something new, see things differently and do our work a little better than before.",
+        "points": [
+            {
+                "title": "Make every story personal.",
+                "desc": "Understand the people we photograph and what matters to them."
+            },
+            {
+                "title": "Create with purpose.",
+                "desc": "Pay attention to light, composition, emotion and the little details that make an image special."
+            },
+            {
+                "title": "Make people feel comfortable.",
+                "desc": "Give every client an experience that feels welcoming, thoughtful and genuine."
+            },
+            {
+                "title": "Grow through creativity.",
+                "desc": "Explore new ideas, learn new techniques and collaborate with people who inspire us."
+            },
+            {
+                "title": "Keep moving forward.",
+                "desc": "Embrace new technology and opportunities without losing the human touch that makes photography meaningful."
+            }
+        ],
+        "outro": "As Zyago Studio grows, we want to build a team, a creative culture and a body of work that we can be proud of — not just for what we create, but for the experiences we give people along the way.",
+        "highlight": "Our goal is simple: do meaningful work, treat people well and never stop growing."
+    },
+    "inspiration": {
+        "eyebrow": "Foundational Elements",
+        "title": "INSPIRATION",
+        "text": "Cinema · Golden Hour Light · Classical Sculpture · Old World Architecture · Poetic Stillness · Genuine Human Connection"
+    }
+}

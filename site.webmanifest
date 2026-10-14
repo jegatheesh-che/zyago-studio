@@ -1,0 +1,21 @@
+{
+  "name": "Zyago Studio",
+  "short_name": "Zyago",
+  "description": "Contemporary portrait and wedding photography studio in Velachery, Chennai.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#415d47",
+  "background_color": "#0c0e0d",
+  "display": "standalone",
+  "start_url": "/"
+}

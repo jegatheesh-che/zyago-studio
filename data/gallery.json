@@ -1,0 +1,366 @@
+{
+    "version": 1,
+    "last_updated": "2026-10-13T09:20:21+05:30",
+    "items": [
+        {
+            "id": "portrait-hl-016",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Sculpted Light Study · Clara in Silk",
+            "alt": "Editorial Fashion Portrait in Sculpted Light",
+            "src": "assets/images/highlights/portraits/portrait-hl-016.webp",
+            "grid_class": "item-portrait",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-025",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Sacred Vows &amp; Rituals · Heritage Wedding",
+            "alt": "Sacred Vows & Rituals Heritage Wedding Celebration",
+            "src": "assets/images/highlights/events/event-hl-025.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-017",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Presence &amp; Form · Contemporary Studio Sitting",
+            "alt": "Presence & Form Contemporary Studio Sitting",
+            "src": "assets/images/highlights/portraits/portrait-hl-017.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-009",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Timeless Union · Emotional Vows",
+            "alt": "Timeless Union Candid Wedding Vows",
+            "src": "assets/images/highlights/events/event-hl-009.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-018",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Architectural Daylight · Atelier IV",
+            "alt": "Architectural Daylight Studio Atelier Sitting",
+            "src": "assets/images/highlights/portraits/portrait-hl-018.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-026",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Evening Radiance · Grand Banquet",
+            "alt": "Evening Radiance Celebration Moments",
+            "src": "assets/images/highlights/events/event-hl-026.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-020",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Quiet Reflection · Fine Art Study",
+            "alt": "Quiet Reflection Fine Art Study Sitting",
+            "src": "assets/images/highlights/portraits/portrait-hl-020.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-010",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Heritage Mandap · Sacred Traditions",
+            "alt": "Heritage Mandap Sacred Traditions",
+            "src": "assets/images/highlights/events/event-hl-010.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-023",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Atmospheric Silhouette · Studio V",
+            "alt": "Atmospheric Silhouette Studio Portrait V",
+            "src": "assets/images/highlights/portraits/portrait-hl-023.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-027",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Twilight Banquet · Festive Atmosphere",
+            "alt": "Twilight Banquet Festive Atmosphere",
+            "src": "assets/images/highlights/events/event-hl-027.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-024",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Haute Couture Expression · Tonal Harmony",
+            "alt": "Haute Couture Expression Tonal Harmony",
+            "src": "assets/images/highlights/portraits/portrait-hl-024.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-012",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Candid Laughter · Family Gathering",
+            "alt": "Candid Laughter Family Gathering",
+            "src": "assets/images/highlights/events/event-hl-012.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-027",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Cinematographic Frame · Daylight Archive",
+            "alt": "Cinematographic Frame Daylight Archive",
+            "src": "assets/images/highlights/portraits/portrait-hl-027.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-031",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Sunset Promenade · Golden Hour Moments",
+            "alt": "Sunset Promenade Golden Hour Moments",
+            "src": "assets/images/highlights/events/event-hl-031.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-025",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Fine Art Chiaroscuro · Beatrice",
+            "alt": "Fine Art Chiaroscuro Beatrice",
+            "src": "assets/images/highlights/portraits/portrait-hl-025.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-016",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Intimate Moments · Euphoric Cheers",
+            "alt": "Intimate Moments Euphoric Cheers",
+            "src": "assets/images/highlights/events/event-hl-016.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-028",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Timeless Persona · Bespoke Headshot",
+            "alt": "Timeless Persona Bespoke Headshot Sitting",
+            "src": "assets/images/highlights/portraits/portrait-hl-028.webp",
+            "grid_class": "item-portrait",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-032",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Grand Procession · Ceremonial Splendor",
+            "alt": "Grand Procession Ceremonial Splendor",
+            "src": "assets/images/highlights/events/event-hl-032.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-015",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Silk &amp; Shadow · Fine Art Composition",
+            "alt": "Silk & Shadow Fine Art Composition",
+            "src": "assets/images/highlights/portraits/portrait-hl-015.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-017",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Golden Vows · Milestone Celebration",
+            "alt": "Golden Vows Milestone Celebration",
+            "src": "assets/images/highlights/events/event-hl-017.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-030",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Form &amp; Shadow · Minimalist Sitting",
+            "alt": "Form & Shadow Minimalist Sitting",
+            "src": "assets/images/highlights/portraits/portrait-hl-030.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-033",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Coastal Reception · Twilight Radiance",
+            "alt": "Coastal Reception Twilight Radiance",
+            "src": "assets/images/highlights/events/event-hl-033.webp",
+            "grid_class": "item-landscape",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        },
+        {
+            "id": "portrait-hl-031",
+            "category": "studio",
+            "category_label": "Studio Portrait",
+            "title": "Modern Poise · Studio Session IX",
+            "alt": "Modern Poise Studio Session IX",
+            "src": "assets/images/highlights/portraits/portrait-hl-031.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "studio-portrait"
+            ]
+        },
+        {
+            "id": "event-hl-022",
+            "category": "events",
+            "category_label": "Life Events",
+            "title": "Joyous Celebration · Cherished Memories",
+            "alt": "Joyous Celebration Cherished Memories",
+            "src": "assets/images/highlights/events/event-hl-022.webp",
+            "grid_class": "item-portrait-tall",
+            "is_default": true,
+            "uploaded_at": null,
+            "pages": [
+                "galleries",
+                "life-events"
+            ]
+        }
+    ]
+}

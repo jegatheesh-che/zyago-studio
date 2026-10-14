@@ -1,25 +1,24 @@
 # ==============================================================================
 # ZYAGO STUDIO — ROBOTS.TXT
-# Optimized for Google Search, Bing, Local SEO & AI Answer Engines (AEO/GEO)
+# Optimized for Search Engines (Google, Bing) & AI Answer/LLM Engines (AEO/GEO)
 # ==============================================================================
 
 User-agent: *
 Allow: /
-Disallow: /scratch/
-Disallow: /raw_assets/
-Disallow: /document/
-Disallow: /screenshots/
-Disallow: /scripts/
-Disallow: /ui_audit_report/
+Disallow: /admin/
+Disallow: /api/
 
 # Explicitly Allow Generative AI Search & Answer Engines
 User-agent: GPTBot
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: Google-Extended
@@ -38,4 +37,4 @@ User-agent: Bingbot
 Allow: /
 
 # Canonical XML Sitemap
-Sitemap: https://www.zyagostudio.in/sitemap.xml
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml

@@ -1,6 +1,6 @@
 # Zyago Studio — Luxury Editorial Photography & Cinematography
 
-A bespoke, responsive web experience crafted for **Zyago Studio**, an editorial wedding, fine art studio portraiture, and milestone event photography house based out of London and available worldwide.
+A bespoke, responsive web experience crafted for **Zyago Studio**, an editorial wedding, fine art studio portraiture, and milestone event photography house based out of Chennai, Tamil Nadu and available worldwide.
 
 ---
 

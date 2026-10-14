@@ -1,13 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="140" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="140" height="140">
   <defs>
     <path id="textCircle" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+    <clipPath id="logoCircleClip">
+      <circle cx="100" cy="100" r="26" />
+    </clipPath>
   </defs>
   <circle cx="100" cy="100" r="88" fill="none" stroke="#a27e54" stroke-width="1" stroke-opacity="0.4"/>
   <circle cx="100" cy="100" r="62" fill="none" stroke="#a27e54" stroke-width="1" stroke-opacity="0.3"/>
-  <text font-family="'Cinzel', 'Cormorant Garamond', 'Playfair Display', serif" font-size="9" fill="#a27e54" letter-spacing="3.2">
+  <text font-family="'Cinzel', 'Cormorant Garamond', 'Playfair Display', serif" font-size="8" fill="#a27e54" letter-spacing="2.1">
     <textPath href="#textCircle" startOffset="0%">
-      • ZYAGO STUDIO • BESPOKE COMMISSION • LONDON •
+      • ZYAGO STUDIO • BESPOKE COMMISSION • CHENNAI, TAMIL NADU •
     </textPath>
   </text>
-  <text x="100" y="107" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="24" fill="#a27e54" text-anchor="middle" font-style="italic" font-weight="600" letter-spacing="1">ZS</text>
+  <g clip-path="url(#logoCircleClip)">
+    <image href="data:image/webp;base64,UklGRlAFAABXRUJQVlA4IEQFAACwIQCdASqMAIwAPlEoj0YjoqEhItbaKHAKCWkA1ZEQOeVsnfIOqOfp1+72enx/ld/gN1drYPFZ+d/8HwUv470A7zv7d8b7IX/xvUtzlfR3sF/y/+yf88boXa/TEUKfEble4FbKXu7uB+ngpBDs+zcufgHCSQs6WHISgiLK76NZZLEwpYpLRpNFjhljw6UeYzw+vEZA+X8OyFvzUqYUYBiOKh1u22bMuA2+UJ5kEOXD9sbSyrZO6TBZSERf98DEiwecjsKFwgE2HVPJLfl1CW33BSMbue5Z3pjrGSmy945MOgKIgxNLjv/nTDwim8fMyAhEbCn8sQDoCFJUUq5mUXFq4iH4kS1+Ms/gxrNBgOnN0CAARbcGAAD+899mtsVcd/w7ubr0sInrDZJIN9kZRnL4YyWMS3rnf3673YAC8fkk/qI5sVeG4OGORJwy74l96DiAGsTo/Lf/ymwWyJ+aiNyKGamJ4M1VUhWnULAf9BOOWkBAHW/axhrPU/qRlUszmQwieZ0sVk3/38pRECIEuK3yCZAo/pqwhfs0o6egzWfW/AWRiesmv78lcp0xg7Wtjf6xLmkQxVHF3g4AP4uF89phSCbiyBK0Nibt0hIUpKv84k3TI5mrzOPb5VZgHejVmd/3xA7r9xA1P11WFi7s3nfrYwhyvbrJ0oifDVtlpM9EJxpimm9EJZR/fG9OA3liaHi5L4unPpfCdRU+5fItGHybSARGhIRqH+WnOgbU8Ybp+Tl6LeWw4GoQTpTPEnvl8Gw11/8NXWP8I7Q0UP+dln3b7Lf914ao+aYO6hwDTjeN0glQxE0Ap0Nw2B73v9IWymTv+8Uh9PBF02e4IE5MN058KxtjPWnzJr1q+v9V7MF76TjdOBfMCxqjkfe9rDOi+Vrgg31/TvsZnKjctcHXRVmt5dwYP85zyP18A1sGjKnYq9OQWk86mRcDbYv1Hz0SxCCAU5pp5swavua+kK4iUzfC++H0s77sLnKAtOD3dzYnF9ZlwR14CuOALSeFjhplHsh1lA6SYE3zNHi57KeJuvLDQSqn23V2NXpa1AkbK/4SL6yR8Yrg9yPBC4xSrePK71C9hhtIC4f9rAPMW00Ja/UEiWe08uzFX6cB4eQ6NBrfg07xtB8MNdZEv5T/f25OLbrgVeBgUXuou4Is29ce4OhJ8vVqp4h6DY/EPG5q1DmEgNQ2fhDKoyac9k6sPP/HmQ4Ojmr+Xvor+pMQvnex0mcRFUHa0G1lEvMHi6HGNaa9hSsLyZJK1e+qlmMDo1AFAdDkgqo+d49gU7gHXvGjRUZbZX7H1SZgoYr/gbk0SK8HEu0uDsZJqryFju5R3GaIFy/10wfCE4gijaLMo4BaJ48y05fMVmAqgLf9I5hfz/PFNTwXP/NANyv4zbKdScQhtR28nFxjWaXEyYrr6p4NUfAFpWyKg+64tytcySo9zjkpXt6AKDkaTWo2BfT3L30XdUx4JCAyVL/Gg+dRpyXNVbH1IV/Un/vfE7h22kIPQhaFg0NvzLFa7G32j/S7MN4H3aeWxfG+rze1l9sUM+7ope8tiGAO0Zdop27ly3mKRBP1UintDjj+KeeSmY+M/pP+wCPRmoamni1dOmBUYKfH5A4o+Eac02OWyIGZ1+GmplMLl6ISagDpGE/QuCHoBJf4tTKovo2sYQJ0tA0WGiGaB73yeRVKXRZ1jgBZPmMO2W4luSrV+S5L+IADX1gLjJzSWj66SUNiGTJDAFBAR9tIud8rNlT+Z5gjIQgN2F5XKCyck5lbLL5eGGk9XTfCIXSCa3cbwAAA" x="74" y="74" width="52" height="52" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+  <circle cx="100" cy="100" r="26" fill="none" stroke="#a27e54" stroke-width="1.5" stroke-opacity="0.55"/>
 </svg>
